@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'FagoCo';                
+    src: url('./FagoCo.ttf') format('truetype');
+}  
+body {
+    font: 12pt Arial, sans-serif;
+}
+.alternate tr {
+	font: 12pt Arial, sans-serif;
+    height: 15pt;
+}
+.alternate tr:nth-of-type(2n+3) {
+    background: #eef4e1;
+}
+textarea {
+    font: 14pt Arial, sans-serif;
+    border: 1px solid #f3f3f3;
+    background: #fff;    
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+}

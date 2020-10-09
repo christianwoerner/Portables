@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvdXML xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://buildingsmart-tech.org/mvd/XML/1.1 http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="731be20e-c55b-4618-bcab-66013e32da99" name="KIT/IAI mvdXML Editor" author="Geiger, Andreas (IAI)">
+  <Templates>
+    <!-- IfcMaterial -->
+    <ConceptTemplate uuid="ab22b73c-9e39-4548-8075-c5e6cd47374a"
+      name="MaterialConceptTemplate" applicableSchema="IFC4" applicableEntity="IfcMaterial">
+      <Definitions>
+        <Definition>
+          <Body lang="en"><![CDATA[Concept Template for checking existance of material properties]]></Body>
+        </Definition>
+      </Definitions>
+      <Rules>
+        <AttributeRule RuleID="MaterialName" AttributeName="Name"/>
+        <AttributeRule RuleID="MaterialProperties" AttributeName="HasProperties">
+          <EntityRules>
+            <EntityRule EntityName="IfcMaterialProperties">
+              <AttributeRules>
+                <AttributeRule RuleID="PropertySetName" AttributeName="Name"></AttributeRule>
+                <AttributeRule RuleID="PropertySetDescription" AttributeName="Description"></AttributeRule>
+                <AttributeRule RuleID="Properties" AttributeName="Properties">
+                  <EntityRules>
+                    <EntityRule EntityName="IfcSimpleProperty">
+                      <References>
+                        <Template ref="a54dd595-4a27-48b9-91fb-126afc0d8bff"/>
+                      </References>
+                    </EntityRule>
+                  </EntityRules>
+                </AttributeRule>
+              </AttributeRules>
+            </EntityRule>
+          </EntityRules>
+        </AttributeRule>
+      </Rules>
+    </ConceptTemplate>
+    <!-- IfcSimpleProperty -->
+    <ConceptTemplate uuid="a54dd595-4a27-48b9-91fb-126afc0d8bff" name="SimplePropertyConceptTemplate"
+      applicableSchema="IFC4" applicableEntity="IfcSimpleProperty">
+      <Definitions>
+        <Definition>
+          <Body lang="en"><![CDATA[]]></Body>
+        </Definition>
+      </Definitions>
+      <Rules>
+        <AttributeRule RuleID="SimplePropertyName" AttributeName="Name">
+          <EntityRules>
+            <EntityRule EntityName="IfcIdentifier"/>
+          </EntityRules>
+        </AttributeRule>
+        <AttributeRule RuleID="SimplePropertyDescription" AttributeName="Description">
+          <EntityRules>
+            <EntityRule EntityName="IfcText"/>
+          </EntityRules>
+        </AttributeRule>
+        <AttributeRule RuleID="NominalValue" AttributeName="NominalValue">
+          <EntityRules>
+            <EntityRule EntityName="IfcValue"/>
+          </EntityRules>
+        </AttributeRule>
+      </Rules>
+    </ConceptTemplate>
+  </Templates>
+  <Views>
+    <ModelView uuid="77d67338-4758-475c-8063-da6358bdca8e" name="IFC4 import test" author="Geiger, Andreas (IAI)" applicableSchema="IFC4">
+      <Definitions>
+        <Definition>
+          <Body><![CDATA[Test rules]]></Body>
+        </Definition>
+      </Definitions>
+      <ExchangeRequirements>
+        <ExchangeRequirement uuid="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" name="Building energy simulation requirements" applicability="import">
+          <Definitions>
+            <Definition>
+              <Body><![CDATA[Check import]]></Body>
+            </Definition>
+          </Definitions>
+        </ExchangeRequirement>
+      </ExchangeRequirements>
+      <Roots>
+        <ConceptRoot uuid="cbe696fb-1119-48c0-a715-53ac8395690f" name="Test for Material properties of IfcMaterial" applicableRootEntity="IfcMaterial">
+          <Definitions>
+            <Definition>
+              <Body><![CDATA[]]></Body>
+            </Definition>
+          </Definitions>
+          <Concepts>
+            <Concept uuid="f554d7e6-0b21-4dfb-8876-4372743f7b3e" name="Check material properties">
+              <Definitions>
+                <Definition>
+                  <Body lang="en"><![CDATA[Existence of material relation]]></Body>
+                </Definition>
+              </Definitions>
+              <Template ref="ab22b73c-9e39-4548-8075-c5e6cd47374a"/>
+              <Requirements>
+                <Requirement applicability="import" exchangeRequirement="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" requirement="mandatory"/>
+              </Requirements>
+              <TemplateRules operator="and">
+                <TemplateRule Parameters="MaterialName[Exists]=TRUE">
+                  <RuleMessage lang="en-EN" state="failure">A valid material name has to be assigned</RuleMessage>
+                  <RuleMessage lang="de-DE" state="failure">Ein gültiger Materialname muss angegeben sein</RuleMessage>
+                </TemplateRule>
+                <TemplateRule Parameters="MaterialProperties[Size]>=2"/>
+                <TemplateRules operator="and">
+                  <TemplateRule Parameters="PropertySetName[Value]='Pset_MaterialThermal' and SimplePropertyName[Value]='ThermalConductivity' and NominalValue[Value] > '0.0'"/>
+                  <TemplateRule Parameters="PropertySetName[Value]='Pset_MaterialThermal' and SimplePropertyName[Value]='SpecificHeatCapacity' and NominalValue[Value] > '0.0'"/>
+                  <TemplateRule Parameters="PropertySetName[Value]='Pset_MaterialCommon' and SimplePropertyName[Value]='MassDensity' and NominalValue[Value] > '0.0'"/>
+                </TemplateRules>
+              </TemplateRules>
+            </Concept>
+          </Concepts>
+        </ConceptRoot>
+      </Roots>
+    </ModelView>
+  </Views>
+</mvdXML>

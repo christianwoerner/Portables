@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- UtilityNetworkADE Core Model Version No. 0.1.0, March 29th, 2010 -->
+<!-- Editors:  Prof. Dr. Thomas H. Kolbe, Institute for Geodesy and Geoinformation Science, Technical University of Berlin -->
+<!-- Dipl.-Ing. Thomas Becker, Institute for Geodesy and Geoinformation Science, Technical University of Berlin -->
+<!-- Claus Nagel, M. Sc., Institute for Geodesy and Geoinformation Science, Technical University of Berlin -->
+<xsd:schema xmlns="http://www.citygml.org/ade/utility/core/0.1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:core="http://www.opengis.net/citygml/1.0"
+    xmlns:gml="http://www.opengis.net/gml" targetNamespace="http://www.citygml.org/ade/utility/core/0.1.0" elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+    <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="../CityGML/3.1.1/base/gml.xsd"/>
+    <xsd:import namespace="http://www.opengis.net/citygml/1.0" schemaLocation="../CityGML/CityGML/cityGMLBase.xsd"/>
+    <!-- ========================================================================================= -->
+    <!-- ===================================  _NetworkFeature    ====================================== -->
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="AbstractNetworkFeatureType" abstract="true">
+        <xsd:annotation>
+            <xsd:documentation> </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="core:AbstractCityObjectType">
+                <xsd:sequence>
+                    <xsd:element name="consistsOf" type="ConsistsOfNetworkFeaturePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element name="featureGraph" type="FeatureGraphPropertyType" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--================================================================================================= -->
+    <xsd:element name="_NetworkFeature" type="AbstractNetworkFeatureType" abstract="true" substitutionGroup="core:_CityObject"/>
+    <!-- ========================================================================================= -->
+    <!-- ===================================     Network      =========================================== -->
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="NetworkType">
+        <xsd:annotation>
+            <xsd:documentation> </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureCollectionType">
+                <xsd:sequence>
+                    <xsd:element name="type" type="gml:CodeType" minOccurs="1"/>
+                    <xsd:element name="networkMember" type="NetworkPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element name="networkFeatureMember" type="AbstractNetworkFeaturePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element name="networkLinkMember" type="NetworkLinkPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element name="networkMembers" type="NetworkArrayPropertyType" minOccurs="0"/>
+                    <xsd:element name="networkFeatureMembers" type="AbstractNetworkFeatureArrayPropertyType" minOccurs="0"/>
+                    <xsd:element name="networkLinkMembers" type="NetworkLinkArrayPropertyType" minOccurs="0"/>
+                    <xsd:element name="networkGraph" type="NetworkGraphPropertyType" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--================================================================================================= -->
+    <xsd:element name="Network" type="NetworkType" substitutionGroup="gml:_FeatureCollection"/>
+    <!--=================================================================================================-->
+    <!-- ======================================     FeatureGraph      =========================================== -->
+    <!--=================================================================================================-->
+    <xsd:complexType name="FeatureGraphType">
+        <xsd:annotation>
+            <xsd:documentation> </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureCollectionType">
+                <xsd:sequence>
+                    <xsd:choice minOccurs="1">
+                        <xsd:element name="nodeMember" type="NodePropertyType" minOccurs="1" maxOccurs="unbounded"/>
+                        <xsd:element name="nodeMembers" type="NodeArrayPropertyType" minOccurs="0"/>
+                    </xsd:choice>
+                    <xsd:element name="interiorFeatureLinkMember" type="InteriorFeatureLinkPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element name="interiorFeatureLinkMembers" type="InteriorFeatureLinkArrayPropertyType" minOccurs="0"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--================================================================================================= -->
+    <xsd:element name="FeatureGraph" type="FeatureGraphType" substitutionGroup="gml:_FeatureCollection"/>
+    <!--=================================================================================================-->
+    <!-- ======================================     NetworkGraph      =========================================== -->
+    <!--=================================================================================================-->
+    <xsd:complexType name="NetworkGraphType">
+        <xsd:annotation>
+            <xsd:documentation> Offener Punkt: richtiger Wert für minOccurs bei featureGraphMember und interFeatureLinkMember? (vorige Alternative: 2, 1)
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureCollectionType">
+                <xsd:sequence>
+                    <xsd:element name="featureGraphMember" type="FeatureGraphPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element name="interFeatureLinkMember" type="InterFeatureLinkPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element name="featureGraphMembers" type="FeatureGraphArrayPropertyType" minOccurs="0"/>
+                    <xsd:element name="interFeatureLinkMembers" type="InterFeatureLinkArrayPropertyType" minOccurs="0"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--================================================================================================= -->
+    <xsd:element name="NetworkGraph" type="NetworkGraphType" substitutionGroup="gml:_FeatureCollection"/>
+    <!--=================================================================================================-->
+    <!-- ==========================================     Node      ============================================== -->
+    <!--=================================================================================================-->
+    <xsd:complexType name="NodeType">
+        <xsd:annotation>
+            <xsd:documentation> Within the dual graph structure of one layer an edge in dual space represents the adjacencies or connections (e.g. doors or
+                passages as intra-space connections) </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <xsd:element name="type" type="NodeTypeType" minOccurs="1"/>
+                    <xsd:element name="connectionSignature" type="AbstractSignaturePropertyType" minOccurs="0"/>
+                    <xsd:element name="linkControl" type="AbstractLinkControlPropertyType" minOccurs="0"/>
+                    <xsd:element name="geometry" type="gml:PointPropertyType" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:element name="Node" type="NodeType" substitutionGroup="gml:_Feature"/>
+    <!--=================================================================================================-->
+    <!-- ==========================================     _Edge     ============================================= -->
+    <!--=================================================================================================-->
+    <xsd:complexType name="AbstractEdgeType">
+        <xsd:annotation>
+            <xsd:documentation> </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <xsd:element name="direction" type="gml:SignType" minOccurs="0"/>
+                    <xsd:element name="linkControl" type="AbstractLinkControlPropertyType" minOccurs="0"/>
+                    <xsd:element name="start" type="NodeReferencePropertyType" minOccurs="1"/>
+                    <xsd:element name="end" type="NodeReferencePropertyType" minOccurs="1"/>
+                    <xsd:element name="geometry" type="gml:CurvePropertyType" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:element name="_Edge" type="AbstractEdgeType" substitutionGroup="gml:_Feature"/>
+    <!--=================================================================================================-->
+    <!-- ==================================    InteriorFeatureLink   =================================== -->
+    <!--=================================================================================================-->
+    <xsd:complexType name="InteriorFeatureLinkType">
+        <xsd:complexContent>
+            <xsd:extension base="AbstractEdgeType">
+                <xsd:sequence/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:element name="InteriorFeatureLink" type="InteriorFeatureLinkType" substitutionGroup="_Edge"/>
+    <!--=================================================================================================-->
+    <!-- =====================================   InterFeatureLink      =========================================== -->
+    <!--=================================================================================================-->
+    <xsd:complexType name="InterFeatureLinkType">
+        <xsd:annotation>
+            <xsd:documentation> </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="AbstractEdgeType">
+                <xsd:sequence>
+                    <xsd:element name="type" type="InterFeatureLinkTypeType" minOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:element name="InterFeatureLink" type="InterFeatureLinkType" substitutionGroup="_Edge"/>
+    <!--=================================================================================================-->
+    <!-- =======================================    NetworkLink      =========================================== -->
+    <!--=================================================================================================-->
+    <xsd:complexType name="NetworkLinkType">
+        <xsd:annotation>
+            <xsd:documentation> </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="AbstractEdgeType">
+                <xsd:sequence/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:element name="NetworkLink" type="NetworkLinkType" substitutionGroup="_Edge"/>
+    <!--=================================================================================================-->
+    <!-- =======================================   Properties      =========================================== -->
+    <!--=================================================================================================-->
+    <xsd:complexType name="AbstractNetworkFeaturePropertyType">
+        <xsd:complexContent>
+            <xsd:restriction base="gml:FeaturePropertyType">
+                <xsd:sequence minOccurs="0">
+                    <xsd:element ref="_NetworkFeature"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="AbstractNetworkFeatureArrayPropertyType">
+        <xsd:annotation>
+            <xsd:documentation>Container for features - follow gml:ArrayAssociationType pattern. Ideally this type would be derived by extension of
+                FeatureArrayPropertyType. However, this leads to a non-deterministic content model, since both the base and the extension have minOccurs="0",
+                and is thus prohibited in XML Schema. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="_NetworkFeature" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="ConsistsOfNetworkFeaturePropertyType">
+        <xsd:complexContent>
+            <xsd:restriction base="gml:FeaturePropertyType">
+                <xsd:sequence minOccurs="0">
+                    <xsd:element ref="_NetworkFeature"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="NetworkPropertyType">
+        <xsd:complexContent>
+            <xsd:restriction base="gml:FeaturePropertyType">
+                <xsd:sequence minOccurs="0">
+                    <xsd:element ref="Network"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="NetworkArrayPropertyType">
+        <xsd:annotation>
+            <xsd:documentation>Container for features - follow gml:ArrayAssociationType pattern. Ideally this type would be derived by extension of
+                FeatureArrayPropertyType. However, this leads to a non-deterministic content model, since both the base and the extension have minOccurs="0",
+                and is thus prohibited in XML Schema. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="Network" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:complexType name="FeatureGraphPropertyType">
+        <xsd:complexContent>
+            <xsd:restriction base="gml:FeaturePropertyType">
+                <xsd:sequence minOccurs="0">
+                    <xsd:element ref="FeatureGraph"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="FeatureGraphArrayPropertyType">
+        <xsd:annotation>
+            <xsd:documentation>Container for features - follow gml:ArrayAssociationType pattern. Ideally this type would be derived by extension of
+                FeatureArrayPropertyType. However, this leads to a non-deterministic content model, since both the base and the extension have minOccurs="0",
+                and is thus prohibited in XML Schema. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="FeatureGraph" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:complexType name="NetworkGraphPropertyType">
+        <xsd:complexContent>
+            <xsd:restriction base="gml:FeaturePropertyType">
+                <xsd:sequence minOccurs="0">
+                    <xsd:element ref="NetworkGraph"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:complexType name="NodePropertyType">
+        <xsd:complexContent>
+            <xsd:restriction base="gml:FeaturePropertyType">
+                <xsd:sequence minOccurs="0">
+                    <xsd:element ref="Node"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="NodeArrayPropertyType">
+        <xsd:annotation>
+            <xsd:documentation>Container for features - follow gml:ArrayAssociationType pattern. Ideally this type would be derived by extension of
+                FeatureArrayPropertyType. However, this leads to a non-deterministic content model, since both the base and the extension have minOccurs="0",
+                and is thus prohibited in XML Schema. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="Node" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:complexType name="NodeReferencePropertyType">
+        <xsd:complexContent>
+            <xsd:restriction base="gml:FeaturePropertyType">
+                <xsd:sequence/>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:complexType name="InteriorFeatureLinkPropertyType">
+        <xsd:complexContent>
+            <xsd:restriction base="gml:FeaturePropertyType">
+                <xsd:sequence minOccurs="0">
+                    <xsd:element ref="InteriorFeatureLink"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="InteriorFeatureLinkArrayPropertyType">
+        <xsd:annotation>
+            <xsd:documentation>Container for features - follow gml:ArrayAssociationType pattern. Ideally this type would be derived by extension of
+                FeatureArrayPropertyType. However, this leads to a non-deterministic content model, since both the base and the extension have minOccurs="0",
+                and is thus prohibited in XML Schema. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="InteriorFeatureLink" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:complexType name="InterFeatureLinkPropertyType">
+        <xsd:complexContent>
+            <xsd:restriction base="gml:FeaturePropertyType">
+                <xsd:sequence minOccurs="0">
+                    <xsd:element ref="InterFeatureLink"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="InterFeatureLinkArrayPropertyType">
+        <xsd:annotation>
+            <xsd:documentation>Container for features - follow gml:ArrayAssociationType pattern. Ideally this type would be derived by extension of
+                FeatureArrayPropertyType. However, this leads to a non-deterministic content model, since both the base and the extension have minOccurs="0",
+                and is thus prohibited in XML Schema. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="InterFeatureLink" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <xsd:complexType name="NetworkLinkPropertyType">
+        <xsd:complexContent>
+            <xsd:restriction base="gml:FeaturePropertyType">
+                <xsd:sequence minOccurs="0">
+                    <xsd:element ref="NetworkLink"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="NetworkLinkArrayPropertyType">
+        <xsd:annotation>
+            <xsd:documentation>Container for features - follow gml:ArrayAssociationType pattern. Ideally this type would be derived by extension of
+                FeatureArrayPropertyType. However, this leads to a non-deterministic content model, since both the base and the extension have minOccurs="0",
+                and is thus prohibited in XML Schema. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="NetworkLink" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--=================================================================================================-->
+    <!--=================================================================================================-->
+    <!--================================== SIMPLE TYPES ================================================== -->
+    <!-- ================================================================================================= -->
+    <xsd:simpleType name="NodeTypeType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="exterior"/>
+            <xsd:enumeration value="interior"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <!-- ========================================================================================= -->
+    <xsd:simpleType name="InterFeatureLinkTypeType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="connects"/>
+            <xsd:enumeration value="contains"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <!-- ========================================================================================= -->
+    <!-- ================================== Data Types     ===========================================-->
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="AbstractSignatureType" abstract="true">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractGMLType">
+                <xsd:sequence/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:element name="_Signature" type="AbstractSignatureType" abstract="true" substitutionGroup="gml:_Object"/>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="AbstractLinkControlType" abstract="true">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractGMLType">
+                <xsd:sequence/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:element name="_LinkControl" type="AbstractLinkControlType" abstract="true" substitutionGroup="gml:_Object"/>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="AbstractSignaturePropertyType">
+        <xsd:sequence minOccurs="0">
+            <xsd:element ref="_Signature" minOccurs="0"/>
+        </xsd:sequence>
+        <xsd:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xsd:complexType>
+    <!-- ========================================================================================= -->
+    <xsd:complexType name="AbstractLinkControlPropertyType">
+        <xsd:sequence minOccurs="0">
+            <xsd:element ref="_LinkControl" minOccurs="0"/>
+        </xsd:sequence>
+        <xsd:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xsd:complexType>
+</xsd:schema>

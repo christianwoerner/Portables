@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://www.opengis.net/citygml/ade/digitalerBauantrag/0.5"
+    xmlns:core="http://www.opengis.net/citygml/1.0"
+    xmlns:furniture="http://www.opengis.net/citygml/cityfurniture/1.0"
+    xmlns:transport="http://www.opengis.net/citygml/transportation/1.0"
+    xmlns:building="http://www.opengis.net/citygml/building/1.0"
+    xmlns:relief="http://www.opengis.net/citygml/relief/1.0"
+    xmlns:citygml="http://www.opengis.net/citygml/1.0" 
+    xmlns:dba="http://www.opengis.net/citygml/ade/digitalerBauantrag/0.5"
+    xmlns:gml="http://www.opengis.net/gml" 
+    xmlns:gen="http://www.opengis.net/citygml/generics/1.0"
+    xmlns:xplan="http://www.xplanung.de/xplangml/4/0" 
+    xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/5.1.1"
+    targetNamespace="http://www.opengis.net/citygml/ade/digitalerBauantrag/0.5"
+    elementFormDefault="qualified" attributeFormDefault="unqualified"> 
+
+    <xs:import namespace="http://www.opengis.net/gml" schemaLocation="../3.1.1/base/gml.xsd"/>
+    <xs:import namespace="http://www.opengis.net/citygml/1.0" schemaLocation="./CityGMLBase.xsd"/>
+    <xs:import namespace="http://www.opengis.net/citygml/building/1.0" schemaLocation="./building.xsd"/>
+    <xs:import namespace="http://www.opengis.net/citygml/landuse/1.0" schemaLocation="./landuse.xsd"/>
+    <xs:import namespace="http://www.opengis.net/citygml/generics/1.0" schemaLocation="./generics.xsd"/>
+    <xs:import namespace="http://www.opengis.net/citygml/appearance/1.0" schemaLocation="./appearance.xsd"/>
+    <xs:import namespace="http://www.opengis.net/citygml/relief/1.0" schemaLocation="./relief.xsd"/>
+    <xs:import namespace="http://www.xplanung.de/xplangml/4/0"  schemaLocation="../../XPlanGML_4_0/XPlanGML.xsd"/> 
+    <xs:import namespace="http://www.adv-online.de/namespaces/adv/gid/5.1.1" schemaLocation="../../NAS_5_1_1/NAS-Operationen.xsd"/>       
+    
+    <!-- ============================================================================================ -->
+    <!--====================================== RelativeToTerrain ===================================  -->
+    <!-- ============================================================================================ -->
+    <xs:simpleType name="RelativeToTerrainType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="entirelyAboveTerrain"/>
+            <xs:enumeration value="substantiallyAboveTerrain"/>
+            <xs:enumeration value="substantiallyAboveAndBelowTerrain"/>
+            <xs:enumeration value="substantiallyBelowTerrain"/>
+            <xs:enumeration value="entirelyBelowTerrain"/>
+        </xs:restriction>
+    </xs:simpleType>
+      
+    <!-- ============================================================================================ -->
+    <!--====================================== ADE Bauantrags-Prüfung ==============================  -->
+    <!-- ============================================================================================ -->
+    
+    <!-- ============================================================================================ -->
+    <!-- ===================================Dachform  =============================================== -->
+    <!-- ============================================================================================ -->
+   
+    <xs:complexType name="DachformPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="Dachform" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:complexType name="DachformType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>
+                    <xs:element name="firstrichtung" type="gml:AngleType" minOccurs="0"/>
+                    <xs:element name="dachform" type="AX_DachformType" minOccurs="0"/>
+                    <xs:element name="dachneigung" type="gml:AngleType" minOccurs="0"/>
+                    <xs:element name="firstlinie" type="gml:MultiCurvePropertyType" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Dachform" type="DachformType" substitutionGroup="core:_CityObject"/>
+    
+    <xs:simpleType name="AX_DachformType">
+        <xs:restriction base="xs:string">
+            <!-- Flachdach -->
+            <xs:enumeration value="1000"/>
+            <!-- Pultdach -->
+            <xs:enumeration value="2100"/>
+            <!-- VersetztesPultdach -->
+            <xs:enumeration value="2200"/>
+            <!-- Satteldach -->
+            <xs:enumeration value="3100"/>
+            <!-- Walmdach -->
+            <xs:enumeration value="3200"/>
+            <!-- Krüppelwalmdach -->
+            <xs:enumeration value="3300"/>
+            <!-- Mansardendach -->
+            <xs:enumeration value="3400"/>
+            <!-- Zeltdach -->
+            <xs:enumeration value="3500"/>
+            <!-- Kegeldach -->
+            <xs:enumeration value="3600"/>
+            <!-- Kuppeldach -->
+            <xs:enumeration value="3700"/>
+            <!-- Sheddach -->
+            <xs:enumeration value="3800"/>
+            <!-- Bogendach -->
+            <xs:enumeration value="3900"/>
+            <!-- Turmdach -->
+            <xs:enumeration value="4000"/>
+            <!-- Mischform -->
+            <xs:enumeration value="5000"/>
+            <!-- Sonstiges -->
+            <xs:enumeration value="9999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- ============================================================================================ -->
+    <!--====================================== Gebäudegrundfläche ==================================  -->
+    <!-- ============================================================================================ -->   
+    <xs:complexType name="GebaeudegrundflaechePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="Gebaeudegrundflaeche" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:complexType name="GebaeudegrundflaecheType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>
+                    <xs:element name="typGrundflaeche" type="GrundflaecheTypenType"/>
+                    <xs:element name="flaechenGeometrie" type="gml:MultiSurfacePropertyType" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <xs:element name="Gebaeudegrundflaeche" type="GebaeudegrundflaecheType" substitutionGroup="core:_CityObject"/>   
+    
+    <xs:simpleType name="GrundflaecheTypenType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="BasisGrundflaeche"/>
+            <xs:enumeration value="BalkonLoggiaTerrasse"/>
+            <xs:enumeration value="ZufahrtUnterbauung"/>
+            <xs:enumeration value="Sonstiges"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- ============================================================================================ -->
+    <!--====================================== Baumasse ============================================  -->
+    <!-- ============================================================================================ -->    
+    <xs:complexType name="BaumassePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="Baumasse" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>         
+
+    <xs:complexType name="BaumasseType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>
+                    <xs:element name="typBaumasse" type="BaumasseTypenType" minOccurs="0"/>
+                    <xs:element name="volumenGeometrie" type="gml:MultiSolidPropertyType" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <xs:element name="Baumasse" type="BaumasseType" substitutionGroup="core:_CityObject"/>   
+    
+    <xs:simpleType name="BaumasseTypenType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Hoehe_Gr_230"/>
+            <xs:enumeration value="Hoehe_Kl_230"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- ============================================================================================ -->
+    <!--====================================== Geschossflaeche =====================================  -->
+    <!-- ============================================================================================ -->    
+    <xs:complexType name="GeschossflaechePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="Geschossflaeche" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>         
+    
+    <xs:complexType name="GeschossflaecheType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>
+                    <xs:element name="typGeschossflaeche" type="GeschossflaecheTypenType" minOccurs="0"/>
+                    <xs:element name="flaechenGeometrie" type="gml:MultiSurfacePropertyType" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>    
+    
+    <xs:element name="Geschossflaeche" type="GeschossflaecheType" substitutionGroup="core:_CityObject"/>   
+                
+    <xs:simpleType name="GeschossflaecheTypenType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Hoehe_Gr_230"/>
+            <xs:enumeration value="Hoehe_Kl_230"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- ============================================================================================ -->
+    <!--===================================== Geschoss =============================================  -->
+    <!-- ============================================================================================ -->
+    <xs:element name="hatGeschoss" type="GeschossPropertyType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    
+    <xs:complexType name="GeschossPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="Geschoss" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:complexType name="InteriorRoomPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="building:Room" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:complexType name="BoundarySurfacePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="building:_BoundarySurface" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:complexType name="GeschossType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>
+                    <xs:element name="vertikaleLage" type="RelativeToTerrainType" minOccurs="0"/>
+                    <xs:element name="typGeschoss" type="GeschossTypenType" minOccurs="0"/>
+                    <xs:element name="geschossNummer" type="xs:int" minOccurs="0"/>
+                    <xs:element name="istVollgeschoss" type="xs:boolean"/>
+                    <xs:element name="geschosshoehe" type="gml:LengthType" minOccurs="0"/>
+                    <xs:element name="relativeFussbodenHoehe" type="gml:LengthType" minOccurs="0"/>
+                    <xs:element name="geschossflaechenAnteil" type="GeschossflaechePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="baumassenAnteil" type="BaumassePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="boundedBy" type="BoundarySurfacePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="interiorRoom" type="InteriorRoomPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="ueberbauteFlaeche" type="UeberbauteFlaechePropertyType" minOccurs="0" maxOccurs="1"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <xs:element name="Geschoss" type="GeschossType" substitutionGroup="core:_CityObject"/>
+    
+    <xs:simpleType name="GeschossTypenType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Kellergeschoss"/>
+            <xs:enumeration value="OberirdischesGeschoss"/>
+            <xs:enumeration value="Staffelgeschoss"/>
+            <xs:enumeration value="Dachgeschoss"/>
+            <xs:enumeration value="Garagengeschoss"/>
+        </xs:restriction>
+    </xs:simpleType>
+        
+    
+    <!-- ============================================================================================ -->
+    <!--================================ Erweiterung _AbstractBuilding =============================  -->
+    <!-- ============================================================================================ -->
+    <xs:element name="relativeToTerrain" type="RelativeToTerrainType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="typBaulicheAnlage" type="BaulicheAnlageTypenType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="gebaeudeklasse" type="xs:int" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="zulaessigInAbstandsflaeche" type="xs:boolean" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="festsetzungMassDerBaulNutzung" type="FestsetzungMassDerBaulNutzungPropertyType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="traufhoehe" type="gml:LengthType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="firsthoehe" type="gml:LengthType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="berechnungGrundflaeche" type="BerechnungGrundflaechePropertyType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="berechnungGeschossflaeche" type="BerechnungGeschossflaechePropertyType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="berechnungBaumasse" type="BerechnungBaumassePropertyType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="berechnungGeschosszahl" type="BerechnungGeschosszahlPropertyType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+   
+    <xs:element name="hatDachform" type="DachformPropertyType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="grundflaechenAnteil" type="GebaeudegrundflaechePropertyType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    <xs:element name="ueberbauteFlaeche" type="UeberbauteFlaechePropertyType" substitutionGroup="building:_GenericApplicationPropertyOfAbstractBuilding"/>
+    
+    <xs:simpleType name="BaulicheAnlageTypenType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Gebaeude"/>
+            <xs:enumeration value="Stellplatz"/>
+            <xs:enumeration value="UeberdachterStellplatzCarport"/>
+            <xs:enumeration value="Garage"/>
+            <xs:enumeration value="NebenanlageParag14"/>
+            <xs:enumeration value="ZufahrtUnterbauung"/>
+            <xs:enumeration value="SonstigeBaulicheAnlage"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="VersionBauNVOType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Version_1962"/>
+            <xs:enumeration value="Version_1968"/>
+            <xs:enumeration value="Version_1977"/>
+            <xs:enumeration value="Version_1990"/>
+            <xs:enumeration value="AndereGesetzlicheBestimmung"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
+    <xs:element name="BerechnungGrundflaeche" type="BerechnungGrundflaecheType" substitutionGroup="gml:_Object"/>
+    <xs:complexType name="BerechnungGrundflaecheType">
+        <xs:sequence>
+            <xs:element name="GR_Basis" type="gml:AreaType"/>
+            <xs:element name="GRZ_Basis" type="xs:double"/>
+            <xs:element name="GR_Balkon" type="gml:AreaType" minOccurs="0"/>
+            <xs:element name="GRZ_Balkon" type="xs:double" minOccurs="0"/>
+            <xs:element name="GR_ZufahrtUnterbauung" type="gml:AreaType" minOccurs="0"/>
+            <xs:element name="GRZ_ZufahrtUnterbauung" type="xs:double" minOccurs="0"/>
+            <xs:element name="methode" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="BerechnungGrundflaechePropertyType">
+        <xs:sequence>
+            <xs:element ref="BerechnungGrundflaeche"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    <xs:element name="BerechnungGeschossflaeche" type="BerechnungGeschossflaecheType" substitutionGroup="gml:_Object"/>
+    <xs:complexType name="BerechnungGeschossflaecheType">
+        <xs:sequence>
+            <xs:element name="GF_Basis" type="gml:AreaType"/>
+            <xs:element name="GFZ_Basis" type="xs:double"/>
+            <xs:element name="GF_NichtVollgeschoss" type="gml:AreaType" minOccurs="0"/>
+            <xs:element name="GFZ_NichtVollgeschoss" type="xs:double" minOccurs="0"/>
+            <xs:element name="GF_Garagengeschoss" type="gml:AreaType" minOccurs="0"/>
+            <xs:element name="GFZ_Garagengeschoss" type="xs:double" minOccurs="0"/>
+            <xs:element name="methode" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="BerechnungGeschossflaechePropertyType">
+        <xs:sequence>
+            <xs:element ref="BerechnungGeschossflaeche"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    <xs:element name="BerechnungBaumasse" type="BerechnungBaumasseType" substitutionGroup="gml:_Object"/>
+    <xs:complexType name="BerechnungBaumasseType">
+        <xs:sequence>
+            <xs:element name="BM_Basis" type="gml:AreaType"/>
+            <xs:element name="BMZ_Basis" type="xs:double"/>
+            <xs:element name="BM_NichtVollgeschoss" type="gml:AreaType" minOccurs="0"/>
+            <xs:element name="BMZ_NichtVollgeschoss" type="xs:double" minOccurs="0"/>
+            <xs:element name="BM_Garagengeschoss" type="gml:AreaType" minOccurs="0"/>
+            <xs:element name="BMZ_Garagengeschoss" type="xs:double" minOccurs="0"/>
+            <xs:element name="methode" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="BerechnungBaumassePropertyType">
+        <xs:sequence>
+            <xs:element ref="BerechnungBaumasse"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="BerechnungGeschosszahl" type="BerechnungGeschosszahlType" substitutionGroup="gml:_Object"/>
+    <xs:complexType name="BerechnungGeschosszahlType">
+        <xs:sequence>
+            <xs:element name="Z" type="xs:int"/>
+            <xs:element name="ZU" minOccurs="0"/>
+            <xs:element name="Zgarage" minOccurs="0"/>
+            <xs:element name="methode" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="BerechnungGeschosszahlPropertyType">
+        <xs:sequence>
+            <xs:element ref="BerechnungGeschosszahl"/>
+        </xs:sequence>
+    </xs:complexType>
+     
+    <xs:simpleType name="GebaeudehoeheBezugspunktType">
+        <xs:restriction base="xs:string">
+            <!-- Geländeoberkante -->
+            <xs:enumeration value="2000"/>
+            <!-- GehwegOberkante -->
+            <xs:enumeration value="2500"/>
+            <!-- BezugshöheBPlan -->
+            <xs:enumeration value="3000"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="GebaeudehoeheTypenType">
+        <xs:restriction base="xs:string">
+            <!-- Traufhöhe -->
+            <xs:enumeration value="1000"/>
+            <!-- Firsthöhe -->
+            <xs:enumeration value="2000"/>
+            <!-- Oberkante -->
+            <xs:enumeration value="3000"/>
+            <!-- Unbestimmt -->
+            <xs:enumeration value="4000"/>
+        </xs:restriction>
+    </xs:simpleType>   
+    
+    
+    <!-- ============================================================================================ -->
+    <!--================================ Erweiterung Room ==========================================  -->
+    <!-- ============================================================================================ -->
+    <xs:element name="wirdBeruecksichtigt" type="xs:boolean" substitutionGroup="building:_GenericApplicationPropertyOfRoom"/> 
+    <xs:element name="typRaum" type="xs:string" substitutionGroup="building:_GenericApplicationPropertyOfRoom"/> 
+    <xs:element name="raumnummer" type="xs:string" substitutionGroup="building:_GenericApplicationPropertyOfRoom"/>
+    <xs:element name="langname" type="xs:string" substitutionGroup="building:_GenericApplicationPropertyOfRoom"/>     
+    <xs:element name="raumGrundflaechenAnteil" type="GrundflaecheRaumPropertyType" substitutionGroup="building:_GenericApplicationPropertyOfRoom"/>
+    <xs:element name="raumBaumassenAnteil" type="BaumasseRaumPropertyType" substitutionGroup="building:_GenericApplicationPropertyOfRoom"/>   
+    
+    <xs:complexType name="GrundflaecheRaumType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>
+                    <xs:element name="typRaumhoehe" type="RaumhoeheTypenType"/>
+                    <xs:element name="flaechenGeometrie" type="gml:MultiSurfacePropertyType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <xs:complexType name="GrundflaecheRaumPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="GrundflaecheRaum" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:element name="GrundflaecheRaum" type="GrundflaecheRaumType" substitutionGroup="core:_CityObject"/>     
+    
+    <xs:complexType name="BaumasseRaumType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>
+                    <xs:element name="typRaumhoehe" type="RaumhoeheTypenType"/>
+                    <xs:element name="volumenGeometrie" type="gml:MultiSolidPropertyType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <xs:complexType name="BaumasseRaumPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="BaumasseRaum" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:element name="BaumasseRaum" type="BaumasseRaumType" substitutionGroup="core:_CityObject"/>         
+
+    <xs:simpleType name="RaumhoeheTypenType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Hoehe_Gr_230"/>
+            <xs:enumeration value="Hoehe_150_230"/>
+            <xs:enumeration value="Hoehe_Kl_150"/>
+        </xs:restriction>
+    </xs:simpleType>  
+    
+    
+    <!-- ============================================================================================ -->
+    <!--================================ Baugrundstueck ============================================  -->
+    <!-- ============================================================================================ -->
+    <xs:complexType name="BaugrundstueckPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="Baugrundstueck" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:complexType name="BaugrundstueckType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>
+                    <xs:element name="adresse" type="xs:string" minOccurs="0"/>
+                    <xs:element name="grundbuchbezirk" type="xs:string" minOccurs="0"/>
+                    <xs:element name="gemarkung" type="xs:string" minOccurs="0"/>
+                    <xs:element name="flurstuecknummer" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="bplanNummer" type="xs:string" minOccurs="0"/>
+                    <xs:element name="bplanName" type="xs:string" minOccurs="0"/>
+                    <xs:element name="massgeblicheFlaeche" type="gml:AreaType"/>
+                    <xs:element name="GR_KorrekturOberirdisch" type="gml:AreaType" minOccurs="0"/>
+                    <xs:element name="GR_KorrekturVersiegelung" type="gml:AreaType" minOccurs="0"/>
+                    <xs:element name="GF_Korrektur" type="gml:AreaType" minOccurs="0"/>
+                    <xs:element name="BM_Korrektur" type="gml:VolumeType" minOccurs="0"/>
+                    <xs:element name="grundstueckImBaugebiet" type="GrundstueckImBaugebietPropertyType" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="grundstueckAusserhalbBaugebiet" type="GrundstueckAusserhalbBaugebietPropertyType" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="bestehendesGebaeude" type="BestehendesGebaeudePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <xs:element name="Baugrundstueck" type="BaugrundstueckType" substitutionGroup="core:_CityObject"/>     
+
+    <!-- ============================================================================================ -->
+    <!--================================ Adresse ===================================================  -->
+    <!-- ============================================================================================ -->
+    <xs:element name="Adresse" type="AdresseType" substitutionGroup="core:_CityObject" />
+    
+    <xs:complexType name="AdressePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="Adresse" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:complexType name="AdresseType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>
+                    <xs:element name="anrede" type="xs:string" minOccurs="0"/>
+                    <xs:element name="titel" type="xs:string" minOccurs="0"/>
+                    <xs:element name="vorname" type="xs:string" minOccurs="0"/>
+                    <xs:element name="nachname" type="xs:string" minOccurs="0"/>
+                    <xs:element name="strasse" type="xs:string" minOccurs="0"/>
+                    <xs:element name="hausnummer" type="xs:string" minOccurs="0"/>
+                    <xs:element name="hausnummerBuchstabe" type="xs:string" minOccurs="0"/>
+                    <xs:element name="adresszusatz" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="plz" type="xs:string" minOccurs="0"/>
+                    <xs:element name="ort" type="xs:string" minOccurs="0"/>
+                    <xs:element name="telefon" type="xs:string" minOccurs="0"/>
+                     <xs:element name="istAntragsteller" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <!-- ============================================================================================ -->
+    <!--================================ GrundstueckImBaugebiet ====================================  -->
+    <!-- ============================================================================================ -->  
+    <xs:complexType name="GrundstueckImBaugebietPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="GrundstueckImBaugebiet" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:complexType name="GrundstueckImBaugebietType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>                   
+                    <xs:element name="flaechenGeometrie" type="gml:MultiSurfacePropertyType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>    
+    
+    <xs:element name="GrundstueckImBaugebiet" type="GrundstueckImBaugebietType" substitutionGroup="core:_CityObject"/>    
+
+    <!-- ============================================================================================ -->
+    <!--================================ GrundstueckAusserhalbBaugebiet ============================  -->
+    <!-- ============================================================================================ -->  
+    <xs:complexType name="GrundstueckAusserhalbBaugebietPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="GrundstueckAusserhalbBaugebiet" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:complexType name="GrundstueckAusserhalbBaugebietType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>                   
+                    <xs:element name="flaechenGeometrie" type="gml:MultiSurfacePropertyType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>    
+    
+    <xs:element name="GrundstueckAusserhalbBaugebiet" type="GrundstueckAusserhalbBaugebietType" substitutionGroup="core:_CityObject"/>        
+    
+    <!-- ============================================================================================ -->
+    <!--================================ BestehendesGebaeude =======================================  -->
+    <!-- ============================================================================================ -->  
+    <xs:complexType name="BestehendesGebaeudePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="BestehendesGebaeude" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+    <xs:complexType name="BestehendesGebaeudeType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>     
+                   <xs:element name="alkisId" type="xs:string" minOccurs="0"/>
+                   <xs:element name="gebaeudefunktion" type="AX_GebaeudefunktionType" minOccurs="0"/>
+                   <xs:element name="anzahlDerOberirdischenGeschosse" type="xs:integer" minOccurs="0"/>
+                   <xs:element name="anzahlDerUnterirdischenGeschosse" type="xs:integer" minOccurs="0"/>
+                   <xs:element name="objekthoehe" type="gml:LengthType" minOccurs="0"/>
+                   <xs:element name="dachform" type="AX_DachformType" minOccurs="0"/>
+                   <xs:element name="geschossflaeche" type="gml:AreaType" minOccurs="0"/>
+                   <xs:element name="grundflaeche" type="gml:AreaType" minOccurs="0"/>
+                   <xs:element name="umbauterRaum" type="gml:VolumeType" minOccurs="0"/>
+                   <xs:element name="flaechenGeometrie" type="gml:MultiSurfacePropertyType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>    
+    
+    <xs:element name="BestehendesGebaeude" type="BestehendesGebaeudeType" substitutionGroup="core:_CityObject"/> 
+
+    <xs:simpleType name="AX_GebaeudefunktionType">
+        <xs:annotation>
+            <xs:documentation> ALKIS Gebäudefunktionen. Die Werte des Typs sind im XML file AX_GebaeudefunktionenType.xml definiert</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    
+    <!-- ============================================================================================ -->
+    <!--================================ Bebauungsplan =============================================  -->
+    <!-- ============================================================================================ -->  
+    <xs:complexType name="BebauungsplanPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="Bebauungsplan" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>    
+    
+    <xs:complexType name="BebauungsplanType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>     
+                    <xs:element name="planName" type="xs:string" minOccurs="0"/>
+                    <xs:element name="planNummer" type="xs:string" minOccurs="0"/>
+                    <xs:element name="veraenderungssperre" type="xs:boolean" default="false"/>
+                    <xs:element name="bezugshoehe" type="gml:LengthType" minOccurs="0"/>
+                    <xs:element name="versionBauNVO" type="xs:string"/>
+                    <xs:element name="versionBauNVOText" type="xs:string" minOccurs="0"/>
+                    <xs:element name="xplanPlan" type="gml:ReferenceType" minOccurs="0"/>
+                    <xs:element name="xplanBaugebiet" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>    
+    
+    <xs:element name="Bebauungsplan" type="BebauungsplanType" substitutionGroup="core:_CityObject"/>
+    
+    <xs:element name="FestsetzungMassDerBaulNutzung" type="FestsetzungMassDerBaulNutzungType" substitutionGroup="gml:_Object"/>
+    <xs:complexType name="FestsetzungMassDerBaulNutzungType">
+        <xs:sequence>
+            <xs:element name="GRmax" type="gml:AreaType" minOccurs="0"/>
+            <xs:element name="GR_Ausn" type="gml:AreaType" minOccurs="0"/>
+            <xs:element name="GRZmax" type="xs:double" minOccurs="0"/>
+            <xs:element name="GRZ_Ausn" type="xs:double" minOccurs="0"/>
+            <xs:element name="GFmin" type="gml:AreaType" minOccurs="0"/>
+            <xs:element name="GFmax" type="gml:AreaType" minOccurs="0"/>
+            <xs:element name="GF_Ausn" type="gml:AreaType" minOccurs="0"/>
+            <xs:element name="GFZmin" type="xs:double" minOccurs="0"/>
+            <xs:element name="GFZmax" type="xs:double" minOccurs="0"/>
+            <xs:element name="GFZ_Ausn" type="xs:double" minOccurs="0"/>
+            <xs:element name="BMmax" type="gml:VolumeType" minOccurs="0"/>
+            <xs:element name="BM_Ausn" type="gml:VolumeType" minOccurs="0"/>
+            <xs:element name="BMZmax" type="xs:double" minOccurs="0"/>
+            <xs:element name="BMZ_Ausn" type="xs:double" minOccurs="0"/>
+            <xs:element name="Zmin" type="xs:int" minOccurs="0"/>
+            <xs:element name="Zmax" type="xs:int" minOccurs="0"/>
+            <xs:element name="Z_Ausn" type="xs:int" minOccurs="0"/>
+            <xs:element name="ZUmin" type="xs:int" minOccurs="0"/>
+            <xs:element name="ZUmax" type="xs:int" minOccurs="0"/>
+            <xs:element name="ZU_Ausn" type="xs:int" minOccurs="0"/>
+            <xs:element name="Hmin" type="gml:LengthType" minOccurs="0"/>
+            <xs:element name="Hmax" type="gml:LengthType" minOccurs="0"/>
+            <xs:element name="Hzwingend" type="gml:LengthType" minOccurs="0"/>
+            <xs:element name="H_Bezug" type="dba:GebaeudehoeheBezugspunktType" minOccurs="0"/>
+            <xs:element name="H_Typ" type="dba:GebaeudehoeheTypenType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="FestsetzungMassDerBaulNutzungPropertyType">
+        <xs:sequence>
+            <xs:element ref="FestsetzungMassDerBaulNutzung"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+
+    <!-- ============================================================================================ -->
+    <!--================================ BauBeschraenkung ==========================================  -->
+    <!-- ============================================================================================ -->  
+    <xs:complexType name="BauBeschraenkungPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="BauBeschraenkung" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>        
+    
+    <xs:complexType name="BauBeschraenkungType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>
+                    <xs:element name="typ" type="xs:string"/>
+                    <xs:element name="attributName" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="attributWert" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="externeReferenz" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="textlicheFestsetzung" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="startBedingung" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="endBedingung" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="xplanObjekt" type="gml:ReferenceType" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <xs:element name="BauBeschraenkung" type="BauBeschraenkungType" substitutionGroup="core:_CityObject"/>  
+    
+    <!-- ============================================================================================ -->
+    <!--================================ UeberbauteFlaeche =========================================  -->
+    <!-- ============================================================================================ -->  
+    <xs:complexType name="UeberbauteFlaechePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="UeberbauteFlaeche" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    
+   <xs:complexType name="UeberbauteFlaecheType">
+   <xs:complexContent>
+       <xs:extension base="core:AbstractCityObjectType">
+           <xs:sequence>
+               <xs:element name="flaechenGeometrie" type="gml:MultiSurfacePropertyType"/>
+               <xs:element name="ausserhalbBaufenster" type="dba:UeberbauteFlaecheAusserhalbBaufensterPropertyType" minOccurs="0"/>
+               <xs:element name="xplanObjekt" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded"/>
+           </xs:sequence>
+       </xs:extension>
+   </xs:complexContent>
+   </xs:complexType>
+    
+    <xs:element name="UeberbauteFlaeche" type="UeberbauteFlaecheType" substitutionGroup="core:_CityObject"/>
+    
+    <xs:complexType name="UeberbauteFlaecheAusserhalbBaufensterPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="UeberbauteFlaecheAusserhalbBaufenster" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"></xs:attributeGroup>
+    </xs:complexType>
+    
+    <xs:complexType name="UeberbauteFlaecheAusserhalbBaufensterType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>
+                    <xs:element name="breite" type="gml:LengthType" minOccurs="0"/>
+                    <xs:element name="tiefe" type="gml:LengthType" minOccurs="0"/>
+                    <xs:element name="flaeche" type="gml:AreaType" minOccurs="0"/>
+                    <xs:element name="flaechenGeometrie" type="gml:MultiSurfacePropertyType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <xs:element name="UeberbauteFlaecheAusserhalbBaufenster" type="UeberbauteFlaecheAusserhalbBaufensterType" substitutionGroup="core:_CityObject"/>
+    
+    
+    <!-- ============================================================================================ -->
+    <!--================================ Bauantrag =================================================  -->
+    <!-- ============================================================================================ -->  
+    
+    <xs:complexType name="BauantragPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="Bauantrag" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>    
+    
+    <xs:complexType name="BauantragType">
+        <xs:complexContent>
+            <xs:extension base="core:AbstractCityObjectType">
+                <xs:sequence>     
+                   <xs:element name="bauherr" type="AdressePropertyType" minOccurs="0"/>
+                    <xs:element name="entwurfsverfasser" type="AdressePropertyType" minOccurs="0"/>
+                    <xs:element name="grundeigentuemer" type="AdressePropertyType" minOccurs="0"/>
+                   <xs:element name="kurzbeschreibung" type="xs:string" minOccurs="0"/>                   
+                   <xs:element name="baugrundstueck" type="BaugrundstueckPropertyType" minOccurs="0"/>
+                   <xs:element name="gebaeude" type="gml:AssociationType" minOccurs="0" maxOccurs="unbounded"/>
+                   <xs:element name="plan" type="BebauungsplanPropertyType" minOccurs="0"/>
+                    <xs:element name="beschraenkung" type="BauBeschraenkungPropertyType" minOccurs="0"/>                    
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>        
+    
+    <xs:element name="Bauantrag" type="BauantragType" substitutionGroup="core:_CityObject"/>
+    
+ 
+        
+   
+  
+</xs:schema>

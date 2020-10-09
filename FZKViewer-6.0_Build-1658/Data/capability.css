@@ -1,0 +1,52 @@
+*
+{
+font-family: Tahoma, Arial;
+font-weight: normal;
+font-size: 8pt;
+}
+
+h1
+{
+font-size: 14pt;
+font-weight: bold;
+padding: 0;
+margin: 0;
+}
+
+h2
+{
+padding: 0;
+margin: 0;
+margin-bottom: 14pt;
+}
+
+h3
+{
+font-weight: bold;
+padding: 3px;
+margin: 0;
+margin-top: 14pt;
+background-color: #ddd;
+}
+
+p
+{
+padding: 0;
+margin: 0;
+}
+
+table
+{
+border-spacing: 5px;
+}
+
+table td, table th
+{
+vertical-align:top;
+text-align: left;
+}
+
+table th
+{
+width: 100px;
+}

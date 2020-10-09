@@ -1,0 +1,3 @@
+<Plugins>
+  <Plugin name="PluginTest.dll" version="1.0.0.1"/>
+</Plugins>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- UtilityNetworkADE Core Model Version No. 0.1.0, March 29th, 2010 -->
+<!-- Editors:  Prof. Dr. Thomas H. Kolbe, Institute for Geodesy and Geoinformation Science, Technical University of Berlin -->
+<!-- Dipl.-Ing. Thomas Becker, Institute for Geodesy and Geoinformation Science, Technical University of Berlin -->
+<!-- Claus Nagel, M. Sc., Institute for Geodesy and Geoinformation Science, Technical University of Berlin -->
+
+<!-- ======================================================================================= -->
+<!-- === PLEASE NOTE: This is just a PRELIMINARY schema of the NetworkComponents package === -->
+<!-- === as described in the UtilityNetworkADE specification document v0.1.0 (p. 2).     === -->
+<!-- === The schema exemplifies the modelling of concrete utility network packages       === -->
+<!-- === which are dependent on the NetworkCore package of the UtilityNetworkADE.        === -->
+<!-- === The NetworkComponents package and this schema will be completely reworked for   === -->
+<!-- === the final release of the UtilityNetworkADE.                                     === -->
+<!-- ======================================================================================= -->
+
+<xsd:schema xmlns="http://www.citygml.org/ade/utility/networkComponents/0.1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:core="http://www.citygml.org/ade/utility/core/0.1.0" xmlns:gml="http://www.opengis.net/gml"
+    targetNamespace="http://www.citygml.org/ade/utility/networkComponents/0.1.0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xsd:import namespace="http://www.citygml.org/ade/utility/core/0.1.0" schemaLocation="utility_core.xsd"/>
+    <!-- ============================================================================================================== -->
+    <!-- =========================================  LineObjects nur zum Testen   ====================================== -->
+    <!-- ============================================================================================================== -->
+    <xsd:complexType name="SectionType">
+        <xsd:complexContent>
+            <xsd:extension base="core:AbstractNetworkFeatureType">
+                <xsd:sequence> </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ============================================================================================================== -->
+    <xsd:element name="Section" type="SectionType" substitutionGroup="core:_NetworkFeature"/>
+    <!-- ============================================================================================================== -->
+    <xsd:element name="MainLine" type="SectionType" substitutionGroup="Section"/>
+    <xsd:element name="SupplyLine" type="SectionType" substitutionGroup="Section"/>
+    <xsd:element name="HouseServiceLine" type="SectionType" substitutionGroup="Section"/>
+    <xsd:element name="ProtectivePipe" type="SectionType" substitutionGroup="Section"/>
+    <!-- ============================================================================================================== -->
+    <!-- ============================================================================================================== -->
+    <!-- =========================================  PointObjects nur zum Testen   ====================================== -->
+    <!-- ============================================================================================================== -->
+    <xsd:complexType name="ComponentType">
+        <xsd:complexContent>
+            <xsd:extension base="core:AbstractNetworkFeatureType">
+                <xsd:sequence> </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!-- ============================================================================================================== -->
+    <xsd:element name="Component" type="ComponentType" substitutionGroup="core:_NetworkFeature"/>
+    <!-- ============================================================================================================== -->
+    <xsd:element name="Hydrant" type="ComponentType" substitutionGroup="Component"/>
+    <xsd:element name="Valve" type="ComponentType" substitutionGroup="Component"/>
+    <xsd:element name="ManHole" type="ComponentType" substitutionGroup="Component"/>
+    <xsd:element name="Fitting" type="ComponentType" substitutionGroup="Component"/>
+    <!-- ============================================================================================================== -->
+</xsd:schema>

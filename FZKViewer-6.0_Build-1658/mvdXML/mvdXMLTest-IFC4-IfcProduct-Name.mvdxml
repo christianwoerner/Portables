@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Template for strict export -->
+<mvdXML xmlns="http://buildingsmart-tech.org/mvdXML/mvdXML1-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://buildingsmart-tech.org/mvdXML/mvdXML1-1 ../xsd/mvdXML_V1-1.xsd" uuid="00000013-0000-0000-0000-000000000013" name="KIT/IAI mvdXML Editor">
+  <Templates>
+    <ConceptTemplate uuid="00000000-0000-0000-0001-000000000001" name="ProductConceptTemplate" applicableSchema="IFC4" applicableEntity="IfcProduct">
+      <Definitions>
+        <Definition>
+          <Body lang="en"><![CDATA[Concept Template for any Product]]></Body>
+        </Definition>
+      </Definitions>
+      <Rules>
+        <AttributeRule RuleID="Name" AttributeName="Name"/>
+      </Rules>
+    </ConceptTemplate>
+  </Templates>
+  <Views>
+    <ModelView uuid="00000023-0000-0000-0000-000000000023" name="mvdXML Unit Tests for IFC4 (bSN syntax)" applicableSchema="IFC4">
+      <Definitions>
+        <Definition>
+          <Body><![CDATA[Test rules]]></Body>
+        </Definition>
+      </Definitions>
+      <ExchangeRequirements>
+        <ExchangeRequirement uuid="00000023-0000-0000-0000-000000000352" name="Test Name of IfcProduct" applicability="import">
+          <Definitions>
+            <Definition>
+              <Body><![CDATA[Check attribute name of IfcProduct.]]></Body>
+            </Definition>
+          </Definitions>
+        </ExchangeRequirement>
+      </ExchangeRequirements>
+      <Roots>
+        <ConceptRoot uuid="00000023-0000-0000-2000-000000029124" name="Test name of IfcProduct" applicableRootEntity="IfcProduct">
+          <Definitions>
+            <Definition>
+              <Body><![CDATA[Existence of name attriute.]]></Body>
+            </Definition>
+          </Definitions>
+          <Concepts>
+            <Concept uuid="00000023-0000-0000-0000-000000029124" name="Name exists">
+              <Definitions>
+                <Definition>
+                  <Body lang="en"><![CDATA[Existence of name attribute.]]></Body>
+                </Definition>
+              </Definitions>
+              <Template ref="00000000-0000-0000-0001-000000000001"/>
+              <Requirements>
+                <Requirement applicability="import" exchangeRequirement="00000023-0000-0000-0000-000000000352" requirement="mandatory"/>
+              </Requirements>
+              <TemplateRules operator="and">
+                <TemplateRule Parameters="Name[Exists]=TRUE"/>
+              </TemplateRules>
+            </Concept>
+          </Concepts>
+        </ConceptRoot>
+      </Roots>
+    </ModelView>
+  </Views>
+</mvdXML>

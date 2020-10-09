@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary   gml:id="AX_Dachform" 
+    xmlns="http://www.opengis.net/gml" 
+    xmlns:gml="http://www.opengis.net/gml" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.opengis.net/gml D:/XPlanung/XPlanGML.4.0/Schema/gml/3.2.1/gml.xsd">
+    <name>AX_DachformType</name>
+ 
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_1000">
+                    <gml:name>Flachdach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">1000</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_2100">
+                    <gml:name>Pultdach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">2100</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_2200">
+                    <gml:name>Versetztes Pultdach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">2200</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_3100">
+                    <gml:name>Satteldach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">3100</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_3200">
+                    <gml:name>Walmdach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">3200</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_3300">
+                    <gml:name>Krüppelwalmdach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">3300</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_3400">
+                    <gml:name>Mansardendach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">3400</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_3500">
+                    <gml:name>Zeltdach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">3500</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_3600">
+                    <gml:name>Kegeldach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">3600</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_3700">
+                    <gml:name>Kuppeldach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">3700</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_3800">
+                    <gml:name>Sheddach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">3800</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_3900">
+                    <gml:name>Bogendach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">3900</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_4000">
+                    <gml:name>Turmdach</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">4000</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_5000">
+                    <gml:name>Mischform</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">5000</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="AX_Dachform_9999">
+                    <gml:name>Sonstiges</gml:name>
+                    <name codeSpace="urn:adv:AX_Dachform">9999</name>
+                </Definition>
+            </dictionaryEntry>
+        
+    
+    
+    
+
+</Dictionary>

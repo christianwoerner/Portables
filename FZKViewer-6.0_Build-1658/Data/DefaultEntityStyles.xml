@@ -1,0 +1,869 @@
+<EntityTypes>
+	<!-- IFC -->
+	<EntityType type="IfcProject" color="222,184,135" icon="0"/>
+	<EntityType type="IfcSite" color="0,255,0" icon="1" texture="meadow_1.jpg"/>
+	<EntityType type="IfcBuilding" color="0,229,238" icon="2"/>
+	<EntityType type="IfcBuildingStorey" color="222,184,135" icon="3"/>
+	<EntityType type="IfcSpace" color="173,216,230" alpha="0.4" icon="4" visible="false"/>
+	<EntityType type="IfcSpatialZone" color="" icon="66"/>
+	<EntityType type="IfcSpatialStructureElement" color="" icon="5"/>
+	<EntityType type="IfcExternalSpatialElement" color="" icon="5"/>
+	<EntityType type="IfcExternalSpatialStructureElement" color="" icon="5"/>
+	<EntityType type="IfcWall" color="204,204,204" icon="6" texture="concrete_1.jpg"/>
+	<EntityType type="IfcWallStandardCase" color="204,204,204" icon="7" texture="bricks_1.jpg"/>
+	<EntityType type="IfcOpeningElement" color="222,184,135" icon="10" visible="false"/>
+	<EntityType type="IfcOpeningElement[Recess]" color="222,184,135" icon="35" visible="false"/>
+	<EntityType type="IfcOpeningStandardCase" color="222,184,135" icon="10" visible="false"/>
+	<EntityType type="IfcOpeningStandardCase[Recess]" color="222,184,135" icon="35" visible="false"/>
+	<EntityType type="IfcVoidingFeature" color="222,184,135" icon="35" visible="false"/>
+	<EntityType type="IfcColumn" color="0,255,0" icon="9" texture="concrete_1.jpg"/>
+	<EntityType type="IfcColumnStandardCase" color="0,255,0" icon="9"/>
+	<EntityType type="IfcBeam" color="0,205,0" icon="8"/>
+	<EntityType type="IfcBeamStandardCase" color="0,205,0" icon="8"/>
+	<EntityType type="IfcSlab" color="102,102,102" icon="11" texture="concrete_1.jpg"/>
+	<EntityType type="IfcSlab[Roof]" color="255,0,0" icon="12" texture="dachziegel_2.jpg"/>
+	<EntityType type="IfcSlab[Floor]" color="40,70,30" icon="11"/>
+	<EntityType type="IfcSlab[Landing]" color="222,184,135" icon="36"/>
+	<EntityType type="IfcSlab[BaseSlab]" color="102,102,102" icon="11"/>
+	<EntityType type="IfcSlabStandardCase" color="102,102,102" icon="11"/>
+	<EntityType type="IfcSlabStandardCase[Roof]" color="255,0,0" icon="12"/>
+	<EntityType type="IfcSlabStandardCase[Floor]" color="40,70,30" icon="11"/>
+	<EntityType type="IfcSlabStandardCase[Landing]" color="222,184,135" icon="36"/>
+	<EntityType type="IfcSlabStandardCase[BaseSlab]" color="102,102,102" icon="11"/>
+	<EntityType type="IfcRoof" color="255,0,0" icon="12" texture="dachziegel_2.jpg"/>
+	<EntityType type="IfcDoor" color="0,0,255" icon="13"/>
+	<EntityType type="IfcDoorStandardCase" color="0,0,255" icon="13"/>
+	<EntityType type="IfcWindow" color="0,255,255" alpha="0.4" icon="14"/>
+	<EntityType type="IfcWindowStandardCase" color="0,255,255" alpha="0.4" icon="14"/>
+	<EntityType type="IfcFurniture" color="255,64,64" icon="20"/>
+	<EntityType type="IfcRailing" color="255,255,0" icon="15"/>
+	<EntityType type="IfcRamp" color="255,0,255" icon="16"/>
+	<EntityType type="IfcRampFlight" color="255,0,255" icon="18"/>
+	<EntityType type="IfcStair" color="255,165,0" icon="17"/>
+	<EntityType type="IfcStairFlight" color="255,165,0" icon="19"/>
+	<EntityType type="IfcBuildingElementProxy" color="255,106,106" icon="21"/>
+	<EntityType type="IfcProxy" color="255,106,106" icon="21"/>
+	<EntityType type="IfcSanitary" color="222,184,135" icon="22"/>
+	<EntityType type="IfcElectrical" color="222,184,135" icon="23"/>
+	<EntityType type="IfcVentilation" color="222,184,135" icon="27"/>
+	<EntityType type="IfcZone" color="222,184,135" icon="28"/>
+	<EntityType type="IfcGroup" color="222,184,135" icon="29"/>
+	<EntityType type="IfcSystem" color="222,184,135" icon="30"/>
+	<EntityType type="IfcDistributionSystem" color="" icon="30"/>
+	<EntityType type="IfcBuildingSystem" color="" icon="30"/>
+	<EntityType type="IfcVirtualElement" color="62,48,10" icon="5"/>
+	<EntityType type="IfcDistributionElement" color="" icon="32"/>
+	<EntityType type="IfcDistributionControllerElement" color="" icon="32"/>
+	<EntityType type="IfcDistributionChamberElement" color="" icon="32"/>
+	<EntityType type="IfcDistributionFlowElement" color="" icon="32"/>
+	<EntityType type="IfcCovering" color="" icon="38"/>
+	<EntityType type="IfcEquipmentElement" color="" icon="5"/>
+	<EntityType type="IfcDiscreteElement" color="" icon="5"/>
+	<EntityType type="IfcElectricalElement" color="" icon="23"/>
+	<EntityType type="IfcElectricMotor" color="" icon="23"/>
+	<EntityType type="IfcElectricalAppliance" color="" icon="23"/>
+	<EntityType type="IfcElectricDistributionPoint" color="" icon="23"/>
+	<EntityType type="IfcElectricalCircuit" color="" icon="23"/>
+	<EntityType type="IfcTransportElement" color="" icon="43"/>
+	<EntityType type="IfcControlElement" color="" icon="5"/>
+	<EntityType type="IfcController" color="" icon="5"/>
+	<EntityType type="IfcActuator" color="" icon="5"/>
+	<EntityType type="IfcTreatmentDevice" color="" icon="5"/>
+	<EntityType type="IfcAirFilter" color="" icon="5"/>
+	<EntityType type="IfcChiller" color="" icon="5"/>
+	<EntityType type="IfcCoil" color="" icon="5"/>
+	<EntityType type="IfcCompressor" color="" icon="5"/>
+	<EntityType type="IfcCoolingTower" color="" icon="5"/>
+	<EntityType type="IfcFan" color="" icon="32"/>
+	<EntityType type="IfcAirTerminal" color="" icon="32"/>
+	<EntityType type="IfcFluidMovingDevice" color="" icon="5"/>
+	<EntityType type="IfcHeatTransferDevice" color="" icon="5"/>
+	<EntityType type="IfcBoiler" color="" icon="5"/>
+	<EntityType type="IfcHeatExchanger" color="" icon="5"/>
+	<EntityType type="IfcUnitHeater" color="" icon="5"/>
+	<EntityType type="IfcTank" color="" icon="5"/>
+	<EntityType type="IfcHydronicHeater" color="" icon="5"/>
+	<EntityType type="IfcOutlet" color="" icon="5"/>
+	<EntityType type="IfcPump" color="" icon="5"/>
+	<EntityType type="IfcSanitaryTerminal" color="" icon="5"/>
+	<EntityType type="IfcValve" color="" icon="32"/>
+	<EntityType type="IfcFurnishingElement" color="" icon="20"/>
+	<EntityType type="IfcBuiltIn" color="" icon="5"/>
+	<EntityType type="IfcCurtainWall" color="" icon="37"/>
+	<EntityType type="IfcLightFixture" color="" icon="5"/>
+	<EntityType type="IfcDamper" color="" icon="32"/>
+	<EntityType type="IfcSensor" color="" icon="5"/>
+	<EntityType type="IfcStorageDevice" color="" icon="5"/>
+	<EntityType type="IfcTubeBundle" color="" icon="5"/>
+	<EntityType type="IfcBuildingElementPart" color="" icon="103"/>
+	<EntityType type="IfcReinforcingBar" color="" icon="5"/>
+	<EntityType type="IfcPlate" color="" icon="40"/>
+	<EntityType type="IfcPlateStandardCase" color="" icon="40"/>
+	<EntityType type="IfcDiscreteAccessory" color="" icon="5"/>
+	<EntityType type="IfcReinforcingMesh" color="" icon="5"/>
+	<EntityType type="IfcTendon" color="" icon="5"/>
+	<EntityType type="IfcTendonAnchor" color="" icon="5"/>
+	<EntityType type="IfcReinforcingElement" color="" icon="5"/>
+	<EntityType type="IfcBuildingElementComponent" color="" icon="103"/>
+	<EntityType type="IfcFooting" color="" icon="39"/>
+	<EntityType type="IfcPile" color="" icon="5"/>
+	<EntityType type="IfcEnergyConversionDevice" color="" icon="32"/>
+	<EntityType type="IfcFlowController" color="" icon="32"/>
+	<EntityType type="IfcFlowMovingDevice" color="" icon="32"/>
+	<EntityType type="IfcFlowStorageDevice" color="" icon="32"/>
+	<EntityType type="IfcFlowTreatmentDevice" color="" icon="32"/>
+	<EntityType type="IfcFlowFitting" color="" icon="32"/>
+	<EntityType type="IfcFlowSegment" color="" icon="32"/>
+	<EntityType type="IfcFlowTerminal" color="" icon="32"/>
+	<EntityType type="IfcPipeSegment" color="" icon="32"/>
+	<EntityType type="IfcPipeFitting" color="" icon="32"/>
+	<EntityType type="IfcElementAssembly" color="" icon="102"/>
+	<EntityType type="IfcAccessory" color="" icon="5"/>
+	<EntityType type="IfcMechanicalFastener" color="" icon="101"/>
+	<EntityType type="IfcFastener" color="" icon="101"/>
+	<EntityType type="IfcElementComponent" color="" icon="5"/>
+	<EntityType type="IfcProjectionElement" color="" icon="5"/>
+	<EntityType type="IfcFeatureElementAddition" color="" icon="5"/>
+	<EntityType type="IfcHamferEdgeFeature" color="" icon="5"/>
+	<EntityType type="IfcRoundedEdgeFeature" color="" icon="5"/>
+	<EntityType type="IfcEdgeFeature" color="" icon="5"/>
+	<EntityType type="IfcFeatureElementSubtraction" color="" icon="5"/>
+	<EntityType type="IfcFeatureElement" color="" icon="5"/>
+	<EntityType type="IfcGrid" color="" icon="42"/>
+	<EntityType type="IfcPort" color="" icon="32"/>
+	<EntityType type="IfcDistributionPort" color="" icon="32"/>
+	<EntityType type="IfcStructuralActivity" color="" icon="33"/>
+	<EntityType type="IfcStructuralAction" color="" icon="33"/>
+	<EntityType type="IfcStructuralLinearAction" color="" icon="33"/>
+	<EntityType type="IfcStructuralLinearActionVarying" color="" icon="33"/>
+	<EntityType type="IfcStructuralPlanarAction" color="" icon="33"/>
+	<EntityType type="IfcStructuralPlanarActionVarying" color="" icon="33"/>
+	<EntityType type="IfcStructuralPointAction" color="" icon="33"/>
+	<EntityType type="IfcStructuralPointReaction" color="" icon="33"/>
+	<EntityType type="IfcStructuralItem" color="" icon="33"/>
+	<EntityType type="IfcStructuralConnection" color="" icon="33"/>
+	<EntityType type="IfcStructuralCurveConnection" color="" icon="33"/>
+	<EntityType type="IfcStructuralPointConnection" color="" icon="33"/>
+	<EntityType type="IfcStructuralSurfaceConnection" color="" icon="33"/>
+	<EntityType type="IfcStructuralAnalysisModel" color="" icon="33"/>
+	<EntityType type="IfcMember" color="" icon="34"/>
+	<EntityType type="IfcMemberStandardCase" color="" icon="34"/>
+	<EntityType type="IfcStructuralMember" color="" icon="33"/>
+	<EntityType type="IfcStructuralCurveMember" color="" icon="33"/>
+	<EntityType type="IfcStructuralCurveMemberVarying" color="" icon="33"/>
+	<EntityType type="IfcStructuralSurfaceMember" color="" icon="33"/>
+	<EntityType type="IfcStructuralSurfaceMemberVarying" color="" icon="33"/>
+	<EntityType type="IfcStructuralLoadGroup" color="" icon="33"/>
+	<EntityType type="IfcStructuralLoadCase" color="" icon="33"/>
+	<EntityType type="IfcTimeSeriesSchedule" color="" icon="5"/>
+	<EntityType type="IfcAnnotation" color="" icon="41"/>
+	<EntityType type="IfcAsset" color="" icon="5"/>
+	<EntityType type="IfcActor" color="" icon="67"/>
+	<EntityType type="IfcOccupant" color="" icon="67"/>
+	<EntityType type="IfcCondition" color="" icon="5"/>
+	<EntityType type="IfcInventory" color="" icon="5"/>
+	<EntityType type="IfcStructuralResultGroup" color="" icon="33"/>
+	<EntityType type="IfcGeographicElement" color="255,106,106" icon="46"/>
+	<EntityType type="IfcChimney" color="" icon="5"/>
+	<EntityType type="IfcCableCarrierFitting" color="" icon="5"/>
+	<EntityType type="IfcCableCarrierSegment" color="" icon="5"/>
+	<EntityType type="IfcCableFitting" color="" icon="5"/>
+	<EntityType type="IfcCableSegment" color="" icon="5"/>
+	<EntityType type="IfcTask" color="" icon="68"/>
+	<EntityType type="IfcWorkPlan" color="" icon="63"/>
+	<EntityType type="IfcWorkCalendar" color="" icon="5"/>
+	<EntityType type="IfcWorkSchedule" color="" icon="5"/>
+	<EntityType type="IfcWorkTime" color="" icon="5"/>
+	<EntityType type="IfcProjectLibrary" color="" icon="5"/>
+	<EntityType type="IfcDuctSegment" color="" icon="5"/>
+	<EntityType type="IfcAlignment" color="" icon="73"/>
+	<EntityType type="IfcDistributionCircuit" color="" icon="5"/>
+	<EntityType type="IfcDuctFitting" color="" icon="5"/>
+	<EntityType type="IfcElectricDistributionBoard" color="" icon="23"/>
+	<EntityType type="IfcProtectiveDevice" color="" icon="5"/>
+	<EntityType type="IfcSolarDevice" color="" icon="5"/>
+	<EntityType type="IfcSpaceHeater" color="" icon="5"/>
+	<EntityType type="IfcSwitchingDevice" color="" icon="5"/>
+	<EntityType type="IfcUnitaryEquipment" color="" icon="5"/>
+	<EntityType type="IfcFireSuppressionTerminal" color="" icon="5"/>
+	<EntityType type="IfcWasteTerminal" color="" icon="5"/>
+	<EntityType type="IfcBridge" color="255,165,0" icon="53"/>
+	<EntityType type="IfcBridgePart" color="255,69,0" icon="53"/>
+	<EntityType type="IfcBridgePrismaticElement" color="139,0,139" icon="33"/>
+	<EntityType type="IfcRoad" color="255,165,0" icon="50"/>
+	<EntityType type="IfcRoadPart" color="255,69,0" icon="50"/>
+	<!-- IFC TypeObject -->
+	<EntityType type="IfcBeamType" color="" icon="100"/>
+	<EntityType type="IfcWallType" color="" icon="100"/>
+	<EntityType type="IfcPipeFittingType" color="" icon="100"/>
+	<EntityType type="IfcPipeSegmentType" color="" icon="100"/>
+	<EntityType type="IfcSpaceHeaterType" color="" icon="100"/>
+	<EntityType type="IfcUnitaryEquipmentType" color="" icon="100"/>
+	<!-- CityGML -->
+	<EntityType type="core:CityModel" color="" icon="0"/>
+	<EntityType type="citygml:CityModel" color="" icon="0"/>
+	<EntityType type="relief:ReliefFeature" color="0,185,0" icon="1"/>
+	<EntityType type="citygml:ReliefFeature" color="0,185,0" icon="1"/>
+	<EntityType type="relief:TINRelief" color="0,185,0" icon="1"/>
+	<EntityType type="citygml:TINRelief" color="0,185,0" icon="1"/>
+	<EntityType type="relief:RasterRelief" color="0,185,0" icon="1"/>
+	<EntityType type="citygml:RasterRelief" color="0,185,0" icon="1"/>
+	<EntityType type="relief:MassPointRelief" color="0,0,0" icon="1"/>
+	<EntityType type="citygml:MassPointRelief" color="0,0,0" icon="1"/>
+	<EntityType type="relief:BreaklineRelief" color="0,0,0" icon="1"/>
+	<EntityType type="citygml:BreaklineRelief" color="0,0,0" icon="1"/>
+	<EntityType type="bldg:Building" color="0,229,238" icon="2"/>
+	<EntityType type="citygml:Building" color="0,229,238" icon="2"/>
+	<EntityType type="bldg:BuildingPart" color="0,229,238" icon="2"/>
+	<EntityType type="citygml:BuildingPart" color="0,229,238" icon="2"/>
+	<EntityType type="bldg:BuildingInstallation" color="222,184,135" icon="21"/>
+	<EntityType type="citygml:BuildingInstallation" color="222,184,135" icon="21"/>
+	<EntityType type="bldg:IntBuildingInstallation" color="222,184,135" icon="21"/>
+	<EntityType type="citygml:IntBuildingInstallation" color="222,184,135" icon="21"/>
+	<EntityType type="bldg:BuildingFurniture" color="255,64,64" icon="20"/>
+	<EntityType type="citygml:BuildingFurniture" color="255,64,64" icon="20"/>
+	<EntityType type="bldg:Room" color="173,216,230" alpha="0.4" icon="4" visible="false"/>
+	<EntityType type="citygml:Room" color="173,216,230" alpha="0.4" icon="4" visible="false"/>
+	<EntityType type="bldg:CeilingSurface" color="204,204,204" icon="11"/>
+	<EntityType type="bldg:OuterCeilingSurface" color="204,204,204" icon="11"/>
+	<EntityType type="citygml:CeilingSurface" color="204,204,204" icon="11"/>
+	<EntityType type="bldg:InteriorWallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="citygml:InteriorWallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="bldg:FloorSurface" color="102,102,102" icon="11"/>
+	<EntityType type="bldg:OuterFloorSurface" color="102,102,102" icon="11"/>
+	<EntityType type="citygml:FloorSurface" color="102,102,102" icon="11"/>
+	<EntityType type="bldg:RoofSurface" color="255,0,0" icon="12" texture="dachziegel_2.jpg"/>
+	<EntityType type="citygml:RoofSurface" color="255,0,0" icon="12" texture="dachziegel_2.jpg"/>
+	<EntityType type="bldg:WallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="citygml:WallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="bldg:GroundSurface" color="102,102,102" icon="11"/>
+	<EntityType type="citygml:GroundSurface" color="102,102,102" icon="11"/>
+	<EntityType type="bldg:ClosureSurface" color="204,204,204" icon="27"/>
+	<EntityType type="citygml:ClosureSurface" color="204,204,204" icon="27"/>
+	<EntityType type="bldg:Door" color="0,0,255" icon="13"/>
+	<EntityType type="citygml:Door" color="0,0,255" icon="13"/>
+	<EntityType type="bldg:Window" color="0,255,255" alpha="0.4" icon="14"/>
+	<EntityType type="citygml:Window" color="0,255,255" alpha="0.4" icon="14"/>
+	<EntityType type="core:Address" color="" icon="41" visible="false"/>
+	<EntityType type="core:xalAddress" color="" icon="41" visible="false"/>
+	<EntityType type="citygml:Address" color="" icon="41" visible="false"/>
+	<EntityType type="citygml:xalAddress" color="" icon="41" visible="false"/>
+	<EntityType type="water:WaterBody" color="0,0,255" icon="21"/>
+	<EntityType type="citygml:WaterBody" color="0,0,255" icon="21"/>
+	<EntityType type="water:WaterSurface" color="0,0,255" icon="21"/>
+	<EntityType type="citygml:WaterSurface" color="0,0,255" icon="21"/>
+	<EntityType type="water:WaterGroundSurface" color="0,0,255" icon="21"/>
+	<EntityType type="citygml:WaterGroundSurface" color="0,0,255" icon="21"/>
+	<EntityType type="water:WaterClosureSurface" color="0,0,255" icon="21"/>
+	<EntityType type="citygml:WaterClosureSurface" color="0,0,255" icon="21"/>
+	<EntityType type="trpt:TransportationComplex" color="" icon="21"/>
+	<EntityType type="citygml:TransportationComplex" color="" icon="21"/>
+	<EntityType type="trpt:TrafficArea" color="160,160,160" icon="21"/>
+	<EntityType type="citygml:TrafficArea" color="160,160,160" icon="21"/>
+	<EntityType type="trpt:AuxiliaryTrafficArea" color="160,160,160" icon="21"/>
+	<EntityType type="citygml:AuxiliaryTrafficArea" color="160,160,160" icon="21"/>
+	<EntityType type="trpt:Track" color="160,160,160" icon="21"/>
+	<EntityType type="citygml:Track" color="160,160,160" icon="21"/>
+	<EntityType type="trpt:Road" color="128,128,128" icon="21"/>
+	<EntityType type="citygml:Road" color="128,128,128" icon="21"/>
+	<EntityType type="trpt:Railway" color="160,160,160" icon="21"/>
+	<EntityType type="citygml:Railway" color="160,160,160" icon="21"/>
+	<EntityType type="trpt:Square" color="" icon="5"/>
+	<EntityType type="citygml:Square" color="" icon="5"/>
+	<EntityType type="veget:PlantCover" color="202,134,2" icon="21"/>
+	<EntityType type="citygml:PlantCover" color="202,134,2" icon="21"/>
+	<EntityType type="veget:SolitaryVegetationObject" color="" icon="21"/>
+	<EntityType type="citygml:SolitaryVegetationObject" color="" icon="21"/>
+	<EntityType type="furnit:CityFurniture" color="255,64,64" icon="21"/>
+	<EntityType type="citygml:CityFurniture" color="255,64,64" icon="21"/>
+	<EntityType type="landuse:LandUse" color="67,238,0" icon="21"/>
+	<EntityType type="citygml:LandUse" color="67,238,0" icon="21"/>
+	<EntityType type="group:CityObjectGroup" color="" icon="21"/>
+	<EntityType type="citygml:CityObjectGroup" color="" icon="21"/>
+	<EntityType type="Unknown CityGML Entity" color="" icon="89"/>
+	<EntityType type="tun:Tunnel" color="0,229,238" icon="49"/>
+	<EntityType type="tun:TunnelPart" color="0,229,238" icon="49"/>
+	<EntityType type="tun:TunnelInstallation" color="222,184,135" icon="21"/>
+	<EntityType type="tun:IntTunnelInstallation" color="222,184,135" icon="21"/>
+	<EntityType type="tun:RoofSurface" color="255,0,0" icon="12"/>
+	<EntityType type="tun:WallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="tun:GroundSurface" color="102,102,102" icon="11"/>
+	<EntityType type="tun:ClosureSurface" color="204,204,204" icon="27"/>
+	<EntityType type="tun:FloorSurface" color="102,102,102" icon="11"/>
+	<EntityType type="tun:OuterFloorSurface" color="102,102,102" icon="11"/>
+	<EntityType type="tun:InteriorWallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="tun:CeilingSurface" color="204,204,204" icon="11"/>
+	<EntityType type="tun:OuterCeilingSurface" color="204,204,204" icon="11"/>
+	<EntityType type="tun:HollowSpace" color="128,128,128" icon="21"/>
+	<EntityType type="tun:TunnelFurniture" color="255,64,64" icon="20"/>
+	<EntityType type="tun:Window" color="0,255,255" icon="13"/>
+	<EntityType type="tun:Door" color="0,0,255" icon="14"/>
+	<EntityType type="brid:Bridge" color="255,165,0" icon="53"/>
+	<EntityType type="brid:BridgePart" color="255,69,0" icon="53"/>
+	<EntityType type="brid:BridgeInstallation" color="25,25,112" icon="21"/>
+	<EntityType type="brid:IntBridgeInstallation" color="222,184,135" icon="21"/>
+	<EntityType type="brid:BridgeConstructionElement" color="139,0,139" icon="33"/>
+	<EntityType type="brid:RoofSurface" color="102,102,102" icon="12"/>
+	<EntityType type="brid:WallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="brid:GroundSurface" color="102,102,102" icon="11"/>
+	<EntityType type="brid:ClosureSurface" color="204,204,204" icon="27"/>
+	<EntityType type="brid:FloorSurface" color="102,102,102" icon="11"/>
+	<EntityType type="brid:OuterFloorSurface" color="106,106,106" icon="11"/>
+	<EntityType type="brid:InteriorWallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="brid:CeilingSurface" color="204,204,204" icon="11"/>
+	<EntityType type="brid:OuterCeilingSurface" color="208,208,204" icon="11"/>
+	<EntityType type="brid:BridgeRoom" color="173,216,230" icon="4"/>
+	<EntityType type="brid:BridgeFurniture" color="255,64,64" icon="20"/>
+	<EntityType type="brid:Window" color="0,255,255" icon="14"/>
+	<EntityType type="brid:Door" color="0,0,255" icon="13"/>
+	<EntityType type="genobj:GenericCityObject" color="255,106,106" icon="21"/>
+	<EntityType type="citygml:GenericCityObject" color="255,106,106" icon="21"/>
+	<EntityType type="core:externalReference" color="" icon="30"/>
+	<EntityType type="citygml:externalReference" color="" icon="30"/>
+	<EntityType type="core:externalObject" color="" icon="30"/>
+	<EntityType type="citygml:externalObject" color="" icon="30"/>
+	<EntityType type="core:genericAttribute" color="" icon="41"/>
+	<EntityType type="citygml:genericAttribute" color="" icon="41"/>
+	<EntityType type="core:stringAttribute" color="" icon="41"/>
+	<EntityType type="citygml:stringAttribute" color="" icon="41"/>
+	<EntityType type="core:intAttribute" color="" icon="41"/>
+	<EntityType type="citygml:intAttribute" color="" icon="41"/>
+	<EntityType type="core:doubleAttribute" color="" icon="41"/>
+	<EntityType type="citygml:doubleAttribute" color="" icon="41"/>
+	<EntityType type="core:dateAttribute" color="" icon="41"/>
+	<EntityType type="citygml:dateAttribute" color="" icon="41"/>
+	<EntityType type="core:uriAttribute" color="" icon="41"/>
+	<EntityType type="citygml:uriAttribute" color="" icon="41"/>
+	<!-- Versuch CityGML 3.0 -->
+	<EntityType type="bldg:Storey" color="222,184,135" icon="3"/>
+	<EntityType type="bldg:BuildingConstructiveElement" color="255,106,106" icon="21"/>
+	<EntityType type="bldg:BuildingRoom" color="173,216,230" icon="4"/>
+	<EntityType type="con:WallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="con:GroundSurface" color="102,102,102" icon="11"/>
+	<EntityType type="con:RoofSurface" color="255,0,0" icon="12"/>
+	<!-- ADEs -->
+	<EntityType type="energy:ThermalZone" color="173,216,230" alpha="0.4" icon="28" visible="false"/>
+	<EntityType type="energy:ThermalBoundary[outerWall]" color="204,204,204" icon="7"/>
+	<EntityType type="energy:ThermalBoundary[groundSlab]" color="102,102,102" icon="11"/>
+	<EntityType type="energy:ThermalBoundary[roof]" color="255,0,0" icon="12"/>
+	<EntityType type="energy:ThermalBoundary[sharedWall]" color="204,204,204" icon="7"/>
+	<EntityType type="energy:ThermalOpening" color="222,184,135" icon="10"/>
+	<EntityType type="energy:ThermalZone" color="" icon="92"/>
+	<EntityType type="energy:SolidMaterial" color="" icon="93"/>
+	<EntityType type="energy:Gas" color="" icon="93"/>
+	<EntityType type="energy:Construction" color="" icon="94"/>
+	<EntityType type="energy:Layer" color="" icon="95"/>
+	<EntityType type="energy:VolumeType" color="" icon="96"/>
+	<EntityType type="energy:FloorArea" color="" icon="97"/>
+	<EntityType type="energy:EnergyDemand" color="" icon="98"/>
+	<EntityType type="energy:UsageZone" color="" icon="99"/>
+	<EntityType type="noise:NoiseCityFurnitureSegment" color="" icon="21"/>
+	<EntityType type="noise:NoiseRoadSegment" color="" icon="50"/>
+	<EntityType type="noise:NoiseRailwaySegment" color="" icon="21"/>
+	<EntityType type="noise:Train" color="" icon="21"/>
+	<EntityType type="adetun:TunnelPart" color="0,229,238" icon="49"/>
+	<EntityType type="adetun:Tunnel" color="0,229,238" icon="49"/>
+	<EntityType type="adetun:TunnelInstallation" color="222,184,135" icon="21"/>
+	<EntityType type="adetun:TunnelFurniture" color="255,64,64" icon="21"/>
+	<EntityType type="adetun:HollowSpace" color="128,128,128" icon="21"/>
+	<EntityType type="adetun:CeilingSurface" color="204,204,204" icon="11"/>
+	<EntityType type="adetun:OuterCeilingSurface" color="204,204,204" icon="11"/>
+	<EntityType type="adetun:InteriorWallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="adetun:FloorSurface" color="102,102,102" icon="11"/>
+	<EntityType type="adetun:OuterFloorSurface" color="102,102,102" icon="11"/>
+	<EntityType type="adetun:RoofSurface" color="255,0,0" icon="12"/>
+	<EntityType type="adetun:WallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="adetun:GroundSurface" color="102,102,102" icon="11"/>
+	<EntityType type="adetun:ClosureSurface" color="204,204,204" icon="27"/>
+	<EntityType type="adetun:Door" color="0,0,255" icon="13"/>
+	<EntityType type="adetun:Window" color="0,255,255" icon="14"/>
+	<EntityType type="adebrid:Bridge" color="255,165,0" icon="53"/>
+	<EntityType type="adebrid:BridgePart" color="255,69,0" icon="53"/>
+	<EntityType type="adebrid:BridgeInstallation" color="25,25,112" icon="21"/>
+	<EntityType type="adebrid:IntBridgeInstallation" color="222,184,135" icon="21"/>
+	<EntityType type="adebrid:BridgeConstructionElement" color="139,0,139" icon="33"/>
+	<EntityType type="adebrid:InteriorWallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="adebrid:FloorSurface" color="102,102,102" icon="11"/>
+	<EntityType type="adebrid:RoofSurface" color="102,102,102" icon="12"/>
+	<EntityType type="adebrid:WallSurface" color="204,204,204" icon="7"/>
+	<EntityType type="adebrid:GroundSurface" color="102,102,102" icon="11"/>
+	<EntityType type="adebrid:ClosureSurface" color="204,204,204" icon="27"/>
+	<EntityType type="adebrid:CeilingSurface" color="204,204,204" icon="11"/>
+	<EntityType type="adebrid:Door" color="0,0,255" icon="13"/>
+	<EntityType type="adebrid:Window" color="0,255,255" icon="14"/>
+	<EntityType type="adebrid:BridgeRoom" color="173,216,230" icon="4"/>
+	<EntityType type="adebrid:BridgeFurniture" color="255,64,64" icon="21"/>
+	<EntityType type="cafm:IntBuildingInstallation" color="" icon="21"/>
+	<EntityType type="cafm:BuildingFurniture" color="" icon="20"/>
+	<EntityType type="cafm:RoofSurface" color="" icon="12"/>
+	<EntityType type="cafm:WallSurface" color="" icon="7"/>
+	<EntityType type="cafm:GroundSurface" color="" icon="11"/>
+	<EntityType type="cafm:CeilingSurface" color="" icon="11"/>
+	<EntityType type="cafm:SuspendedCeilingSurface" color="" icon="11"/>
+	<EntityType type="cafm:CeilingConstructionSurface" color="" icon="11"/>
+	<EntityType type="cafm:InteriorWallSurface" color="" icon="7"/>
+	<EntityType type="cafm:LoadBearingInteriorWallSurface" color="" icon="7"/>
+	<EntityType type="cafm:FloorSurface" color="" icon="11"/>
+	<EntityType type="cafm:FloorCoveringSurface" color="" icon="11"/>
+	<EntityType type="cafm:CAFM_Room" color="" icon="4"/>
+	<EntityType type="kit:BuildingStorey" color="" icon="3"/>
+	<EntityType type="kit:Ridge" color="" icon="61"/>
+	<EntityType type="dba:Gebaeudegrundflaeche" color="0,229,238" icon="2"/>
+	<EntityType type="dba:Geschoss" color="204,204,204" icon="3"/>
+	<EntityType type="dba:Geschossflaeche" color="204,204,204" icon="3"/>
+	<EntityType type="dba:Baumasse" color="204,204,204" icon="3"/>
+	<EntityType type="dba:Baugrundstueck" color="0,175,0" icon="21"/>
+	<EntityType type="dba:Dachform" color="255,0,0" icon="12"/>
+	<EntityType type="dba:Adresse" color="" icon="41"/>
+	<EntityType type="dba:GrundstueckImBaugebiet" color="56,231,0" icon="3"/>
+	<EntityType type="dba:GrundstueckAusserhalbBaugebiet" color="255,128,0" icon="3"/>
+	<EntityType type="dba:BestehendesGebaeude" color="200,200,200" icon="2"/>
+	<EntityType type="dba:Bauantrag" color="" icon="47"/>
+	<EntityType type="dba:Bebauungsplan" color="" icon="47"/>
+	<EntityType type="dba:BauBeschraenkung" color="" icon="47"/>
+	<EntityType type="dba:UeberbauteFlaeche" color="128,128,128" icon="3"/>
+	<EntityType type="dba:UeberbauteFlaecheAusserhalbBaufenster" color="255,0,255" icon="3"/>
+	<EntityType type="dba:BerechnungGeschosszahl" color="" icon="47"/>
+	<EntityType type="dba:BerechnungGrundflaeche" color="" icon="47"/>
+	<EntityType type="dba:BerechnungGeschossflaeche" color="" icon="47"/>
+	<EntityType type="dba:BerechnungBaumasse" color="" icon="47"/>
+	<EntityType type="dba:FestsetzungMassDerBaulNutzung" color="" icon="47"/>
+	<EntityType type="dba:GrundflaecheRaum" color="" icon="47"/>
+	<EntityType type="dba:BaumasseRaum" color="" icon="47"/>
+	<!-- XPlanGML -->
+	<EntityType type="gn:GnObjekt" color="" icon="47"/>
+	<EntityType type="gn:Endonym" color="" icon="47"/>
+	<EntityType type="gn:Sprache" color="" icon="47"/>
+	<EntityType type="gn:Status" color="" icon="47"/>
+	<EntityType type="gn:Objektart" color="" icon="47"/>
+	<EntityType type="gn:ObjektartLink" color="" icon="47"/>
+	<EntityType type="gn:Attribut" color="" icon="47"/>
+	<EntityType type="gn:Wert" color="" icon="47"/>
+	<EntityType type="gn:PlzLink" color="" icon="47"/>
+	<EntityType type="gn:PlzGebiet" color="" icon="47"/>
+	<EntityType type="gn:DlmLink" color="" icon="47"/>
+	<EntityType type="gn:Modell" color="" icon="47"/>
+	<EntityType type="gn:Layer" color="" icon="47"/>
+	<EntityType type="gn:Land" color="" icon="47"/>
+	<EntityType type="gn:Bearbeitung" color="" icon="47"/>
+	<EntityType type="gn:Aenderung" color="" icon="47"/>
+	<EntityType type="gn:ZusatzLink" color="" icon="47"/>
+	<EntityType type="gn:Zusatz" color="" icon="47"/>
+	<EntityType type="gn:Ags" color="" icon="47"/>
+	<EntityType type="xplan:XPlanAuszug" color="" icon="47"/>
+	<EntityType type="xplan:BP_AbgrabungsFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_AbstandsFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_AbstandsMass" color="0,0,0" icon="47"/>
+	<EntityType type="xplan:BP_AnpflanzungBindungErhaltung" color="0,228,8" icon="47"/>
+	<EntityType type="xplan:BP_AufschuettungsFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_Ausgleich" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_AusgleichsFlaeche" color="" icon="47"/>
+	<EntityType type="xplan:BP_AusgleichsMassnahme" color="" icon="47"/>
+	<EntityType type="xplan:BP_BahnVerkehr" color="255,183,231" icon="47"/>
+	<EntityType type="xplan:BP_BauGrenze" color="0,102,255" icon="47"/>
+	<EntityType type="xplan:BP_BauLinie" color="255,51,0" icon="47"/>
+	<EntityType type="xplan:BP_Baugebiet" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_BaugebietsTeilFlaeche" color="255,138,111" icon="47"/>
+	<EntityType type="xplan:BP_Bauschutzbereich" color="" icon="47"/>
+	<EntityType type="xplan:BP_Bereich" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_BereichOhneEinAusfahrtLinie" color="0,0,0" icon="47"/>
+	<EntityType type="xplan:BP_BesondererNutzungszweckFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_BodenschaetzeFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_DenkmalschutzEinzelanlage" color="255,51,0" icon="47"/>
+	<EntityType type="xplan:BP_DenkmalschutzEinzelanlagePunkt" color="255,51,0" icon="47"/>
+	<EntityType type="xplan:BP_DenkmalschutzEnsembleFlaeche" color="255,51,0" icon="47"/>
+	<EntityType type="xplan:BP_EinfahrtPunkt" color="0,0,0" icon="47"/>
+	<EntityType type="xplan:BP_EinfahrtsbereichLinie" color="0,0,0" icon="47"/>
+	<EntityType type="xplan:BP_EingriffsBereich" color="255,183,128" icon="47"/>
+	<EntityType type="xplan:BP_ErhaltungsBereichFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_ErneuerbareEnergieFlaeche" color="" icon="47"/>
+	<EntityType type="xplan:BP_Fachgesetz" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_FirstRichtungsLinie" color="0,0,0" icon="47"/>
+	<EntityType type="xplan:BP_FoerderungsFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_FreiFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_GebaeudeFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_GemeinbedarfsFlaeche" color="255,0,112" icon="47"/>
+	<EntityType type="xplan:BP_GemeinschaftsanlagenFlaeche" color="128,0,0" icon="47"/>
+	<EntityType type="xplan:BP_GemeinschaftsanlagenZuordnung" color="128,0,0" icon="47"/>
+	<EntityType type="xplan:BP_GenerischesObjekt" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_GewaesserFlaeche" color="117,199,255" icon="47"/>
+	<EntityType type="xplan:BP_Grabungsschztzgebiet" color="" icon="47"/>
+	<EntityType type="xplan:BP_GruenFlaeche" color="0,228,0" icon="47"/>
+	<EntityType type="xplan:BP_HoehenPunkt" color="0,0,0" icon="47"/>
+	<EntityType type="xplan:BP_Immissionsschutz" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_KennzeichnungsFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_Laermschutzbereich" color="" icon="47"/>
+	<EntityType type="xplan:BP_Landwirtschaft" color="153,204,0" icon="47"/>
+	<EntityType type="xplan:BP_LandwirtschaftsFlaeche" color="153,204,0" icon="47"/>
+	<EntityType type="xplan:BP_LandwirtschaftsLinie" color="" icon="47"/>
+	<EntityType type="xplan:BP_LuftreinhalteFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_LuftverkehrFlaeche" color="204,51,153" icon="47"/>
+	<EntityType type="xplan:BP_NebenanlagenusschlussFlaeche" color="" icon="47"/>
+	<EntityType type="xplan:BP_NebenanlagenFlaeche" color="128,0,0" icon="47"/>
+	<EntityType type="xplan:BP_NutzungsartenGrenze" color="0,0,0" icon="47"/>
+	<EntityType type="xplan:BP_PersGruppenBestimmteFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_Plan" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_RasterplanAenderung" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_RekultivierungsFlaeche" color="" icon="47"/>
+	<EntityType type="xplan:BP_SchutzPflegeEntwicklungsFlaeche" color="0,128,0" icon="47"/>
+	<EntityType type="xplan:BP_SchutzPflegeEntwicklungsMassnahme" color="" icon="47"/>
+	<EntityType type="xplan:BP_Schutzgebiet" color="0,128,0" icon="47"/>
+	<EntityType type="xplan:BP_SpezielleBauweise" color="" icon="47"/>
+	<EntityType type="xplan:BP_SpielSportanlagenFlaeche" color="200,200,200" icon="47"/>
+	<EntityType type="xplan:BP_StrassenVerkehrsFlaeche" color="255,220,69" icon="47"/>
+	<EntityType type="xplan:BP_StrassenbegrenzungsLinie" color="153,204,0" icon="47"/>
+	<EntityType type="xplan:BP_Strassenkoerper" color="0,0,0" icon="47"/>
+	<EntityType type="xplan:BP_TechnikBestimmteFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_TextlicheFestsetzungsFlaeche" color="" icon="47"/>
+	<EntityType type="xplan:BP_UnverbindlicheVormerkung" color="" icon="47"/>
+	<EntityType type="xplan:BP_UeberbaubareGrundstuecksFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:BP_Veraenderungssperre" color="0,0,0" icon="47"/>
+	<EntityType type="xplan:BP_VerEntsorgung" color="" icon="47"/>
+	<EntityType type="xplan:BP_VerEntsorgungsFlaeche" color="255,136,153" icon="47"/>
+	<EntityType type="xplan:BP_VerEntsorgungsleitungLinie" color="0,0,0" icon="47"/>
+	<EntityType type="xplan:BP_VerkehrsflaecheBesondererZweckbestimmung" color="255,220,69" icon="47"/>
+	<EntityType type="xplan:BP_VorbHochwSchutzFlaeche" color="0,123,206" icon="47"/>
+	<EntityType type="xplan:BP_WaldFlaeche" color="51,13,102" icon="47"/>
+	<EntityType type="xplan:BP_WasserrechtlicheFestsetzungsFlaeche" color="0,123,206" icon="47"/>
+	<EntityType type="xplan:BP_WasserwirtschaftsFlaeche" color="0,123,206" icon="47"/>
+	<EntityType type="xplan:BP_Wegerecht" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_AbgrabungsFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_AufschuettungsFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_AusgleichsFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_Bahnverkehr" color="255,183,231" icon="47"/>
+	<EntityType type="xplan:FP_Bauschutzbereich" color="" icon="47"/>
+	<EntityType type="xplan:FP_BebauungsFlaeche" color="255,138,111" icon="47"/>
+	<EntityType type="xplan:FP_Bereich" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_BodenschaetzeFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_DenkmalschutzEnsemble" color="255,51,0" icon="47"/>
+	<EntityType type="xplan:FP_Erhaltungssatzung" color="255,51,0" icon="47"/>
+	<EntityType type="xplan:FP_Fachgesetz" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_Gemeinbedarf" color="255,0,112" icon="47"/>
+	<EntityType type="xplan:FP_GenerischesObjekt" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_Gewaesser" color="117,199,255" icon="47"/>
+	<EntityType type="xplan:FP_Grabungsschutzgebiet" color="" icon="47"/>
+	<EntityType type="xplan:FP_Gruen" color="0,228,8" icon="47"/>
+	<EntityType type="xplan:FP_KeineZentrAbwasserBeseitigungFlaeche" color="255,255,0" icon="47"/>
+	<EntityType type="xplan:FP_Kennzeichnung" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_Laermschutzbereich" color="" icon="47"/>
+	<EntityType type="xplan:FP_LandwirtschaftsFlaeche" color="153,204,0" icon="47"/>
+	<EntityType type="xplan:FP_Luftverkehr" color="204,51,153" icon="47"/>
+	<EntityType type="xplan:FP_NutzungsbeschraenkungsFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_Plan" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_PrivilegiertesVorhaben" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_RasterplanAenderung" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_SchutzPflegeEntwicklung" color="0,128,0" icon="47"/>
+	<EntityType type="xplan:FP_Schutzgebiet" color="0,128,0" icon="47"/>
+	<EntityType type="xplan:FP_SpielSportanlage" color="200,200,200" icon="47"/>
+	<EntityType type="xplan:FP_Strassenverkehr" color="255,220,69" icon="47"/>
+	<EntityType type="xplan:FP_TextlicheDarstellungsFlaeche" color="" icon="47"/>
+	<EntityType type="xplan:FP_UnverbindlicheVormerkung" color="" icon="47"/>
+	<EntityType type="xplan:FP_VerEntsorgung" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_VorbHochwSchutz" color="0,123,206" icon="47"/>
+	<EntityType type="xplan:FP_VorbehalteFlaeche" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:FP_WaldFlaeche" color="51,13,102" icon="47"/>
+	<EntityType type="xplan:FP_Wasserrecht" color="0,123,206" icon="47"/>
+	<EntityType type="xplan:FP_Wasserwirtschaft" color="0,123,206" icon="47"/>
+	<EntityType type="xplan:LP_Abgrenzung" color="" icon="47"/>
+	<EntityType type="xplan:LP_AllgGruenflaeche" color="" icon="47"/>
+	<EntityType type="xplan:LP_Ausgleich" color="" icon="47"/>
+	<EntityType type="xplan:LP_Biotopverbundflaeche" color="" icon="47"/>
+	<EntityType type="xplan:LP_Bodenschutzrecht" color="" icon="47"/>
+	<EntityType type="xplan:LP_Denkmalschutzrecht" color="" icon="47"/>
+	<EntityType type="xplan:LP_ErholungFreizeit" color="" icon="47"/>
+	<EntityType type="xplan:LP_Forstrecht" color="" icon="47"/>
+	<EntityType type="xplan:LP_GenerischesObjekt" color="" icon="47"/>
+	<EntityType type="xplan:LP_NutzungsAusschluss" color="" icon="47"/>
+	<EntityType type="xplan:LP_NutzungserfordernisRegelung" color="" icon="47"/>
+	<EntityType type="xplan:LP_Plan" color="" icon="47"/>
+	<EntityType type="xplan:LP_PlanerischeVertiefung" color="" icon="47"/>
+	<EntityType type="xplan:LP_SchutzPflegeEntwicklung" color="" icon="47"/>
+	<EntityType type="xplan:LP_SchutzobjektBundesrecht" color="" icon="47"/>
+	<EntityType type="xplan:LP_SchutzobjektInternatRecht" color="" icon="47"/>
+	<EntityType type="xplan:LP_SonstigesRecht" color="" icon="47"/>
+	<EntityType type="xplan:LP_WasserrechtGemeingebrEinschraenkungNaturschutz" color="" icon="47"/>
+	<EntityType type="xplan:LP_WasserrechtSchutzgebiet" color="" icon="47"/>
+	<EntityType type="xplan:LP_WasserrechtSonstige" color="" icon="47"/>
+	<EntityType type="xplan:LP_WasserrechtWirtschaftAbflussHochwSchutz" color="" icon="47"/>
+	<EntityType type="xplan:LP_Zwischennutzung" color="" icon="47"/>
+	<EntityType type="xplan:RP_Achse" color="" icon="47"/>
+	<EntityType type="xplan:RP_Bodenschutz" color="" icon="47"/>
+	<EntityType type="xplan:RP_Energieversorgung" color="" icon="47"/>
+	<EntityType type="xplan:RP_Entsorgung" color="" icon="47"/>
+	<EntityType type="xplan:RP_Entwicklungsschwerpunkte" color="" icon="47"/>
+	<EntityType type="xplan:RP_Forstwirtschaft" color="" icon="47"/>
+	<EntityType type="xplan:RP_FreizeitErholung" color="" icon="47"/>
+	<EntityType type="xplan:RP_GemeindeFunktionSiedlungsentwicklung" color="" icon="47"/>
+	<EntityType type="xplan:RP_GenerischesObjekt" color="" icon="47"/>
+	<EntityType type="xplan:RP_Grenze" color="" icon="47"/>
+	<EntityType type="xplan:RP_GruenzugGruenzaesur" color="" icon="47"/>
+	<EntityType type="xplan:RP_Klimaschutz" color="" icon="47"/>
+	<EntityType type="xplan:RP_Kommunikation" color="" icon="47"/>
+	<EntityType type="xplan:RP_Landwirtschaft" color="" icon="47"/>
+	<EntityType type="xplan:RP_Laermschutzbereich" color="" icon="47"/>
+	<EntityType type="xplan:RP_NaturLandschaft" color="" icon="47"/>
+	<EntityType type="xplan:RP_NaturschutzrechtlichesSchutzgebiet" color="" icon="47"/>
+	<EntityType type="xplan:RP_Plan" color="" icon="47"/>
+	<EntityType type="xplan:RP_Raumkategorie" color="" icon="47"/>
+	<EntityType type="xplan:RP_Rohstoffsicherung" color="" icon="47"/>
+	<EntityType type="xplan:RP_SonstigeFreiraumstruktur" color="" icon="47"/>
+	<EntityType type="xplan:RP_SonstigeInfrastruktur" color="" icon="47"/>
+	<EntityType type="xplan:RP_SonstigeSiedlungsstruktur" color="" icon="47"/>
+	<EntityType type="xplan:RP_SozialeInfrastruktur" color="" icon="47"/>
+	<EntityType type="xplan:RP_Verkehr" color="" icon="47"/>
+	<EntityType type="xplan:RP_VorbHochwasserschutz" color="" icon="47"/>
+	<EntityType type="xplan:RP_Wasserschutz" color="" icon="47"/>
+	<EntityType type="xplan:RP_Wasserwirtschaft" color="" icon="47"/>
+	<EntityType type="xplan:RP_Windenergienutzung" color="" icon="47"/>
+	<EntityType type="xplan:RP_ZentralerOrt" color="" icon="47"/>
+	<EntityType type="xplan:SO_Bereich" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:SO_Bodenschutzrech" color="255,128,64" icon="47"/>
+	<EntityType type="xplan:SO_Denkmalschutzrecht" color="255,51,0" icon="47"/>
+	<EntityType type="xplan:SO_Forstrech" color="51,13,102" icon="47"/>
+	<EntityType type="xplan:SO_Gebiet" color="64,64,64" icon="47"/>
+	<EntityType type="xplan:SO_Grenze" color="0,0,0" icon="47"/>
+	<EntityType type="xplan:SO_Luftverkehrsrecht" color="204,51,153" icon="47"/>
+	<EntityType type="xplan:SO_Plan" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:SO_RasterplanAenderung" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:SO_Schienenverkehrsrecht" color="255,183,231" icon="47"/>
+	<EntityType type="xplan:SO_SchutzgebietNaturschutzrecht" color="0,128,0" icon="47"/>
+	<EntityType type="xplan:SO_SchutzgebietSonstigesRecht" color="255,0,255" icon="47"/>
+	<EntityType type="xplan:SO_SchutzgebietWasserrecht" color="0,123,206" icon="47"/>
+	<EntityType type="xplan:SO_SonstigesRecht" color="0,255,255" icon="47"/>
+	<EntityType type="xplan:SO_Strassenverkehrsrecht" color="255,220,69" icon="47"/>
+	<EntityType type="xplan:SO_Wasserrecht" color="0,123,206" icon="47"/>
+	<EntityType type="adv:AX_Bestandsdatenauszug" color="" icon="47"/>
+	<EntityType type="adv:AX_Flurstueck" color="0,175,0" icon="21"/>
+	<EntityType type="adv:AA_Lebenszeitintervall" color="" icon="47"/>
+	<EntityType type="adv:AX_DQMitDatenerhebung" color="" icon="47"/>
+	<EntityType type="adv:AA_Modellart" color="" icon="47"/>
+	<EntityType type="adv:AA_Fachdatenverbindung" color="" icon="47"/>
+	<EntityType type="adv:AX_Gemarkung_Schluessel" color="" icon="47"/>
+	<EntityType type="adv:AX_Flurstuecksnummer" color="" icon="47"/>
+	<EntityType type="adv:AX_Gemeindekennzeichen" color="" icon="47"/>
+	<EntityType type="adv:AX_Gebaeude" color="255,0,0" icon="2"/>
+	<EntityType type="adv:AX_Bauteil" color="255,0,0" icon="2"/>
+	<EntityType type="xplan:XP_BegruendungAbschnitt" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_DatumAttribut" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_DoubleAttribut" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_ExterneReferenz" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_ExterneReferenzPlan" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_Hoehenangabe" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_TextAbschnitt" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_VerfahrensMerkmal" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_VerbundenerPlan" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_Plangeber" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_Gemeinde" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_SPEMassnahmendaten" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_WirksamkeitBedingung" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_FPO" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_IntegerAttribut" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_LPO" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_LTO" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_PPO" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_PTO" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_Plan" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_Praesentationsobjekt" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_RasterplanAenderung" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_RasterplanBasis" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_StringAttribut" color="128,128,128" icon="47"/>
+	<EntityType type="xplan:XP_URLAttribut" color="128,128,128" icon="47"/>
+	<!-- INSPIRE hy-p  -->
+	<EntityType type="hy-p:StandingWater" color="0,0,255" icon="47"/>
+	<EntityType type="hy-p:Watercourse" color="0,0,255" icon="47"/>
+	<!-- INSPIRE TN Transportation Network -->
+	<EntityType type="tn-ra:RailwayArea" color="21,148,8" icon="47"/>
+	<EntityType type="tn-ra:RailwayLink" color="0,255,255" icon="47"/>
+	<EntityType type="tn-ra:RailwayStationArea" color="192,192,192" icon="47"/>
+	<EntityType type="tn-ra:RailwayStationNode" color="21,148,8" icon=""/>
+	<EntityType type="tn-ro:RoadArea" color="21,148,8"/>
+	<EntityType type="tn-ro:RoadLink" color="10,10,10"/>
+	<EntityType type="tn-ro:RoadServiceArea" color="128,128,128"/>
+	<!-- INSPIRE PLU Planned Land Use -->
+	<EntityType type="plu:SpatialPlan" color="21,148,8" icon="47"/>
+	<EntityType type="plu:ZoningElement" color="221,148,8" icon="47"/>
+	<EntityType type="plu:SupplementaryRegulation" color="21,148,158" icon="47"/>
+	<EntityType type="plu:OrdinanceValue" color="21,148,8" icon=""/>
+	<EntityType type="plu:OfficialDocumentation" color="21,148,8"/>
+	<EntityType type="plu:DimensioningIndicationIntegerValue" color="21,148,8"/>
+	<!-- GeoSciML -->
+	<EntityType type="gsml:GSML" color="" icon="0"/>
+	<EntityType type="gsml:MappedFeature" color="" icon="21"/>
+	<EntityType type="gsml:MappedInterval" color="" icon="21"/>
+	<EntityType type="gsml:GeologicUnit" color="" icon="21"/>
+	<EntityType type="gsml:CompositionPart" color="" icon="21"/>
+	<EntityType type="gsml:GeologicStructure" color="" icon="21"/>
+	<EntityType type="gsml:GeologicFeatureRelation" color="" icon="21"/>
+	<EntityType type="gsml:ShearDisplacementStructure" color="" icon="21"/>
+	<EntityType type="gsml:Fault" color="" icon="21"/>
+	<EntityType type="gsml:FaultSystem" color="" icon="21"/>
+	<EntityType type="gsml:DuctileShearStructure" color="" icon="21"/>
+	<EntityType type="gsml:Fracture" color="" icon="21"/>
+	<EntityType type="gsml:Joint" color="" icon="21"/>
+	<EntityType type="gsml:Contact" color="" icon="21"/>
+	<EntityType type="gsml:Fold" color="" icon="21"/>
+	<EntityType type="gsml:FoldSystem" color="" icon="21"/>
+	<EntityType type="gsml:Foliation" color="" icon="21"/>
+	<EntityType type="gsml:Layering" color="" icon="21"/>
+	<EntityType type="gsml:Lineation" color="" icon="21"/>
+	<EntityType type="gsml:NonDirectionalStructure" color="" icon="21"/>
+	<EntityType type="gsml:GeologicEvent" color="" icon="21"/>
+	<EntityType type="gsml:DisplacementEvent" color="" icon="21"/>
+	<EntityType type="gsml:CompoundMaterial" color="" icon="21"/>
+	<EntityType type="gsml:RockMaterial" color="" icon="21"/>
+	<EntityType type="gsml:OrganicMaterial" color="" icon="21"/>
+	<EntityType type="gsml:InorganicFluid" color="" icon="21"/>
+	<EntityType type="gsml:Mineral" color="" icon="21"/>
+	<EntityType type="gsml:BoreholeCollar" color="" icon="21"/>
+	<EntityType type="gsml:Borehole" color="" icon="21"/>
+	<EntityType type="gsml:BoreholeDetails" color="" icon="21"/>
+	<EntityType type="gsml:NetSlipValue" color="" icon="21"/>
+	<EntityType type="gsml:ControlledConcept" color="" icon="21"/>
+	<EntityType type="sa:SamplingPoint" color="" icon="21"/>
+	<EntityType type="sa:SamplingCurve" color="" icon="21"/>
+	<EntityType type="sa:SamplingSurface" color="" icon="21"/>
+	<EntityType type="sa:SamplingSolid" color="" icon="21"/>
+	<EntityType type="om:Observation" color="" icon="21"/>
+	<!-- SHP -->
+	<EntityType type="ShpShapefile" color="128,128,128" icon="5"/>
+	<EntityType type="ShpNullShape" color="128,128,128" icon="5"/>
+	<EntityType type="ShpPoint" color="128,128,128" icon="56"/>
+	<EntityType type="ShpPolyLine" color="128,128,128" icon="54"/>
+	<EntityType type="ShpPolygon" color="128,128,128" icon="55"/>
+	<EntityType type="ShpMultiPoint" color="128,128,128" icon="56"/>
+	<EntityType type="ShpPointZ" color="128,128,128" icon="56"/>
+	<EntityType type="ShpPolylineZ" color="128,128,128" icon="54"/>
+	<EntityType type="ShpPolygonZ" color="128,128,128" icon="55"/>
+	<EntityType type="ShpMultiPointZ" color="128,128,128" icon="56"/>
+	<EntityType type="ShpPointM" color="128,128,128" icon="56"/>
+	<EntityType type="ShpPolyLineM" color="128,128,128" icon="54"/>
+	<EntityType type="ShpPolygonM" color="128,128,128" icon="55"/>
+	<EntityType type="ShpMultiPointM" color="128,128,128" icon="56"/>
+	<EntityType type="ShpMultiPatch" color="128,128,128" icon="57"/>
+	<!-- gbXML -->
+	<EntityType type="GBXML_Project" color="222,184,135" icon="0"/>
+	<EntityType type="GBXML_Campus" color="0,255,0" icon="1"/>
+	<EntityType type="GBXML_Building" color="0,229,238" icon="2"/>
+	<EntityType type="GBXML_BuildingStorey" color="222,184,135" icon="3" visible="false"/>
+	<EntityType type="GBXML_Space" color="173,216,230" alpha="0.4" icon="4" visible="false"/>
+	<EntityType type="GBXML_Zone" color="222,184,135" icon="28"/>
+	<EntityType type="GBXML_Ceiling" color="102,102,102" icon="11"/>
+	<EntityType type="GBXML_Floor" color="40,70,30" icon="11"/>
+	<EntityType type="GBXML_Wall" color="204,204,204" icon="6"/>
+	<EntityType type="GBXML_Air" color="222,184,135" icon="25"/>
+	<EntityType type="GBXML_AirLoop" color="222,184,135" icon="25"/>
+	<EntityType type="GBXML_AirLoopEquipment" color="222,184,135" icon="25"/>
+	<EntityType type="GBXML_Shade" color="222,184,135" icon="58"/>
+	<EntityType type="GBXML_InteriorWall" color="204,204,204" icon="6"/>
+	<EntityType type="GBXML_ExteriorWall" color="204,204,204" icon="6"/>
+	<EntityType type="GBXML_UndergroundCeiling" color="102,102,102" icon="11"/>
+	<EntityType type="GBXML_UndergroundWall" color="0,0,255" icon="6"/>
+	<EntityType type="GBXML_UndergroundSlab" color="102,102,102" icon="11"/>
+	<EntityType type="GBXML_SlabOnGrade" color="102,102,102" icon="11"/>
+	<EntityType type="GBXML_RaisedFloor" color="102,102,102" icon="11"/>
+	<EntityType type="GBXML_ExposedFloor" color="102,102,102" icon="11"/>
+	<EntityType type="GBXML_InteriorFloor" color="102,102,102" icon="11"/>
+	<EntityType type="GBXML_Roof" color="255,0,0" icon="12"/>
+	<EntityType type="GBXML_Opening" color="222,184,135" alpha="0.4" icon="10"/>
+	<EntityType type="GBXML_Door" color="0,0,255" icon="13"/>
+	<EntityType type="GBXML_Window" color="0,255,255" alpha="0.4" icon="14"/>
+	<EntityType type="GBXML_FreestandingColumn" color="0,255,0" icon="9"/>
+	<EntityType type="GBXML_SpaceBoundary" color="173,21630" icon="5" visible="false"/>
+	<EntityType type="GBXML_EmbeddedColumn" color="0,255,0" icon="9"/>
+	<EntityType type="GBXML_HydronicLoop" color="200,200,200" icon="26"/>
+	<EntityType type="GBXML_HydronicLoopEquipment" color="211,211,211" icon="26"/>
+	<EntityType type="GBXML_Lighting" color="255,235,205" icon="24"/>
+	<EntityType type="GBXML_LightingSystem" color="" icon="24"/>
+	<EntityType type="GBXML_ExtEquip" color="" icon="5"/>
+	<EntityType type="GBXML_IntEquip" color="" icon="5"/>
+	<!-- LandXML -->
+	<EntityType type="LandXML Project" color="" icon="0"/>
+	<EntityType type="LandXML PipeNetwork" color="" icon="74"/>
+	<EntityType type="LandXML Pipes" color="" icon="75"/>
+	<EntityType type="LandXML Pipe" color="" icon="76"/>
+	<EntityType type="LandXML Structs" color="" icon="77"/>
+	<EntityType type="LandXML Struct" color="" icon="78"/>
+	<EntityType type="LandXML Struct[Inlet]" color="" icon="79"/>
+	<EntityType type="LandXML Struct[Outlet]" color="" icon="80"/>
+	<EntityType type="LandXML Struct[Connection]" color="" icon="81"/>
+	<EntityType type="LandXML Struct[Pond]" color="" icon="82"/>
+	<EntityType type="LandXML Alignment" color="" icon="83"/>
+	<EntityType type="LandXML Monument" color="" icon="84"/>
+	<EntityType type="LandXML Parcel" color="" icon="85"/>
+	<EntityType type="LandXML Roadway" color="" icon="50"/>
+	<EntityType type="LandXML Surface" color="" icon="86"/>
+	<EntityType type="LandXML PlanFeature" color="" icon="87"/>
+	<EntityType type="LandXML SourceData" color="" icon="44"/>
+	<EntityType type="LandXML Feature" color="" icon="88"/>
+	<!-- CIM (Icon 110 - 117) -->
+	<EntityType type="CIM" color="" icon="118"/>
+	<EntityType type="CIM Project" color="" icon="118"/>
+	<EntityType type="CIM Type Group" color="" icon="117"/>
+	<!-- OSM -->
+	<EntityType type="OSM Data" color="" icon="91"/>
+	<EntityType type="OSM Node" color="" icon="91"/>
+	<EntityType type="OSM Way" color="" icon="91"/>
+	<EntityType type="OSM Relation" color="" icon="91"/>
+	<!-- Webservices -->
+	<EntityType type="MapService" color="0,255,0" icon="46"/>
+	<EntityType type="OGC MapService" color="0,255,0" icon="46"/>
+	<!-- GPX -->
+	<EntityType type="GPX Waypoint" color="255,0,0" icon="44"/>
+	<EntityType type="GPX Track" color="0,0,255" icon="45"/>
+	<EntityType type="GPX Route" color="0,0,255" icon="5"/>
+	<!-- Point Cloude -->
+	<EntityType type="PointCloudData" color="255,0,0" icon="60"/>
+	<!-- DXF -->
+	<EntityType type="DXF_DOCUMENT" color="" icon="48"/>
+	<EntityType type="DXF_BLOCK" color="" icon="48"/>
+	<EntityType type="DXF_INSERT" color="" icon="48"/>
+	<EntityType type="DXF_ARC" color="" icon="48"/>
+	<EntityType type="DXF_CIRCLE" color="" icon="48"/>
+	<EntityType type="DXF_ELLIPSE" color="" icon="48"/>
+	<EntityType type="DXF_LINE" color="" icon="48"/>
+	<EntityType type="DXF_POINT" color="" icon="48"/>
+	<EntityType type="DXF_POLYLINE" color="" icon="48"/>
+	<EntityType type="DXF_TEXT" color="" icon="48"/>
+	<EntityType type="DXF_LWPOLYLINE" color="" icon="48"/>
+	<EntityType type="DXF_3DFACE" color="" icon="48"/>
+	<EntityType type="DXF_3DSOLID" color="" icon="48"/>
+	<EntityType type="DXF_VERTEX" color="" icon="48"/>
+	<EntityType type="DXF_SOLID" color="" icon="48"/>
+	<EntityType type="DXF_MLINE" color="" icon="48"/>
+	<!-- FDS -->
+	<EntityType type="FDS Project" color="" icon="5"/>
+	<EntityType type="FDS Obstruction" color="" icon="21"/>
+	<EntityType type="FDS Hole" color="" icon="10"/>
+	<EntityType type="FDS Device" color="" icon="5"/>
+	<EntityType type="FDS Ventilation" color="" icon="27"/>
+	<EntityType type="FDS Mesh" color="" icon="24"/>
+	<!-- DataModels -->
+	<EntityType type="DataModel IFC" color="" icon="51"/>
+	<EntityType type="DataModel cityGML" color="" icon="51"/>
+	<EntityType type="DataModel XPlanGML" color="" icon="51"/>
+	<EntityType type="DataModel GeoSciML" color="" icon="51"/>
+	<EntityType type="DataModel GBXML" color="" icon="51"/>
+	<EntityType type="DataModel KML" color="" icon="51"/>
+	<EntityType type="DataModel SHP" color="" icon="51"/>
+	<EntityType type="DataModel GPX" color="" icon="51"/>
+	<EntityType type="DataModel DXF" color="" icon="51"/>
+	<EntityType type="ExtrusionBaseModel" color="" icon="51"/>
+	<EntityType type="VoxelModel" color="" icon="51"/>
+	<!-- DataSources -->
+	<EntityType type="DataSource IFC" color="" icon="52"/>
+	<EntityType type="DataSource cityGML" color="" icon="52"/>
+	<EntityType type="DataSource XPlanGML" color="" icon="52"/>
+	<EntityType type="DataSource GeoSciML" color="" icon="52"/>
+	<EntityType type="DataSource GBXML" color="" icon="52"/>
+	<EntityType type="DataSource SHP" color="" icon="52"/>
+	<EntityType type="DataSource KML" color="" icon="52"/>
+	<EntityType type="DataSource GPX" color="" icon="52"/>
+	<EntityType type="DataSource DXF" color="" icon="52"/>
+	<!-- 3D Formats -->
+	<EntityType type="VRML Element" color="" icon="69"/>
+	<EntityType type="X3D Element" color="" icon="70"/>
+	<EntityType type="SAT Element" color="" icon="5"/>
+	<EntityType type="STL Element" color="" icon="71"/>
+	<EntityType type="3DS Element" color="" icon="5"/>
+	<EntityType type="OBJ Element" color="" icon="5"/>
+</EntityTypes>

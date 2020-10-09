@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogMessageDefinitions>
+	<LogMessages>
+		<Message Id="XML_Read_001" Description="" MessageString=""/>
+		<Message Id="XML_Read_002" Description="" MessageString=""/>
+		<Message Id="XML_Read_003" Description="" MessageString=""/>
+		<Message Id="XML_Read_004" Description="" MessageString=""/>
+		<Message Id="DataRead_001" Description="Loading time" MessageString=""/>
+		<Message Id="DataWrite_001" Description="" MessageString=""/>
+		<Message Id="DataPrepare_001" Description="Data preparing time" MessageString=""/>
+		<Message Id="DataPrepare_002" Description="Error while preparing Geometry" MessageString=""/>
+		<Message Id="DataPrepare_003" Description="Double GUID" MessageString=""/>
+		<Message Id="DataPrepare_004" Description="Invalide coordinate" MessageString=""/>
+		<Message Id="DataPrepare_006" Description="Profile definition unknown" MessageString=""/>
+		<Message Id="DataPrepare_007" Description="Entity type unsupported" MessageString=""/>
+		<Message Id="DataPrepare_008" Description="Relation type unsupported" MessageString=""/>
+		<Message Id="Population_001" Description="" MessageString=""/>
+		<Message Id="Population_002" Description="" MessageString=""/>
+		<Message Id="Population_003" Description="" MessageString=""/>
+		<Message Id="Population_004" Description="" MessageString=""/>
+		<Message Id="Population_005" Description="" MessageString=""/>
+		<Message Id="LOD1Modeller_001" Description="Test Output" MessageString=""/>
+		<Message Id="LOD1Modeller_002" Description="Calc LoD1 Base Footprint Model" MessageString=""/>
+		<Message Id="LOD1Modeller_003" Description="Calc LoD1 Slab Footprint Model" MessageString=""/>
+		<Message Id="LOD1Modeller_004" Description="Calc LoD1 Wall Footprint Model" MessageString=""/>
+		<Message Id="LOD1Modeller_005" Description="Calc LoD1 Building Application Check" MessageString=""/>
+		<Message Id="LOD1Modeller_006" Description="Brep transformation failed" MessageString=""/>
+		<Message Id="LOD1Modeller_007" Description="Footprint subtraction failed" MessageString=""/>
+		<Message Id="LOD1Modeller_008" Description="Init LoD1 Model" MessageString=""/>
+		<Message Id="LOD1Modeller_009" Description="Footprint creation failed" MessageString=""/>
+		<Message Id="LOD1Modeller_010" Description="Footprint unite failed" MessageString=""/>
+		<Message Id="LOD1Modeller_011" Description="" MessageString=""/>
+		<Message Id="LOD1Modeller_012" Description="Results" MessageString=""/>
+		<Message Id="ParametricDoorWindow_001" Description="Door/Window creation not possible" MessageString=""/>
+		<Message Id="ParametricDoorWindow_002" Description="Door/Window incomplete profile definition" MessageString=""/>
+		<Message Id="GMLCodelist_001" Description="Used code number not found" MessageString=""/>
+		<Message Id="XMLSchema_001" Description="" MessageString=""/>
+		<Message Id="ECCOERROR_200" Description="Unknown ECCO error" MessageString=""/>
+		<Message Id="ECCOERROR_201" Description="Schema not supported" MessageString=""/>
+		<Message Id="IFCRead_001" Description="IfcObject derived type not supported" MessageString=""/>
+		<Message Id="IFCRead_002" Description="IfcRelationship derived type not supported" MessageString=""/>
+		<Message Id="IFCRead_003" Description="IfcGeometricRepresentationItem type not supported" MessageString=""/>
+		<Message Id="IFCRead_004" Description="IfcProfile type not supported" MessageString=""/>
+		<Message Id="IFCRead_005" Description="IfcCurve type not supported" MessageString=""/>
+		<Message Id="IFCRead_006" Description="Not supported" MessageString=""/>
+		<Message Id="IFCRead_007" Description="RepresentationType unknown or undefined" MessageString=""/>
+		<Message Id="GMLRead_001" Description="GML Type not supported" MessageString=""/>
+		<Message Id="GMLRead_002" Description="More than one geometry defined" MessageString=""/>
+		<Message Id="GMLRead_003" Description="" MessageString=""/>
+		<Message Id="GMLRead_004" Description="" MessageString=""/>
+		<Message Id="GMLRead_005" Description="" MessageString=""/>
+		<Message Id="GMLRead_006" Description="Unknown GML Type" MessageString=""/>
+		<Message Id="GMLRead_007" Description="" MessageString=""/>
+		<Message Id="GMLRead_008" Description="Linear ring not closed" MessageString=""/>
+		<Message Id="GMLRead_009" Description="Linear ring not valid" MessageString=""/>
+		<Message Id="GMLRead_010" Description="" MessageString=""/>
+		<Message Id="GMLRead_011" Description="" MessageString=""/>
+		<Message Id="GMLRead_012" Description="" MessageString=""/>
+		<Message Id="GMLRead_013" Description="" MessageString=""/>
+		<Message Id="GMLRead_014" Description="" MessageString=""/>
+		<Message Id="GMLRead_015" Description="" MessageString=""/>
+		<Message Id="GMLRead_016" Description="Dictionary not available" MessageString=""/>
+		<Message Id="DXFRead_001" Description="Incorrect OuterLoop" MessageString=""/>
+		<Message Id="SHPRead_001" Description="Error in opening SHP file" MessageString=""/>
+		<Message Id="SHPRead_002" Description="Error in opening SHX file" MessageString=""/>
+		<Message Id="SHPRead_003" Description="Error in SHX file header" MessageString=""/>
+		<Message Id="SHPRead_004" Description="Error in opening DBF files" MessageString=""/>
+		<Message Id="SHPRead_005" Description=".shp-File und .dbf-File incompatible" MessageString=""/>
+		<Message Id="SHPRead_006" Description=".shp/.shx-File und/oder .dbf-File not available" MessageString=""/>
+		<Message Id="POINTCLOUDRead_001" Description="" MessageString=""/>
+		<Message Id="POINTCLOUDRead_002" Description="" MessageString=""/>
+		<Message Id="POINTCLOUDRead_003" Description="" MessageString=""/>
+		<Message Id="OSMRead_001" Description="Node element is marked as 'delete'" MessageString=""/>
+		<Message Id="OSMRead_002" Description="Way element is marked as 'delete'" MessageString=""/>
+		<Message Id="OSMRead_003" Description="Relation element is marked as 'delete'" MessageString=""/>
+		<Message Id="gbXML_ETU_Converter_001" Description="" MessageString=""/>
+		<Message Id="XPlanung_Visualisation_001" Description="" MessageString=""/>
+		<Message Id="EntityVisitor_001" Description="" MessageString=""/>
+		<Message Id="Geometry_Polyline_001" Description="Collinear points" MessageString=""/>
+		<Message Id="Geometry_Face_001" Description="" MessageString=""/>
+		<Message Id="Geometry_Face_002" Description="" MessageString=""/>
+		<Message Id="Geometry_Face_003" Description="Non-planar face" MessageString=""/>
+		<Message Id="Geometry_Face_004" Description="" MessageString=""/>
+		<Message Id="Geometry_Face_005" Description="Invalid loop" MessageString=""/>
+		<Message Id="Geometry_Extrusion_001" Description="" MessageString=""/>
+		<Message Id="Geometry_Extrusion_002" Description="" MessageString=""/>
+		<Message Id="Triangulation_001" Description="General triangulation error" MessageString=""/>
+		<Message Id="Triangulation_002" Description="No valid area" MessageString=""/>
+		<Message Id="Triangulation_003" Description="Extra points added" MessageString=""/>
+		<Message Id="Triangulation_004" Description="Invalid triangle" MessageString=""/>
+		<Message Id="GeoReference_001" Description="SRS statistic" MessageString=""/>
+		<Message Id="GeoReference_002" Description="Lat/Lon bounding box" MessageString=""/>
+		<Message Id="GeoReference_003" Description="Local bounding box" MessageString=""/>
+		<Message Id="GeoReference_004" Description="SRS bounding box" MessageString=""/>
+		<Message Id="GeoReference_005" Description="SRS validation" MessageString=""/>
+		<Message Id="Analyze_001" Description="" MessageString=""/>
+		<Message Id="DataMerge_001" Description="Merge feature relation failed" MessageString=""/>
+		<Message Id="DataMerge_002" Description="Merge Bool attribute failed" MessageString=""/>
+		<Message Id="DataMerge_003" Description="Merge Date attribute failed" MessageString=""/>
+		<Message Id="DataMerge_004" Description="Merge Double attribute failed" MessageString=""/>
+		<Message Id="DataMerge_005" Description="Merge Integer attribute failed" MessageString=""/>
+		<Message Id="DataMerge_006" Description="Merge String attribute failed" MessageString=""/>
+		<Message Id="DataMerge_007" Description="Merge URL attribute failed" MessageString=""/>
+		<Message Id="PortAnalyze_001" Description="PortAnalyzer: Missing port &lt;-> port relation" MessageString="IfcPort #%d missing port &lt;-> port relation"/>
+		<Message Id="PortAnalyze_002" Description="PortAnalyzer: Missing port &lt;-> element relation" MessageString="IfcPort #%d missing port &lt;-> element relation"/>
+		<Message Id="PortAnalyze_003" Description="PortAnalyzer: Relating port not available" MessageString="IfcPort #%d relating port not available (port &lt;-> port relation)"/>
+		<Message Id="PortAnalyze_004" Description="PortAnalyzer: Relating port not available" MessageString=""/>
+		<Message Id="PortAnalyze_005" Description="PortAnalyzer: Related port not available" MessageString=""/>
+		<Message Id="PortAnalyze_006" Description="PortAnalyzer: Missing placement" MessageString="IfcPort #%d missing placement"/>
+		<Message Id="PortAnalyze_007" Description="PortAnalyzer: Port not located within element bounding box (Epsilon &lt; Distance &lt; 5cm)" MessageString="IfcPort #%d not located within bounding box of Element #%d"/>
+		<Message Id="PortAnalyze_008" Description="PortAnalyzer: Port not located within element bounding box (5cm &lt; Distance &lt; 10cm)" MessageString="IfcPort #%d not located within bounding box of Element #%d"/>
+		<Message Id="PortAnalyze_009" Description="PortAnalyzer: Port not located within element bounding box (10cm &lt; Distance &lt; 20cm)" MessageString="IfcPort #%d not located within bounding box of Element #%d"/>
+		<Message Id="PortAnalyze_010" Description="PortAnalyzer: Port not located within element bounding box (Distance > 20cm)" MessageString="IfcPort #%d not located within bounding box of Element #%d"/>
+		<Message Id="PortAnalyze_011" Description="PortAnalyzer: No valid geometry" MessageString="Element #%d has no valid geometry"/>
+		<Message Id="PortAnalyze_012" Description="PortAnalyzer: Incorrect placement" MessageString="IfcPort #%d placemement location is (0.0, 0.0, 0.0)"/>
+		<Message Id="Borehole_001" Description="" MessageString=""/>
+		<Message Id="RelationManager_001" Description="Object Relation - Intersecting Solid " MessageString=""/>
+		<Message Id="RelationManager_002" Description="Object Relation - Connecting Face" MessageString=""/>
+		<Message Id="RelationManager_003" Description="Object Relation - Connecting Edge" MessageString=""/>
+		<Message Id="RelationManager_004" Description="Object Relation - Connecting Vertex" MessageString=""/>
+	</LogMessages>
+</LogMessageDefinitions>

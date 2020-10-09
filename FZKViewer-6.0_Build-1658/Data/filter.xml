@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WFSFilterCollection>
+	<Host url="https://iai-geoservice.iai.kit.edu:444/helmholtz33/wfs" guid="dbebac9a-5ee1-4409-85f2-36a171f6f062">
+		<DialogSettings dlg="WFSQuery">
+			<Property Name="#dlg.resultType">results</Property>
+			<Property Name="crsName">urn:ogc:def:crs:EPSG::25833</Property>
+			<Property Name="maxFeatures"></Property>
+			<Property Name="openAsText">false</Property>
+			<Property Name="outputFormat">application/gml+xml; version=3.1</Property>
+			<Property Name="requestType">post</Property>
+			<Property Name="resultType">results</Property>
+			<Property Name="selFeatures">bldg:Building</Property>
+			<Property Name="selFilters">2</Property>
+			<Property Name="serviceVersion">2.0.0</Property>
+			<Property Name="startIndex"></Property>
+			<Property Name="xlinkDepth"></Property>
+			<Property Name="~~targetfile~~"></Property>
+		</DialogSettings>
+		<FilterList>
+			<Filter id="1">
+				<FilterType>Spatial</FilterType>
+				<Operator>BBOX</Operator>
+				<Property></Property>
+				<Envelope>urn:ogc:def:crs:EPSG::25833, 367980.220157 5804877.689980, 368410.996468 5805438.866982</Envelope>
+			</Filter>
+			<Filter id="2">
+				<FilterType>Spatial</FilterType>
+				<Operator>BBOX</Operator>
+				<Property></Property>
+				<Envelope>urn:ogc:def:crs:EPSG::25833, 376801.824267 5699552.996978, 377058.937532 5699760.097979</Envelope>
+			</Filter>
+		</FilterList>
+	</Host>
+	<Host url="https://security.geobasis-bb.de/wss/service/WFS-ALKIS-NAS-E/guest" guid="71b2f903-a299-465d-8f12-10f94ece033b">
+		<DialogSettings dlg="WFSQuery">
+			<Property Name="#dlg.resultType">results</Property>
+			<Property Name="crsName">urn:ogc:def:crs:EPSG::25833</Property>
+			<Property Name="maxFeatures"></Property>
+			<Property Name="openAsText">false</Property>
+			<Property Name="outputFormat">text/xml; subtype=gml/3.2.1</Property>
+			<Property Name="requestType">post</Property>
+			<Property Name="resultType">results</Property>
+			<Property Name="selFeatures">adv:AX_Flurstueck</Property>
+			<Property Name="selFilters">1</Property>
+			<Property Name="serviceVersion">2.0.0</Property>
+			<Property Name="startIndex"></Property>
+			<Property Name="xlinkDepth"></Property>
+			<Property Name="~~targetfile~~"></Property>
+		</DialogSettings>
+		<FilterList>
+			<Filter id="1">
+				<FilterType>Spatial</FilterType>
+				<Operator>BBOX</Operator>
+				<Property></Property>
+				<Envelope>urn:adv:crs:ETRS89_UTM33, 367980.220130 5804877.689980, 368411.881139 5805438.867354</Envelope>
+			</Filter>
+		</FilterList>
+	</Host>
+	<Host url="https://isk.geobasis-bb.de/ows/alkis_sf_wfs" guid="f8986a52-0612-471f-ba54-2d20527afe0b">
+		<DialogSettings dlg="WFSQuery">
+			<Property Name="#dlg.resultType">results</Property>
+			<Property Name="crsName">urn:ogc:def:crs:EPSG::25833</Property>
+			<Property Name="maxFeatures"></Property>
+			<Property Name="openAsText">false</Property>
+			<Property Name="outputFormat">text/xml; subtype=gml/3.2.1</Property>
+			<Property Name="requestType">post</Property>
+			<Property Name="resultType">results</Property>
+			<Property Name="selFeatures">adv:AX_Flurstueck</Property>
+			<Property Name="selFilters">1</Property>
+			<Property Name="serviceVersion">1.1.0</Property>
+			<Property Name="startIndex"></Property>
+			<Property Name="xlinkDepth"></Property>
+			<Property Name="~~targetfile~~"></Property>
+		</DialogSettings>
+		<FilterList>
+			<Filter id="1">
+				<FilterType>Spatial</FilterType>
+				<Operator>BBOX</Operator>
+				<Property></Property>
+				<Envelope>urn:ogc:def:crs:EPSG::25833, 367980.220130 5804877.689980, 368411.881139 5805438.867354</Envelope>
+			</Filter>
+		</FilterList>
+	</Host>
+	<Host url="https://isk.geobasis-bb.de/ows/alkis_nas_wfs" guid="e593a3e9-7568-46b6-b138-b8043799b0dc">
+		<DialogSettings dlg="WFSQuery">
+			<Property Name="#dlg.resultType">results</Property>
+			<Property Name="crsName">urn:ogc:def:crs:EPSG::25833</Property>
+			<Property Name="maxFeatures"></Property>
+			<Property Name="openAsText">false</Property>
+			<Property Name="outputFormat">text/xml; subtype=gml/3.2.1</Property>
+			<Property Name="requestType">post</Property>
+			<Property Name="resultType">results</Property>
+			<Property Name="selFeatures">adv:AX_Flurstueck</Property>
+			<Property Name="selFilters">2</Property>
+			<Property Name="serviceVersion">1.1.0</Property>
+			<Property Name="startIndex"></Property>
+			<Property Name="xlinkDepth"></Property>
+			<Property Name="~~targetfile~~"></Property>
+		</DialogSettings>
+		<FilterList>
+			<Filter id="1">
+				<FilterType>Spatial</FilterType>
+				<Operator>BBOX</Operator>
+				<Property></Property>
+				<Envelope>urn:ogc:def:crs:EPSG::25833, 367732.415159 5804570.501990, 368447.003156 5805795.102991</Envelope>
+			</Filter>
+			<Filter id="2">
+				<FilterType>Spatial</FilterType>
+				<Operator>BBOX</Operator>
+				<Property></Property>
+				<Envelope>urn:ogc:def:crs:EPSG::25833, 376901.824133 5699652.996993, 376958.937133 5699660.097993</Envelope>
+			</Filter>
+		</FilterList>
+	</Host>
+	<Host url="https://inspire.brandenburg.de/services/cp_alkis_wfs" guid="93e80aec-910d-463f-8e3b-3e7cd4934bf9">
+		<DialogSettings dlg="WFSQuery">
+			<Property Name="#dlg.resultType">results</Property>
+			<Property Name="crsName">urn:adv:crs:ETRS89_UTM33</Property>
+			<Property Name="maxFeatures">1</Property>
+			<Property Name="openAsText">false</Property>
+			<Property Name="outputFormat">text/xml; subtype=gml/3.2.1</Property>
+			<Property Name="requestType">post</Property>
+			<Property Name="resultType">results</Property>
+			<Property Name="selFeatures">cp:CadastralParcel;cp:CadastralZoning</Property>
+			<Property Name="selFilters"></Property>
+			<Property Name="serviceVersion">2.0.0</Property>
+			<Property Name="startIndex"></Property>
+			<Property Name="xlinkDepth"></Property>
+			<Property Name="~~targetfile~~"></Property>
+		</DialogSettings>
+		<FilterList></FilterList>
+	</Host>
+</WFSFilterCollection>

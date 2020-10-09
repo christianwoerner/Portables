@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceFilterSettings>
+	<Host url="https://isk.geobasis-bb.de/mapproxy/dop20c_wmts/service?" guid="a331a0f4-903c-4873-863d-071fc50e7532">
+		<DialogSettings dlg="GetTile">
+			<Property Name="colSet">367-367</Property>
+			<Property Name="layers">bebb_dop20c</Property>
+			<Property Name="outputFormat">image/png</Property>
+			<Property Name="rowSet">670-670</Property>
+			<Property Name="sceneBBox">EPSG:25833 376901.824133 5699652.996993 376958.937133 5699660.097993 1</Property>
+			<Property Name="styles">default</Property>
+			<Property Name="tileMatrix">14</Property>
+			<Property Name="tileMatrixSet">grid_25833</Property>
+		</DialogSettings>
+	</Host>
+</WebServiceFilterSettings>

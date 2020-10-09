@@ -1,0 +1,1769 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit FZK (www.iai.fzk.de) XPlanGML-Toolbox, Erstellungsdatum: 03/29/11-->
+<Dictionary   gml:id="ExternalCodeLists" xmlns="http://www.opengis.net/gml" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.opengis.net/gml D:/XPlanung/XPlanGML.4.0/Schema/gml/3.2.1/gml.xsd">
+  <description>Externe Codelisten von Anwendungsschema '__XPlanGML'.</description>
+  <name>xplan:__XPlanGML</name>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_AbweichendeBauweise">
+      <name>xplan:BP_AbweichendeBauweise</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailArtDerBaulNutzung">
+      <name>xplan:BP_DetailArtDerBaulNutzung</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailDachform">
+      <name>xplan:BP_DetailDachform</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestBahnverkehr">
+      <name>xplan:BP_DetailZweckbestBahnverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestGemeinbedarf">
+      <name>xplan:BP_DetailZweckbestGemeinbedarf</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestGemeinschaftsanlagen">
+      <name>xplan:BP_DetailZweckbestGemeinschaftsanlagen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestGewaesser">
+      <name>xplan:BP_DetailZweckbestGewaesser</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestGruenFlaeche">
+      <name>xplan:BP_DetailZweckbestGruenFlaeche</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestLandwirtschaft">
+      <name>xplan:BP_DetailZweckbestLandwirtschaft</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestLuftverkehr">
+      <name>xplan:BP_DetailZweckbestLuftverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestNaturschutzgebiet">
+      <name>xplan:BP_DetailZweckbestNaturschutzgebiet</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestNebenanlagen">
+      <name>xplan:BP_DetailZweckbestNebenanlagen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestSchutzgebiet">
+      <name>xplan:BP_DetailZweckbestSchutzgebiet</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestSpielSportanlage">
+      <name>xplan:BP_DetailZweckbestSpielSportanlage</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestStrassenverkehr">
+      <name>xplan:BP_DetailZweckbestStrassenverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestVerEntsorgung">
+      <name>xplan:BP_DetailZweckbestVerEntsorgung</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestVorbHochwSchutz">
+      <name>xplan:BP_DetailZweckbestVorbHochwSchutz</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestWaldFlaeche">
+      <name>xplan:BP_DetailZweckbestWaldFlaeche</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestWasserrecht">
+      <name>xplan:BP_DetailZweckbestWasserrecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_DetailZweckbestWasserwirtschaft">
+      <name>xplan:BP_DetailZweckbestWasserwirtschaft</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_SonstPlanArt">
+      <name>xplan:BP_SonstPlanArt</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_SpezielleBauweiseSonstTypen">
+      <name>xplan:BP_SpezielleBauweiseSonstTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_Status">
+      <name>xplan:BP_Status</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:BP_ZweckbestimmungGenerischeObjekte">
+      <name>xplan:BP_ZweckbestimmungGenerischeObjekte</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:CharacterString">
+      <name>xplan:CharacterString</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailArtDerBaulNutzung">
+      <name>xplan:FP_DetailArtDerBaulNutzung</name>
+      <definitionMember>
+        <Definition gml:id="xplan:FP_DetailArtDerBaulNutzung_52124">
+          <description>Wohnbauflächen, deren parkartiger Charakter durch besondere Festsetzungen gesichert werden soll</description>
+          <name>52124</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:FP_DetailArtDerBaulNutzung_52204">
+          <description>Bauflächen mit Dorf- oder Wohngebietscharakter</description>
+          <name>52204</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:FP_DetailArtDerBaulNutzung_52314">
+          <description>Gemischte Bauflächen, deren Charakter als Dienstleistungszentren für die Wohnbecölkerung und für die Wirtschaft durch besondere Festsetzungen gesichert werden soll</description>
+          <name>52314</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestBahnverkehr">
+      <name>xplan:FP_DetailZweckbestBahnverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestGemeinbedarf">
+      <name>xplan:FP_DetailZweckbestGemeinbedarf</name>
+      <definitionMember>
+        <Definition gml:id="xplan:FP_DetailZweckbestGemeinbedarf_52156">
+          <description>Flächen für Gemeinbedarf, geringfügig bebaut</description>
+          <name>52156</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestGewaesser">
+      <name>xplan:FP_DetailZweckbestGewaesser</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestGruen">
+      <name>xplan:FP_DetailZweckbestGruen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestLandwirtschaftsFlaeche">
+      <name>xplan:FP_DetailZweckbestLandwirtschaftsFlaeche</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestLuftverkehr">
+      <name>xplan:FP_DetailZweckbestLuftverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestSchutzgebiet">
+      <name>xplan:FP_DetailZweckbestSchutzgebiet</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestSpielSportanlage">
+      <name>xplan:FP_DetailZweckbestSpielSportanlage</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestStrassenverkehr">
+      <name>xplan:FP_DetailZweckbestStrassenverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestVerEntsorgung">
+      <name>xplan:FP_DetailZweckbestVerEntsorgung</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestVorbHochwSchutz">
+      <name>xplan:FP_DetailZweckbestVorbHochwSchutz</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestWaldFlaeche">
+      <name>xplan:FP_DetailZweckbestWaldFlaeche</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestWasserrecht">
+      <name>xplan:FP_DetailZweckbestWasserrecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_DetailZweckbestWasserwirtschaft">
+      <name>xplan:FP_DetailZweckbestWasserwirtschaft</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_SonstPlanArt">
+      <name>xplan:FP_SonstPlanArt</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_SpezifischePraegungTypen">
+      <name>xplan:FP_SpezifischePraegungTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_Status">
+      <name>xplan:FP_Status</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:FP_ZweckbestimmungGenerischeObjekte">
+      <name>xplan:FP_ZweckbestimmungGenerischeObjekte</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_BodenschutzrechtDetailTypen">
+      <name>xplan:LP_BodenschutzrechtDetailTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_DenkmalschutzrechtDetailTypen">
+      <name>xplan:LP_DenkmalschutzrechtDetailTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_ErholungFreizeitDetailFunktionen">
+      <name>xplan:LP_ErholungFreizeitDetailFunktionen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_InternatSchutzobjektDetailTypen">
+      <name>xplan:LP_InternatSchutzobjektDetailTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_NRW_DetailGrundstuecksMassnahmen">
+      <name>xplan:LP_NRW_DetailGrundstuecksMassnahmen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_NRW_DetailLandschaftsstrukturElemente">
+      <name>xplan:LP_NRW_DetailLandschaftsstrukturElemente</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_NRW_DetailSonstigeMassnahmen">
+      <name>xplan:LP_NRW_DetailSonstigeMassnahmen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_SchutzgebietDetailTypen">
+      <name>xplan:LP_SchutzgebietDetailTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_SchutzobjektLandesrechtDetailTypen">
+      <name>xplan:LP_SchutzobjektLandesrechtDetailTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_SonstRechtDetailTypen">
+      <name>xplan:LP_SonstRechtDetailTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_WaldschutzDetailTypen">
+      <name>xplan:LP_WaldschutzDetailTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_WasserrechtGemeingebrEinschraenkungNaturschutzDetailTypen">
+      <name>xplan:LP_WasserrechtGemeingebrEinschraenkungNaturschutzDetailTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_WasserrechtSchutzgebietDetailTypen">
+      <name>xplan:LP_WasserrechtSchutzgebietDetailTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_WasserrechtSonstigeTypen">
+      <name>xplan:LP_WasserrechtSonstigeTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:LP_WasserrechtWirtschaftAbflussHochwSchutzDetailTypen">
+      <name>xplan:LP_WasserrechtWirtschaftAbflussHochwSchutzDetailTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_NRW_ASB_SonstZweckbindungen">
+      <name>xplan:RP_NRW_ASB_SonstZweckbindungen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_NRW_GIB_SonstigeZweckbindungen">
+      <name>xplan:RP_NRW_GIB_SonstigeZweckbindungen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_NRW_SonstAufschuettAblagerungTypen">
+      <name>xplan:RP_NRW_SonstAufschuettAblagerungTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_NRW_SonstInfrastrukturTypen">
+      <name>xplan:RP_NRW_SonstInfrastrukturTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_NRW_SonstLuftverkehrTypen">
+      <name>xplan:RP_NRW_SonstLuftverkehrTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_NRW_SonstSchienenverkehrTypen">
+      <name>xplan:RP_NRW_SonstSchienenverkehrTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_NRW_SonstStrassenverkehrTypen">
+      <name>xplan:RP_NRW_SonstStrassenverkehrTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_NRW_SonstVerkehrTypen">
+      <name>xplan:RP_NRW_SonstVerkehrTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_NRW_SonstWasserverkehrTypen">
+      <name>xplan:RP_NRW_SonstWasserverkehrTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_NRW_SonstZweckbindungTypen">
+      <name>xplan:RP_NRW_SonstZweckbindungTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_SonstGrenzeTypen">
+      <name>xplan:RP_SonstGrenzeTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_SonstPlanArt">
+      <name>xplan:RP_SonstPlanArt</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_Status">
+      <name>xplan:RP_Status</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:RP_ZweckbestimmungGenerischeObjekte">
+      <name>xplan:RP_ZweckbestimmungGenerischeObjekte</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_DetailKlassifizNachBodenschutzrecht">
+      <name>xplan:SO_DetailKlassifizNachBodenschutzrecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_DetailKlassifizNachDenkmalschutzrecht">
+      <name>xplan:SO_DetailKlassifizNachDenkmalschutzrecht</name>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_DetailKlassifizNachDenkmalschutzrecht_1000">
+          <description>Bla Bla</description>
+          <name>1000</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_DetailKlassifizNachForstrecht">
+      <name>xplan:SO_DetailKlassifizNachForstrecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_DetailKlassifizNachLuftverkehrsrecht">
+      <name>xplan:SO_DetailKlassifizNachLuftverkehrsrecht</name>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_DetailKlassifizNachLuftverkehrsrecht_1001">
+          <description>Fluglaermschutzzone_1</description>
+          <name>1001</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_DetailKlassifizNachLuftverkehrsrecht_1002">
+          <description>Fluglaermschutzzone_2</description>
+          <name>1002</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_DetailKlassifizNachLuftverkehrsrecht_1003">
+          <description>Fluglaermschutzzone_3</description>
+          <name>1003</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_DetailKlassifizNachSchienenverkehrsrecht">
+      <name>xplan:SO_DetailKlassifizNachSchienenverkehrsrecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_DetailKlassifizNachSonstigemRecht">
+      <name>xplan:SO_DetailKlassifizNachSonstigemRecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_DetailKlassifizNachStrassenverkehrsrecht">
+      <name>xplan:SO_DetailKlassifizNachStrassenverkehrsrecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_DetailKlassifizNachWasserrecht">
+      <name>xplan:SO_DetailKlassifizNachWasserrecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_DetailKlassifizSchutzgebietNaturschutzrecht">
+      <name>xplan:SO_DetailKlassifizSchutzgebietNaturschutzrecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_DetailKlassifizSchutzgebietSonstRecht">
+      <name>xplan:SO_DetailKlassifizSchutzgebietSonstRecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_DetailKlassifizSchutzgebietWasserrecht">
+      <name>xplan:SO_DetailKlassifizSchutzgebietWasserrecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_PlanTyp">
+      <name>xplan:SO_PlanTyp</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_SonstGebietsArt">
+      <name>xplan:SO_SonstGebietsArt</name>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_SonstGebietsArt_2300">
+          <description>Erhaltungssatzung</description>
+          <name>2300</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_SonstGebietsArt_3000">
+          <description>Gestaltungsverordnung</description>
+          <name>3000</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_SonstGebietsArt_3500">
+          <description>städtebauliches Milieu</description>
+          <name>3500</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_SonstGrenzeTypen">
+      <name>xplan:SO_SonstGrenzeTypen</name>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_SonstGrenzeTypen_1000">
+          <description>Grenze_12_Seemeilenzone</description>
+          <name>1000</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_SonstGrenzeTypen_1001">
+          <description>BegrenzungDesKuestenmeeres</description>
+          <name>1001</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_SonstGrenzeTypen_2000">
+          <description>VerlaufUmstritten</description>
+          <name>2000</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_SonstGrenzeTypen_3000">
+          <description>AuffassungSchleswigHolstein</description>
+          <name>3000</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_SonstGrenzeTypen_4000">
+          <description>GrenzeDtAusschlWirtschaftszone</description>
+          <name>4000</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_SonstGrenzeTypen_5000">
+          <description>MittlereTideHochwasserLinie</description>
+          <name>5000</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_SonstRechtscharakter">
+      <name>xplan:SO_SonstRechtscharakter</name>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_SonstRechtscharakter_DarstellungFPlan">
+          <description>DarstellungFPlan</description>
+          <name>DarstellungFPlan</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:SO_SonstRechtscharakter_FestsetzungBPlan">
+          <description>FestsetzungBPlan</description>
+          <name>FestsetzungBPlan</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:SO_SonstRechtsstandGebietTyp">
+      <name>xplan:SO_SonstRechtsstandGebietTyp</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:XP_ExterneReferenzArt">
+      <name>xplan:XP_ExterneReferenzArt</name>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_ExterneReferenzArt_Dokument">
+          <description>Dokument</description>
+          <name>Dokument</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_ExterneReferenzArt_PlanMitGeoreferenz">
+          <description>PlanMitGeoreferenz</description>
+          <name>PlanMitGeoreferenz</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:XP_GesetzlicheGrundlage">
+      <name>xplan:XP_GesetzlicheGrundlage</name>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Alsterdorf 20 vom 06.07.2006 (HmbGVBl. 2006, S.401)">
+          <description>Alsterdorf 20 vom 06.07.2006 (HmbGVBl. 2006, S.401)</description>
+          <name>Alsterdorf 20 vom 06.07.2006 (HmbGVBl. 2006, S.401)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Altengamme 10 vom 24.11.2005 (HmbGVBl. 2005, S.453)">
+          <description>Altengamme 10 vom 24.11.2005 (HmbGVBl. 2005, S.453)</description>
+          <name>Altengamme 10 vom 24.11.2005 (HmbGVBl. 2005, S.453)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Altengamme 8 / Neuengamme 10 vom 08.06.2006 (HmbGVBl. 2006, S.294)">
+          <description>Altengamme 8 / Neuengamme 10 vom 08.06.2006 (HmbGVBl. 2006, S.294)</description>
+          <name>Altengamme 8 / Neuengamme 10 vom 08.06.2006 (HmbGVBl. 2006, S.294)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Altengamme 9 / Neuengamme 9 vom 02.06.2006 (HmbGVBl. 2006, S.275)">
+          <description>Altengamme 9 / Neuengamme 9 vom 02.06.2006 (HmbGVBl. 2006, S.275)</description>
+          <name>Altengamme 9 / Neuengamme 9 vom 02.06.2006 (HmbGVBl. 2006, S.275)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Altona Altstadt 21 vom 21.09.1999  (HmbGVBl. 1999, S.227)">
+          <description>Altona Altstadt 21 vom 21.09.1999  (HmbGVBl. 1999, S.227)</description>
+          <name>Altona Altstadt 21 vom 21.09.1999  (HmbGVBl. 1999, S.227)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Altona-Altstadt 32, mit Änderung vom 28.10.82 (HmbGVBl. 1982, S.361),Verordnung zur Änderung über den B-.Plan Altona-Altstadt 32 und vom 02.04.85(HmbGVBl. 1985, S.104)">
+          <description>Altona-Altstadt 32, mit Änderung vom 28.10.82 (HmbGVBl. 1982, S.361),Verordnung zur Änderung über den B-.Plan Altona-Altstadt 32 und vom 02.04.85(HmbGVBl. 1985, S.104)</description>
+          <name>Altona-Altstadt 32, mit Änderung vom 28.10.82 (HmbGVBl. 1982, S.361),Verordnung zur Änderung über den B-.Plan Altona-Altstadt 32 und vom 02.04.85(HmbGVBl. 1985, S.104)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Altona-Altstadt 35 vom 08.03.1994 (HmbGVBl. 1994, S.62)">
+          <description>Altona-Altstadt 35 vom 08.03.1994 (HmbGVBl. 1994, S.62)</description>
+          <name>Altona-Altstadt 35 vom 08.03.1994 (HmbGVBl. 1994, S.62)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Altona-Altstadt 39 vom 22.12.1989 (HmbGVBl. 1989, S.302)">
+          <description>Altona-Altstadt 39 vom 22.12.1989 (HmbGVBl. 1989, S.302)</description>
+          <name>Altona-Altstadt 39 vom 22.12.1989 (HmbGVBl. 1989, S.302)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Altona-Altstadt 44 vom 29.04.2002 (HmbGVBl. 2002, S. 69)">
+          <description>Altona-Altstadt 44 vom 29.04.2002 (HmbGVBl. 2002, S. 69)</description>
+          <name>Altona-Altstadt 44 vom 29.04.2002 (HmbGVBl. 2002, S. 69)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Altona-Altstadt 47 vom 04.09.2001 (HmbGVBl. 2001, S.334)">
+          <description>Altona-Altstadt 47 vom 04.09.2001 (HmbGVBl. 2001, S.334)</description>
+          <name>Altona-Altstadt 47 vom 04.09.2001 (HmbGVBl. 2001, S.334)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Altona-Nord 16 / Altona-Altstadt 45 vom 22.06.1994 (HmbGVBl. 1994, S.184)">
+          <description>Altona-Nord 16 / Altona-Altstadt 45 vom 22.06.1994 (HmbGVBl. 1994, S.184)</description>
+          <name>Altona-Nord 16 / Altona-Altstadt 45 vom 22.06.1994 (HmbGVBl. 1994, S.184)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Altona-Nord 17 vom 10.02.2006 (HmbGVBl. 2006, S.66)">
+          <description>Altona-Nord 17 vom 10.02.2006 (HmbGVBl. 2006, S.66)</description>
+          <name>Altona-Nord 17 vom 10.02.2006 (HmbGVBl. 2006, S.66)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Amblatt_EU_FFH">
+          <description>Amtsblatt der EU Nr. L 012 vom 15/01/2008 S. 0001 - 0117</description>
+          <name>Amblatt_EU_FFH</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bahrenfeld 17 vom 13.06.2006 (HmbGVBl. 2006, S.325)">
+          <description>Bahrenfeld 17 vom 13.06.2006 (HmbGVBl. 2006, S.325)</description>
+          <name>Bahrenfeld 17 vom 13.06.2006 (HmbGVBl. 2006, S.325)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bahrenfeld 35 vom 27.11.1990 (HmbGVBl. 1990, S232)">
+          <description>Bahrenfeld 35 vom 27.11.1990 (HmbGVBl. 1990, S232)</description>
+          <name>Bahrenfeld 35 vom 27.11.1990 (HmbGVBl. 1990, S232)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bahrenfeld 38 vom 13.10.2004 (HmbGVBl. 2004, S.381)">
+          <description>Bahrenfeld 38 vom 13.10.2004 (HmbGVBl. 2004, S.381)</description>
+          <name>Bahrenfeld 38 vom 13.10.2004 (HmbGVBl. 2004, S.381)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bahrenfeld 43 vom 20.06.2006 (HmbGVBl. 2006, S.345)">
+          <description>Bahrenfeld 43 vom 20.06.2006 (HmbGVBl. 2006, S.345)</description>
+          <name>Bahrenfeld 43 vom 20.06.2006 (HmbGVBl. 2006, S.345)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Barmbek-Nord 13 vom 06.06.2006 (HmbGVBl. 2006, S.277)">
+          <description>Barmbek-Nord 13 vom 06.06.2006 (HmbGVBl. 2006, S.277)</description>
+          <name>Barmbek-Nord 13 vom 06.06.2006 (HmbGVBl. 2006, S.277)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Barmbek-Nord 30  vom 15.05.2001 (HmbGVBl. 2001, S.115)">
+          <description>Barmbek-Nord 30  vom 15.05.2001 (HmbGVBl. 2001, S.115)</description>
+          <name>Barmbek-Nord 30  vom 15.05.2001 (HmbGVBl. 2001, S.115)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Barmbek-Süd 12 vom 30.06.2006 (HmbGVBl. 2006, S.371)">
+          <description>Barmbek-Süd 12 vom 30.06.2006 (HmbGVBl. 2006, S.371)</description>
+          <name>Barmbek-Süd 12 vom 30.06.2006 (HmbGVBl. 2006, S.371)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergedorf 100 (§172 Abs.1 s1 Nr.1 BauGB) vom 11.12.2009 GVBL S. 442">
+          <description>Bergedorf 100 (§172 Abs.1 s1 Nr.1 BauGB) vom 11.12.2009 GVBL S. 442</description>
+          <name>Bergedorf 100 (§172 Abs.1 s1 Nr.1 BauGB) vom 11.12.2009 GVBL S. 442</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergedorf 75 vom 20.04.1993 (HmbGVBl. 1993, S.87)">
+          <description>Bergedorf 75 vom 20.04.1993 (HmbGVBl. 1993, S.87)</description>
+          <name>Bergedorf 75 vom 20.04.1993 (HmbGVBl. 1993, S.87)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergedorf 80 vom 18.04.1989 (HmbGVBl. 1989, S.70)">
+          <description>Bergedorf 80 vom 18.04.1989 (HmbGVBl. 1989, S.70)</description>
+          <name>Bergedorf 80 vom 18.04.1989 (HmbGVBl. 1989, S.70)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergedorf 84 vom 04.02.1991 (HmbGVBl. 1991, S.41)">
+          <description>Bergedorf 84 vom 04.02.1991 (HmbGVBl. 1991, S.41)</description>
+          <name>Bergedorf 84 vom 04.02.1991 (HmbGVBl. 1991, S.41)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergedorf 86 vom25.02.1992 (HmbGVBl. 1992, S.34)">
+          <description>Bergedorf 86 vom25.02.1992 (HmbGVBl. 1992, S.34)</description>
+          <name>Bergedorf 86 vom25.02.1992 (HmbGVBl. 1992, S.34)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergedorf 92 vom 06.12.2005 (HmbGVBl. 2005, S.457)">
+          <description>Bergedorf 92 vom 06.12.2005 (HmbGVBl. 2005, S.457)</description>
+          <name>Bergedorf 92 vom 06.12.2005 (HmbGVBl. 2005, S.457)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergedorf 94 vom 08.01.2008 (HmbGVBl. 2008, S.33)">
+          <description>Bergedorf 94 vom 08.01.2008 (HmbGVBl. 2008, S.33)</description>
+          <name>Bergedorf 94 vom 08.01.2008 (HmbGVBl. 2008, S.33)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergedorf 98 vom 26.02.2008 (HmbGVBl. 2008, S.101)">
+          <description>Bergedorf 98 vom 26.02.2008 (HmbGVBl. 2008, S.101)</description>
+          <name>Bergedorf 98 vom 26.02.2008 (HmbGVBl. 2008, S.101)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergstedt 13">
+          <description>Bergstedt 13</description>
+          <name>Bergstedt 13</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergstedt 17 vom 10.06.1999 (HmbGVBl. 1999, S.121)">
+          <description>Bergstedt 17 vom 10.06.1999 (HmbGVBl. 1999, S.121)</description>
+          <name>Bergstedt 17 vom 10.06.1999 (HmbGVBl. 1999, S.121)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergstedt 22 vom 19.10.2001 (HmbGVBl. 2001, S.427)">
+          <description>Bergstedt 22 vom 19.10.2001 (HmbGVBl. 2001, S.427)</description>
+          <name>Bergstedt 22 vom 19.10.2001 (HmbGVBl. 2001, S.427)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bergstedt 24 (§172 Abs.1 s1 Nr.1 BauGB) vom 14.04.2010 GVBL S. 325">
+          <description>Bergstedt 24 (§172 Abs.1 s1 Nr.1 BauGB) vom 14.04.2010 GVBL S. 325</description>
+          <name>Bergstedt 24 (§172 Abs.1 s1 Nr.1 BauGB) vom 14.04.2010 GVBL S. 325</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Billbrook 3 vom 11.04.1995 (HmbGVBl. 1995, S.82)">
+          <description>Billbrook 3 vom 11.04.1995 (HmbGVBl. 1995, S.82)</description>
+          <name>Billbrook 3 vom 11.04.1995 (HmbGVBl. 1995, S.82)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Billstedt 102 vom 27.03.2006 (HmbGVBl. 2006, S.140)">
+          <description>Billstedt 102 vom 27.03.2006 (HmbGVBl. 2006, S.140)</description>
+          <name>Billstedt 102 vom 27.03.2006 (HmbGVBl. 2006, S.140)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Billstedt 88 vom 02.05.1991 (HmbGVBl. 1991, S.204)">
+          <description>Billstedt 88 vom 02.05.1991 (HmbGVBl. 1991, S.204)</description>
+          <name>Billstedt 88 vom 02.05.1991 (HmbGVBl. 1991, S.204)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Billstedt 92 vom 05.12.1995 (HmbGVBl. 1995, S.358)">
+          <description>Billstedt 92 vom 05.12.1995 (HmbGVBl. 1995, S.358)</description>
+          <name>Billstedt 92 vom 05.12.1995 (HmbGVBl. 1995, S.358)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Blankenese 16 vom 11.05.1988 (HmbGVBl. 1988, S.71)">
+          <description>Blankenese 16 vom 11.05.1988 (HmbGVBl. 1988, S.71)</description>
+          <name>Blankenese 16 vom 11.05.1988 (HmbGVBl. 1988, S.71)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Blankenese 26 vom 11.05.1988 (HmbGVBl. 1988, S.72)">
+          <description>Blankenese 26 vom 11.05.1988 (HmbGVBl. 1988, S.72)</description>
+          <name>Blankenese 26 vom 11.05.1988 (HmbGVBl. 1988, S.72)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Blankenese 28 vom 20.03.1990 (HmbGVBl. 1990, S.49)">
+          <description>Blankenese 28 vom 20.03.1990 (HmbGVBl. 1990, S.49)</description>
+          <name>Blankenese 28 vom 20.03.1990 (HmbGVBl. 1990, S.49)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Blankenese 29 vom 02.07.1991 (HmbGVBl. 1991, S.245)">
+          <description>Blankenese 29 vom 02.07.1991 (HmbGVBl. 1991, S.245)</description>
+          <name>Blankenese 29 vom 02.07.1991 (HmbGVBl. 1991, S.245)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Blankenese 3 vom 27.03.2001 (HmbGVBl. 2001, S.133)">
+          <description>Blankenese 3 vom 27.03.2001 (HmbGVBl. 2001, S.133)</description>
+          <name>Blankenese 3 vom 27.03.2001 (HmbGVBl. 2001, S.133)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Blankenese 30 vom 24.09.1991 (HmbGVBl. 1991, S.331)">
+          <description>Blankenese 30 vom 24.09.1991 (HmbGVBl. 1991, S.331)</description>
+          <name>Blankenese 30 vom 24.09.1991 (HmbGVBl. 1991, S.331)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Blankenese 35 / Sülldorf 20 vom 23.06.2006 (HmbGVBl. 2006, S.335)">
+          <description>Blankenese 35 / Sülldorf 20 vom 23.06.2006 (HmbGVBl. 2006, S.335)</description>
+          <name>Blankenese 35 / Sülldorf 20 vom 23.06.2006 (HmbGVBl. 2006, S.335)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Blankenese 36 vom 04.05.2006 (HmbGVBl. 2006, S.224, 225)">
+          <description>Blankenese 36 vom 04.05.2006 (HmbGVBl. 2006, S.224, 225)</description>
+          <name>Blankenese 36 vom 04.05.2006 (HmbGVBl. 2006, S.224, 225)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Blankenese 4  vom 05.07.2006 (HmbGVBl. 2006, S.393)">
+          <description>Blankenese 4  vom 05.07.2006 (HmbGVBl. 2006, S.393)</description>
+          <name>Blankenese 4  vom 05.07.2006 (HmbGVBl. 2006, S.393)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Blankenese 6 vom06.10.1992 (HmbGVBl. 1992, S.207)">
+          <description>Blankenese 6 vom06.10.1992 (HmbGVBl. 1992, S.207)</description>
+          <name>Blankenese 6 vom06.10.1992 (HmbGVBl. 1992, S.207)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bramfeld 44 - Siedlung Hohnerkamp vom 20.02.1987(HmbGVBl. 1987, S.77)">
+          <description>Bramfeld 44 - Siedlung Hohnerkamp vom 20.02.1987(HmbGVBl. 1987, S.77)</description>
+          <name>Bramfeld 44 - Siedlung Hohnerkamp vom 20.02.1987(HmbGVBl. 1987, S.77)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bramfeld 57 vom 08.03.1994 (HmbGVBl. 1994, S.69)">
+          <description>Bramfeld 57 vom 08.03.1994 (HmbGVBl. 1994, S.69)</description>
+          <name>Bramfeld 57 vom 08.03.1994 (HmbGVBl. 1994, S.69)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Bundesanzeiger_Vogelschutz">
+          <description>Bundesanzeiger BeilagenNr.196a vom 19.10.2007</description>
+          <name>Bundesanzeiger_Vogelschutz</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Curslack 12 vom 09.09.1999 (HmbGVBl. 1999, S.223)">
+          <description>Curslack 12 vom 09.09.1999 (HmbGVBl. 1999, S.223)</description>
+          <name>Curslack 12 vom 09.09.1999 (HmbGVBl. 1999, S.223)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Curslack 17 vom 21.03.2006 (HmbGVBl. 2006, S.135)">
+          <description>Curslack 17 vom 21.03.2006 (HmbGVBl. 2006, S.135)</description>
+          <name>Curslack 17 vom 21.03.2006 (HmbGVBl. 2006, S.135)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Duvenstedt 11 vom 11.01.1994 (HmbGVBl. 1994, S.3)">
+          <description>Duvenstedt 11 vom 11.01.1994 (HmbGVBl. 1994, S.3)</description>
+          <name>Duvenstedt 11 vom 11.01.1994 (HmbGVBl. 1994, S.3)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Eidelstedt 31 vom 18.12.2002 (HmbGVBl. 2002, S.1)">
+          <description>Eidelstedt 31 vom 18.12.2002 (HmbGVBl. 2002, S.1)</description>
+          <name>Eidelstedt 31 vom 18.12.2002 (HmbGVBl. 2002, S.1)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Eidelstedt 57 vom 25.06.1997 (HmbGVBl. 1997, S.290)">
+          <description>Eidelstedt 57 vom 25.06.1997 (HmbGVBl. 1997, S.290)</description>
+          <name>Eidelstedt 57 vom 25.06.1997 (HmbGVBl. 1997, S.290)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Eppendorf 1">
+          <description>Eppendorf 1</description>
+          <name>Eppendorf 1</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Eppendorf 2 vom 04.12.2003 (HmbGVBl. 2003, S.555)">
+          <description>Eppendorf 2 vom 04.12.2003 (HmbGVBl. 2003, S.555)</description>
+          <name>Eppendorf 2 vom 04.12.2003 (HmbGVBl. 2003, S.555)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Eppendorf 22 vom 09.09.1999 (HmbGVBl. 1999, S.233)">
+          <description>Eppendorf 22 vom 09.09.1999 (HmbGVBl. 1999, S.233)</description>
+          <name>Eppendorf 22 vom 09.09.1999 (HmbGVBl. 1999, S.233)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Eppendorf 4">
+          <description>Eppendorf 4</description>
+          <name>Eppendorf 4</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Farmsen-Berne 31 vom 25.02.2000 (HmbGVBl. 2000, S.65)">
+          <description>Farmsen-Berne 31 vom 25.02.2000 (HmbGVBl. 2000, S.65)</description>
+          <name>Farmsen-Berne 31 vom 25.02.2000 (HmbGVBl. 2000, S.65)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Finkenwerder  35 vom 08.07.1997 (HmbGVBl. 1997, S347)">
+          <description>Finkenwerder  35 vom 08.07.1997 (HmbGVBl. 1997, S347)</description>
+          <name>Finkenwerder  35 vom 08.07.1997 (HmbGVBl. 1997, S347)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Finkenwerder 32 (§172 Abs.1 s1 Nr.1 BauGB) vom 06.10.2009 GVBL S. 352">
+          <description>Finkenwerder 32 (§172 Abs.1 s1 Nr.1 BauGB) vom 06.10.2009 GVBL S. 352</description>
+          <name>Finkenwerder 32 (§172 Abs.1 s1 Nr.1 BauGB) vom 06.10.2009 GVBL S. 352</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_FluLärmG">
+          <description>Gesetz zum Schutz gegen Fluglärm</description>
+          <name>FluLärmG</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Fuhlsbüttel 19 / Langenhorn 41 vom 27.09.1995 (HmbGVBl. 1995, S.217)">
+          <description>Fuhlsbüttel 19 / Langenhorn 41 vom 27.09.1995 (HmbGVBl. 1995, S.217)</description>
+          <name>Fuhlsbüttel 19 / Langenhorn 41 vom 27.09.1995 (HmbGVBl. 1995, S.217)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Fuhlsbüttel 24 vom 06.06.2006 (HmbGVBl. 2006, S.291)">
+          <description>Fuhlsbüttel 24 vom 06.06.2006 (HmbGVBl. 2006, S.291)</description>
+          <name>Fuhlsbüttel 24 vom 06.06.2006 (HmbGVBl. 2006, S.291)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Fuhlsbüttel 25 vom 20.02.2006 (HmbGVBl. 2006, S.92)">
+          <description>Fuhlsbüttel 25 vom 20.02.2006 (HmbGVBl. 2006, S.92)</description>
+          <name>Fuhlsbüttel 25 vom 20.02.2006 (HmbGVBl. 2006, S.92)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Groß Flottbek 13 vom 27.04.2004 (HmbGVBl. 2004, S.239)">
+          <description>Groß Flottbek 13 vom 27.04.2004 (HmbGVBl. 2004, S.239)</description>
+          <name>Groß Flottbek 13 vom 27.04.2004 (HmbGVBl. 2004, S.239)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Groß Flottbek 9 vom 14.11.1989 (HmbGVBl. 1989, S215)">
+          <description>Groß Flottbek 9 vom 14.11.1989 (HmbGVBl. 1989, S215)</description>
+          <name>Groß Flottbek 9 vom 14.11.1989 (HmbGVBl. 1989, S215)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Groß-Borstel 24 vom 09.01.1990 (HmbGVBl. 1990, S.5)">
+          <description>Groß-Borstel 24 vom 09.01.1990 (HmbGVBl. 1990, S.5)</description>
+          <name>Groß-Borstel 24 vom 09.01.1990 (HmbGVBl. 1990, S.5)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Hamburg-Altstadt 26 vom 14.12.1990 (HmbGVBl. 1990, S.238)">
+          <description>Hamburg-Altstadt 26 vom 14.12.1990 (HmbGVBl. 1990, S.238)</description>
+          <name>Hamburg-Altstadt 26 vom 14.12.1990 (HmbGVBl. 1990, S.238)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Hamburg-Altstadt 30 vom 14.06.1994 (HmbGVBl. 1994, S.179)">
+          <description>Hamburg-Altstadt 30 vom 14.06.1994 (HmbGVBl. 1994, S.179)</description>
+          <name>Hamburg-Altstadt 30 vom 14.06.1994 (HmbGVBl. 1994, S.179)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Harburg 48 vom 20.01.1992 (HmbGVBl. 1992, S.7)">
+          <description>Harburg 48 vom 20.01.1992 (HmbGVBl. 1992, S.7)</description>
+          <name>Harburg 48 vom 20.01.1992 (HmbGVBl. 1992, S.7)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Harburg 59 vom 20.06.2000 (HmbGVBl. 2000, S. 109)">
+          <description>Harburg 59 vom 20.06.2000 (HmbGVBl. 2000, S. 109)</description>
+          <name>Harburg 59 vom 20.06.2000 (HmbGVBl. 2000, S. 109)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Harvestehude 1 vom 20.11.1979 (HmbGVBl. 1979, S.331)">
+          <description>Harvestehude 1 vom 20.11.1979 (HmbGVBl. 1979, S.331)</description>
+          <name>Harvestehude 1 vom 20.11.1979 (HmbGVBl. 1979, S.331)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Hausbruch 38 vom 13.12.2002 (HmbGVBl. 2002, S. 339)">
+          <description>Hausbruch 38 vom 13.12.2002 (HmbGVBl. 2002, S. 339)</description>
+          <name>Hausbruch 38 vom 13.12.2002 (HmbGVBl. 2002, S. 339)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Hoheluft-Ost 2 vom 26.09.2003 (HmbGVBl. 2003, S.489)">
+          <description>Hoheluft-Ost 2 vom 26.09.2003 (HmbGVBl. 2003, S.489)</description>
+          <name>Hoheluft-Ost 2 vom 26.09.2003 (HmbGVBl. 2003, S.489)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Hummelsbüttel 26  vom 23.06.1998 (HmbGVBl. 1998, S.100)">
+          <description>Hummelsbüttel 26  vom 23.06.1998 (HmbGVBl. 1998, S.100)</description>
+          <name>Hummelsbüttel 26  vom 23.06.1998 (HmbGVBl. 1998, S.100)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Iserbrook 20 / Osdorf 18 vom 19.04.1989 (HmbGVBl. 1989, S.63)">
+          <description>Iserbrook 20 / Osdorf 18 vom 19.04.1989 (HmbGVBl. 1989, S.63)</description>
+          <name>Iserbrook 20 / Osdorf 18 vom 19.04.1989 (HmbGVBl. 1989, S.63)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Iserbrook 22 vom 20.06.1996 (HmbGVBl. 1996, S.151)">
+          <description>Iserbrook 22 vom 20.06.1996 (HmbGVBl. 1996, S.151)</description>
+          <name>Iserbrook 22 vom 20.06.1996 (HmbGVBl. 1996, S.151)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Kirchwerder 17 / Ochsenwerder 8 vom 03.02.2006 (HmbGVBl. 2006, S.51)">
+          <description>Kirchwerder 17 / Ochsenwerder 8 vom 03.02.2006 (HmbGVBl. 2006, S.51)</description>
+          <name>Kirchwerder 17 / Ochsenwerder 8 vom 03.02.2006 (HmbGVBl. 2006, S.51)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Kirchwerder 19 vom 17.06.2002 (HmbGVBl. 2002, S.93)">
+          <description>Kirchwerder 19 vom 17.06.2002 (HmbGVBl. 2002, S.93)</description>
+          <name>Kirchwerder 19 vom 17.06.2002 (HmbGVBl. 2002, S.93)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Kirchwerder 20 vom 09.11.2005 (HmbGVBl. 2005, S.447)">
+          <description>Kirchwerder 20 vom 09.11.2005 (HmbGVBl. 2005, S.447)</description>
+          <name>Kirchwerder 20 vom 09.11.2005 (HmbGVBl. 2005, S.447)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Kirchwerder 21 vom 23.02.2006 (HmbGVBl. 2006, S.96)">
+          <description>Kirchwerder 21 vom 23.02.2006 (HmbGVBl. 2006, S.96)</description>
+          <name>Kirchwerder 21 vom 23.02.2006 (HmbGVBl. 2006, S.96)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Kirchwerder 22 vom 09.05.2006 (HmbGVBl. 2006, S.216)">
+          <description>Kirchwerder 22 vom 09.05.2006 (HmbGVBl. 2006, S.216)</description>
+          <name>Kirchwerder 22 vom 09.05.2006 (HmbGVBl. 2006, S.216)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Klostertor 10 vom 21.01.1998 (HmbGVBl. 1998, S.23)">
+          <description>Klostertor 10 vom 21.01.1998 (HmbGVBl. 1998, S.23)</description>
+          <name>Klostertor 10 vom 21.01.1998 (HmbGVBl. 1998, S.23)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Langenhorn 63 vom25.02.1992 (HmbGVBl. 1992, S.33)">
+          <description>Langenhorn 63 vom25.02.1992 (HmbGVBl. 1992, S.33)</description>
+          <name>Langenhorn 63 vom25.02.1992 (HmbGVBl. 1992, S.33)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Langenhorn 66 vom 22.01.2002 (HmbGVBl. 2002, S.12)">
+          <description>Langenhorn 66 vom 22.01.2002 (HmbGVBl. 2002, S.12)</description>
+          <name>Langenhorn 66 vom 22.01.2002 (HmbGVBl. 2002, S.12)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Langenhorn 67 vom 11.01.2006 (HmbGVBl. 2006, S.11)">
+          <description>Langenhorn 67 vom 11.01.2006 (HmbGVBl. 2006, S.11)</description>
+          <name>Langenhorn 67 vom 11.01.2006 (HmbGVBl. 2006, S.11)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Lemsahl-Mellingstedt 11vom 17.04.1991">
+          <description>Lemsahl-Mellingstedt 11vom 17.04.1991</description>
+          <name>Lemsahl-Mellingstedt 11vom 17.04.1991</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Marienthal 11 vom 26.04.1988 (HmbGVBl. 1988, S.63)">
+          <description>Marienthal 11 vom 26.04.1988 (HmbGVBl. 1988, S.63)</description>
+          <name>Marienthal 11 vom 26.04.1988 (HmbGVBl. 1988, S.63)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Marienthal 18 vom 22.01.1991 (HmbGVBl. 1991, S.29)">
+          <description>Marienthal 18 vom 22.01.1991 (HmbGVBl. 1991, S.29)</description>
+          <name>Marienthal 18 vom 22.01.1991 (HmbGVBl. 1991, S.29)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Marienthal 26 vom 29.09.2004 (HmbGVBl. 2004, S.373)">
+          <description>Marienthal 26 vom 29.09.2004 (HmbGVBl. 2004, S.373)</description>
+          <name>Marienthal 26 vom 29.09.2004 (HmbGVBl. 2004, S.373)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Marienthal 27 vom 08.06.2006 (HmbGVBl. 2006, S.292)">
+          <description>Marienthal 27 vom 08.06.2006 (HmbGVBl. 2006, S.292)</description>
+          <name>Marienthal 27 vom 08.06.2006 (HmbGVBl. 2006, S.292)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Marmstorf 9 - Dorfkern Marmstorf - vom 03.03.1980 (HmbGVBl. 1980, S 38)">
+          <description>Marmstorf 9 - Dorfkern Marmstorf - vom 03.03.1980 (HmbGVBl. 1980, S 38)</description>
+          <name>Marmstorf 9 - Dorfkern Marmstorf - vom 03.03.1980 (HmbGVBl. 1980, S 38)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Neuenfelde 10 vom 16.12.2001 (HmbGVBl. 2001, S. 529)">
+          <description>Neuenfelde 10 vom 16.12.2001 (HmbGVBl. 2001, S. 529)</description>
+          <name>Neuenfelde 10 vom 16.12.2001 (HmbGVBl. 2001, S. 529)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Neuengamme 7 vom 21.06.2004 (HmbGVBl. 2004, S.267)">
+          <description>Neuengamme 7 vom 21.06.2004 (HmbGVBl. 2004, S.267)</description>
+          <name>Neuengamme 7 vom 21.06.2004 (HmbGVBl. 2004, S.267)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Neuengamme 8 (§172 Abs.1 s1 Nr.1 BauGB) vom 17.07.2009 GVBL S. 233">
+          <description>Neuengamme 8 (§172 Abs.1 s1 Nr.1 BauGB) vom 17.07.2009 GVBL S. 233</description>
+          <name>Neuengamme 8 (§172 Abs.1 s1 Nr.1 BauGB) vom 17.07.2009 GVBL S. 233</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Neuengamme 9 vom 23.06.2006 (HmbGVBl. 2006, S.357)">
+          <description>Neuengamme 9 vom 23.06.2006 (HmbGVBl. 2006, S.357)</description>
+          <name>Neuengamme 9 vom 23.06.2006 (HmbGVBl. 2006, S.357)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Neugraben-Fischbek 44 vom 27.02.1990 (HmbGVBl. 1990, S. 45)">
+          <description>Neuengamme 9 vom 23.06.2006 Neugraben-Fischbek 44 vom 27.02.1990 (HmbGVBl. 1990, S. 45)</description>
+          <name>Neugraben-Fischbek 44 vom 27.02.1990 (HmbGVBl. 1990, S. 45)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Neuland 11 vom 09.06.1992 (HmbGVBl. 1992, S. 112)">
+          <description>Neuland 11 vom 09.06.1992 (HmbGVBl. 1992, S. 112)</description>
+          <name>Neuland 11 vom 09.06.1992 (HmbGVBl. 1992, S. 112)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Neuland 15 vom 17.04.1991 (HmbGVBl. 1991, S. 123)">
+          <description>Neuland 15 vom 17.04.1991 (HmbGVBl. 1991, S. 123)</description>
+          <name>Neuland 15 vom 17.04.1991 (HmbGVBl. 1991, S. 123)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Neustadt 36 vom 02.09.1997 (HmbGVBl. 1997, S.451)">
+          <description>Neustadt 36 vom 02.09.1997 (HmbGVBl. 1997, S.451)</description>
+          <name>Neustadt 36 vom 02.09.1997 (HmbGVBl. 1997, S.451)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Niendorf 79 vom 01.10.1996 (HmbGVBl. 1996, S.249)">
+          <description>Niendorf 79 vom 01.10.1996 (HmbGVBl. 1996, S.249)</description>
+          <name>Niendorf 79 vom 01.10.1996 (HmbGVBl. 1996, S.249)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Niendorf 84 vom 17.05.2001 (HmbGVBl. 2001, S.117)">
+          <description>Niendorf 84 vom 17.05.2001 (HmbGVBl. 2001, S.117)</description>
+          <name>Niendorf 84 vom 17.05.2001 (HmbGVBl. 2001, S.117)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Nienstedten 14 vom 07.06.1995 (HmbGVBl. 1995, S.125)">
+          <description>Nienstedten 14 vom 07.06.1995 (HmbGVBl. 1995, S.125)</description>
+          <name>Nienstedten 14 vom 07.06.1995 (HmbGVBl. 1995, S.125)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Nienstedten 17 /Osdorf 42 vom 23.03.1993 (HmbGVBl. 1993, S.71)">
+          <description>Nienstedten 17 /Osdorf 42 vom 23.03.1993 (HmbGVBl. 1993, S.71)</description>
+          <name>Nienstedten 17 /Osdorf 42 vom 23.03.1993 (HmbGVBl. 1993, S.71)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Nienstedten 18 / Othmarschen 39 vom 20.06.2006 (HmbGVBl. 2006, S.342)">
+          <description>Nienstedten 18 / Othmarschen 39 vom 20.06.2006 (HmbGVBl. 2006, S.342)</description>
+          <name>Nienstedten 18 / Othmarschen 39 vom 20.06.2006 (HmbGVBl. 2006, S.342)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Nienstedten 19 vom 11.03.1997 (HmbGVBl. 1997, S.69)">
+          <description>Nienstedten 19 vom 11.03.1997 (HmbGVBl. 1997, S.69)</description>
+          <name>Nienstedten 19 vom 11.03.1997 (HmbGVBl. 1997, S.69)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Ohlsdorf 13 vom 23.05.2005 (HmbGVBl. 2005, S.215)">
+          <description>Ohlsdorf 13 vom 23.05.2005 (HmbGVBl. 2005, S.215)</description>
+          <name>Ohlsdorf 13 vom 23.05.2005 (HmbGVBl. 2005, S.215)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Ohlsdorf 26">
+          <description>Ohlsdorf 26</description>
+          <name>Ohlsdorf 26</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Osdorf 33  vom 27.02.2001 (HmbGVBl. 2001, S.35)">
+          <description>Osdorf 33  vom 27.02.2001 (HmbGVBl. 2001, S.35)</description>
+          <name>Osdorf 33  vom 27.02.2001 (HmbGVBl. 2001, S.35)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Osdorf 40 vom 17.11.1988 (HmbGVBl. 1988, S.225)">
+          <description>Osdorf 40 vom 17.11.1988 (HmbGVBl. 1988, S.225)</description>
+          <name>Osdorf 40 vom 17.11.1988 (HmbGVBl. 1988, S.225)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Othmarschen 10 vom 06.02.1990 (HmbGVBl. 1990, S.15)">
+          <description>Othmarschen 10 vom 06.02.1990 (HmbGVBl. 1990, S.15)</description>
+          <name>Othmarschen 10 vom 06.02.1990 (HmbGVBl. 1990, S.15)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Othmarschen 19 / Ottensen 51 vom 09.05.2006 (HmbGVBl. 2006, S.212)">
+          <description>Othmarschen 19 / Ottensen 51 vom 09.05.2006 (HmbGVBl. 2006, S.212)</description>
+          <name>Othmarschen 19 / Ottensen 51 vom 09.05.2006 (HmbGVBl. 2006, S.212)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Othmarschen 28 vom 04.07.1989 (HmbGVBl. 1989, S.125)">
+          <description>Othmarschen 28 vom 04.07.1989 (HmbGVBl. 1989, S.125)</description>
+          <name>Othmarschen 28 vom 04.07.1989 (HmbGVBl. 1989, S.125)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Othmarschen 29 vom 02.07.1998 (HmbGVBl. 1998, S.159)">
+          <description>Othmarschen 29 vom 02.07.1998 (HmbGVBl. 1998, S.159)</description>
+          <name>Othmarschen 29 vom 02.07.1998 (HmbGVBl. 1998, S.159)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Othmarschen 30 vom 05.07.2006 (HmbGVBl. 2006, S.395)">
+          <description>Othmarschen 30 vom 05.07.2006 (HmbGVBl. 2006, S.395)</description>
+          <name>Othmarschen 30 vom 05.07.2006 (HmbGVBl. 2006, S.395)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Ottensen 2 / Othmarschen31 / Altona - Altstadt 48  vom 26.09.2000 (HmbGVBl. 2000, S.293)">
+          <description>Ottensen 2 / Othmarschen31 / Altona - Altstadt 48  vom 26.09.2000 (HmbGVBl. 2000, S.293)</description>
+          <name>Ottensen 2 / Othmarschen31 / Altona - Altstadt 48  vom 26.09.2000 (HmbGVBl. 2000, S.293)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Ottensen 35 vom 20.02.1995 (HmbGVBl. 1995, S.27)">
+          <description>Ottensen 35 vom 20.02.1995 (HmbGVBl. 1995, S.27)</description>
+          <name>Ottensen 35 vom 20.02.1995 (HmbGVBl. 1995, S.27)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Ottensen 45 vom 20.07.1994 (HmbGVBl. 1994, S.210)">
+          <description>Ottensen 45 vom 20.07.1994 (HmbGVBl. 1994, S.210)</description>
+          <name>Ottensen 45 vom 20.07.1994 (HmbGVBl. 1994, S.210)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Ottensen 47 vom 08.03.1994 (HmbGVBl. 1994, S.64)">
+          <description>Ottensen 47 vom 08.03.1994 (HmbGVBl. 1994, S.64)</description>
+          <name>Ottensen 47 vom 08.03.1994 (HmbGVBl. 1994, S.64)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Ottensen 48 vom 10.04.2001 (HmbGVBl. 2001, S.49)">
+          <description>Ottensen 48 vom 10.04.2001 (HmbGVBl. 2001, S.49)</description>
+          <name>Ottensen 48 vom 10.04.2001 (HmbGVBl. 2001, S.49)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Ottensen 49 vom 16.09.1997 (HmbGVBl. 1997, S.477)">
+          <description>Ottensen 49 vom 16.09.1997 (HmbGVBl. 1997, S.477)</description>
+          <name>Ottensen 49 vom 16.09.1997 (HmbGVBl. 1997, S.477)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Poppenbüttel 32 vom 02.05.1991 (HmbGVBl. 1991, S.205)">
+          <description>Poppenbüttel 32 vom 02.05.1991 (HmbGVBl. 1991, S.205)</description>
+          <name>Poppenbüttel 32 vom 02.05.1991 (HmbGVBl. 1991, S.205)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Poppenbüttel 35 / Lemsahl-Mellingstedt 13 vom 18.06.1999  (HmbGVBl. 1999, S.123)">
+          <description>Poppenbüttel 35 / Lemsahl-Mellingstedt 13 vom 18.06.1999  (HmbGVBl. 1999, S.123)</description>
+          <name>Poppenbüttel 35 / Lemsahl-Mellingstedt 13 vom 18.06.1999  (HmbGVBl. 1999, S.123)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Poppenbüttel 36 vom 01.09.2004 (HmbGVBl. 2004, S.357)">
+          <description>Poppenbüttel 36 vom 01.09.2004 (HmbGVBl. 2004, S.357)</description>
+          <name>Poppenbüttel 36 vom 01.09.2004 (HmbGVBl. 2004, S.357)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Rahlstedt 100 vom 02.07.2004 (HmbGVBl. 2004, S.323)">
+          <description>Rahlstedt 100 vom 02.07.2004 (HmbGVBl. 2004, S.323)</description>
+          <name>Rahlstedt 100 vom 02.07.2004 (HmbGVBl. 2004, S.323)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Rahlstedt 115 vom 24.01.2006 (HmbGVBl. 2006, S.13)">
+          <description>Rahlstedt 115 vom 24.01.2006 (HmbGVBl. 2006, S.13)</description>
+          <name>Rahlstedt 115 vom 24.01.2006 (HmbGVBl. 2006, S.13)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Rahlstedt 86 vom 09.05.2006 (HmbGVBl. 2006, S.214)">
+          <description>Rahlstedt 86 vom 09.05.2006 (HmbGVBl. 2006, S.214)</description>
+          <name>Rahlstedt 86 vom 09.05.2006 (HmbGVBl. 2006, S.214)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Rissen 39 vom 12.06.2002 (HmbGVBl. 2002, S.113)">
+          <description>Rissen 39 vom 12.06.2002 (HmbGVBl. 2002, S.113)</description>
+          <name>Rissen 39 vom 12.06.2002 (HmbGVBl. 2002, S.113)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Rissen 40 vom 06.12.1988 (HmbGVBl. 1988, S.240)">
+          <description>Rissen 40 vom 06.12.1988 (HmbGVBl. 1988, S.240)</description>
+          <name>Rissen 40 vom 06.12.1988 (HmbGVBl. 1988, S.240)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Rissen 43 vom 18.12.2002 (HmbGVBl. 2002, S.1)">
+          <description>Rissen 43 vom 18.12.2002 (HmbGVBl. 2002, S.1)</description>
+          <name>Rissen 43 vom 18.12.2002 (HmbGVBl. 2002, S.1)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Rotherbaum 29 vom 15.12.2005 (HmbGVBl. 2005, S.559)">
+          <description>Rotherbaum 29 vom 15.12.2005 (HmbGVBl. 2005, S.559)</description>
+          <name>Rotherbaum 29 vom 15.12.2005 (HmbGVBl. 2005, S.559)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Schnelsen 12  vom 29.02.2000 (HmbGVBl. 2000, S.61)">
+          <description>Schnelsen 12  vom 29.02.2000 (HmbGVBl. 2000, S.61)</description>
+          <name>Schnelsen 12  vom 29.02.2000 (HmbGVBl. 2000, S.61)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Schnelsen 14 vom 17.04.1991 (HmbGVBl. 1991, S.120)">
+          <description>Schnelsen 14 vom 17.04.1991 (HmbGVBl. 1991, S.120)</description>
+          <name>Schnelsen 14 vom 17.04.1991 (HmbGVBl. 1991, S.120)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Schnelsen 33 vom 22.06.1994 (HmbGVBl. 1994, S.185)">
+          <description>Schnelsen 33 vom 22.06.1994 (HmbGVBl. 1994, S.185)</description>
+          <name>Schnelsen 33 vom 22.06.1994 (HmbGVBl. 1994, S.185)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Schnelsen 75 vom 16.12.1991 (HmbGVBl. 1991, S.460)">
+          <description>Schnelsen 75 vom 16.12.1991 (HmbGVBl. 1991, S.460)</description>
+          <name>Schnelsen 75 vom 16.12.1991 (HmbGVBl. 1991, S.460)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Schnelsen 76 vom 04.02.1991 (HmbGVBl. 1991, S39)">
+          <description>Schnelsen 76 vom 04.02.1991 (HmbGVBl. 1991, S39)</description>
+          <name>Schnelsen 76 vom 04.02.1991 (HmbGVBl. 1991, S39)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Schnelsen 8 vom 27.02.1996 (HmbGVBl. 1996, S.29)">
+          <description>Schnelsen 8 vom 27.02.1996 (HmbGVBl. 1996, S.29)</description>
+          <name>Schnelsen 8 vom 27.02.1996 (HmbGVBl. 1996, S.29)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St Pauli 34 vom15.02.1993 (HmbGVBl. 1993, S.47)">
+          <description>St Pauli 34 vom15.02.1993 (HmbGVBl. 1993, S.47)</description>
+          <name>St Pauli 34 vom15.02.1993 (HmbGVBl. 1993, S.47)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St Pauli 39 / Neustadt 38 vom 07.12.1994 (HmbGVBl. 1994, S357)">
+          <description>St Pauli 39 / Neustadt 38 vom 07.12.1994 (HmbGVBl. 1994, S357)</description>
+          <name>St Pauli 39 / Neustadt 38 vom 07.12.1994 (HmbGVBl. 1994, S357)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St. Georg 26 vom 27.06.84">
+          <description>St. Georg 26 vom 27.06.84</description>
+          <name>St. Georg 26 vom 27.06.84</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St. Georg 35 vom 02.09.2004 (HmbGVBl. 2004, S.359)">
+          <description>St. Georg 35 vom 02.09.2004 (HmbGVBl. 2004, S.359)</description>
+          <name>St. Georg 35 vom 02.09.2004 (HmbGVBl. 2004, S.359)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St. Georg 40 vom 06.04.2005 (HmbGVBl. 2005, S.130)">
+          <description>St. Georg 40 vom 06.04.2005 (HmbGVBl. 2005, S.130)</description>
+          <name>St. Georg 40 vom 06.04.2005 (HmbGVBl. 2005, S.130)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St. Pauli 24">
+          <description>St. Pauli 24</description>
+          <name>St. Pauli 24</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St. Pauli 29  vom 02.11.2000 (HmbGVBl. 2000, S.335)">
+          <description>St. Pauli 29  vom 02.11.2000 (HmbGVBl. 2000, S.335)</description>
+          <name>St. Pauli 29  vom 02.11.2000 (HmbGVBl. 2000, S.335)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St. Pauli 33 vom 19.08.1997 (HmbGVBl. 1997, S.412)">
+          <description>St. Pauli 33 vom 19.08.1997 (HmbGVBl. 1997, S.412)</description>
+          <name>St. Pauli 33 vom 19.08.1997 (HmbGVBl. 1997, S.412)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St. Pauli 37 vom 15.12..1998 (HmbGVBl. 1998, S.328)">
+          <description>St. Pauli 37 vom 15.12..1998 (HmbGVBl. 1998, S.328)</description>
+          <name>St. Pauli 37 vom 15.12..1998 (HmbGVBl. 1998, S.328)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St. Pauli 38 vom 15.12..1998 (HmbGVBl. 1998, S.330)">
+          <description>St. Pauli 38 vom 15.12..1998 (HmbGVBl. 1998, S.330)</description>
+          <name>St. Pauli 38 vom 15.12..1998 (HmbGVBl. 1998, S.330)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St. Pauli 42 - Schilleroper vom 23.06.1986 (HmbGVBl. 1986, S.145)">
+          <description>St. Pauli 42 - Schilleroper vom 23.06.1986 (HmbGVBl. 1986, S.145)</description>
+          <name>St. Pauli 42 - Schilleroper vom 23.06.1986 (HmbGVBl. 1986, S.145)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_St.Pauli 40 / Rotherbaum 34 vom 28.03.2006 (HmbGVBl. 2006, S.141)">
+          <description>St.Pauli 40 / Rotherbaum 34 vom 28.03.2006 (HmbGVBl. 2006, S.141)</description>
+          <name>St.Pauli 40 / Rotherbaum 34 vom 28.03.2006 (HmbGVBl. 2006, S.141)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Stellingen 51 / Lokstedt 51 vom 07.07.2006 (HmbGVBl. 2006, S.422)">
+          <description>Stellingen 51 / Lokstedt 51 vom 07.07.2006 (HmbGVBl. 2006, S.422)</description>
+          <name>Stellingen 51 / Lokstedt 51 vom 07.07.2006 (HmbGVBl. 2006, S.422)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Uhlenhorst 10 vom 08.03.1994 (HmbGVBl. 1994, S.67)">
+          <description>Uhlenhorst 10 vom 08.03.1994 (HmbGVBl. 1994, S.67)</description>
+          <name>Uhlenhorst 10 vom 08.03.1994 (HmbGVBl. 1994, S.67)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Uhlenhorst 7 vom 05.02.2004 (HmbGVBl. 2004, S.59)">
+          <description>Uhlenhorst 7 vom 05.02.2004 (HmbGVBl. 2004, S.59)</description>
+          <name>Uhlenhorst 7 vom 05.02.2004 (HmbGVBl. 2004, S.59)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_VE Rahlstedt 125 (§172 Abs.1 s1 Nr.1 BauGB) vom 05.05.2009 GVBL S. 155">
+          <description>VE Rahlstedt 125 (§172 Abs.1 s1 Nr.1 BauGB) vom 05.05.2009 GVBL S. 155</description>
+          <name>VE Rahlstedt 125 (§172 Abs.1 s1 Nr.1 BauGB) vom 05.05.2009 GVBL S. 155</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Volksdorf 20 / Bergstedt 21 vom 05.01.1999 (HmbGVBl. 1999, S.22)">
+          <description>Volksdorf 20 / Bergstedt 21 vom 05.01.1999 (HmbGVBl. 1999, S.22)</description>
+          <name>Volksdorf 20 / Bergstedt 21 vom 05.01.1999 (HmbGVBl. 1999, S.22)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Volksdorf 40 vom 07.06.2005 (HmbGVBl. 2005, S.229)">
+          <description>Volksdorf 40 vom 07.06.2005 (HmbGVBl. 2005, S.229)</description>
+          <name>Volksdorf 40 vom 07.06.2005 (HmbGVBl. 2005, S.229)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Volksdorf 41 vom 07.07.2004 (HmbGVBl. 2004, S.326)">
+          <description>Volksdorf 41 vom 07.07.2004 (HmbGVBl. 2004, S.326)</description>
+          <name>Volksdorf 41 vom 07.07.2004 (HmbGVBl. 2004, S.326)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Volksdorf 42 vom 05.09.2005 (HmbGVBl. 2005, S.390)">
+          <description>Volksdorf 42 vom 05.09.2005 (HmbGVBl. 2005, S.390)</description>
+          <name>Volksdorf 42 vom 05.09.2005 (HmbGVBl. 2005, S.390)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Volksdorf 43 vom 05.09.2005 (HmbGVBl. 2005, S.388)">
+          <description>Volksdorf 43 vom 05.09.2005 (HmbGVBl. 2005, S.388)</description>
+          <name>Volksdorf 43 vom 05.09.2005 (HmbGVBl. 2005, S.388)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Wellingsbüttel 15 vom 01.02.2006 (HmbGVBl. 2006, S.51)">
+          <description>Wellingsbüttel 15 vom 01.02.2006 (HmbGVBl. 2006, S.51)</description>
+          <name>Wellingsbüttel 15 vom 01.02.2006 (HmbGVBl. 2006, S.51)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Wilhelmsburg 72 v. 17.01.1994 (HmbGVBl. 1994, S. 11)">
+          <description>Wilhelmsburg 72 v. 17.01.1994 (HmbGVBl. 1994, S. 11)</description>
+          <name>Wilhelmsburg 72 v. 17.01.1994 (HmbGVBl. 1994, S. 11)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Winterhude 10">
+          <description>Winterhude 10</description>
+          <name>Winterhude 10</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Winterhude 18 - Körner Straße - vom 212.06.1985 (HmbGVBl. 1985, S.139)">
+          <description>Winterhude 18 - Körner Straße - vom 212.06.1985 (HmbGVBl. 1985, S.139)</description>
+          <name>Winterhude 18 - Körner Straße - vom 212.06.1985 (HmbGVBl. 1985, S.139)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Winterhude 31 vom 21.09.2005 (HmbGVBl. 2005, S.411)">
+          <description>Winterhude 31 vom 21.09.2005 (HmbGVBl. 2005, S.411)</description>
+          <name>Winterhude 31 vom 21.09.2005 (HmbGVBl. 2005, S.411)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Winterhude 37 Alsterdorf 17 vom 03.08.2004 (HmbGVBl. 2004, S.344)">
+          <description>Winterhude 37 Alsterdorf 17 vom 03.08.2004 (HmbGVBl. 2004, S.344)</description>
+          <name>Winterhude 37 Alsterdorf 17 vom 03.08.2004 (HmbGVBl. 2004, S.344)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Winterhude 9 vom 19.12.1995 (HmbGVBl. 1995, S.431)">
+          <description>Winterhude 9 vom 19.12.1995 (HmbGVBl. 1995, S.431)</description>
+          <name>Winterhude 9 vom 19.12.1995 (HmbGVBl. 1995, S.431)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Wohldorf-Ohlstedt 13 vom 19.02.2008 (HmbGVBl. 2008, S.103)">
+          <description>Wohldorf-Ohlstedt 13 vom 19.02.2008 (HmbGVBl. 2008, S.103)</description>
+          <name>Wohldorf-Ohlstedt 13 vom 19.02.2008 (HmbGVBl. 2008, S.103)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_Wohldorf-Ohlstedt 17 vom 17.05.2006 (HmbGVBl. 2006, S.240)">
+          <description>Wohldorf-Ohlstedt 17 vom 17.05.2006 (HmbGVBl. 2006, S.240)</description>
+          <name>Wohldorf-Ohlstedt 17 vom 17.05.2006 (HmbGVBl. 2006, S.240)</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_keine gesetzliche Grundlage">
+          <description>keine gesetzliche Grundlage</description>
+          <name>keine gesetzliche Grundlage</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_§ 172 Abs.1 Satz 1 Nr.1 BauGB vom 27.05.2010 GVBL S. 409">
+          <description>§ 172 Abs.1 Satz 1 Nr.1 BauGB vom 27.05.2010 GVBL S. 409</description>
+          <name>§ 172 Abs.1 Satz 1 Nr.1 BauGB vom 27.05.2010 GVBL S. 409</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_§ 172 Abs.1 Satz 1 Nr.2 BauGB vom 27.05.2010 GVBL S. 409">
+          <description>§ 172 Abs.1 Satz 1 Nr.2 BauGB vom 27.05.2010 GVBL S. 409</description>
+          <name>§ 172 Abs.1 Satz 1 Nr.2 BauGB vom 27.05.2010 GVBL S. 409</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_§ 172 BauGB vom 27.05.2010 GVBL S. 409">
+          <description>§ 172 BauGB vom 27.05.2010 GVBL S. 409</description>
+          <name>§ 172 BauGB vom 27.05.2010 GVBL S. 409</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_§ 5 FluLärmG">
+          <description>§ 5 FluLärmG</description>
+          <name>§ 5 FluLärmG</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_§ 81 HBauO">
+          <description>§ 81 HBauO</description>
+          <name>§ 81 HBauO</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_GesetzlicheGrundlage_§§ 12-17 LuftVG">
+          <description>§§ 12-17 LuftVG</description>
+          <name>§§ 12-17 LuftVG</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:XP_MimeTypes">
+      <name>xplan:XP_MimeTypes</name>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_application/msexcel">
+          <description>application/msexcel</description>
+          <name>application/msexcel</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_application/msword">
+          <description>application/msword</description>
+          <name>application/msword</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_application/odt">
+          <description>application/odt</description>
+          <name>application/odt</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_application/pdf">
+          <description />
+          <name>application/pdf</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_application/vnd.ogc.gml">
+          <description>application/vnd.ogc.gml</description>
+          <name>application/vnd.ogc.gml</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_application/vnd.ogc.sld+xml">
+          <description>application/vnd.ogc.sld+xml</description>
+          <name>application/vnd.ogc.sld+xml</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_application/vnd.ogc.wms_xml">
+          <description>application/vnd.ogc.wms_xml</description>
+          <name>application/vnd.ogc.wms_xml</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_application/xml">
+          <description>application/xml</description>
+          <name>application/xml</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_application/zip">
+          <description>application/zip</description>
+          <name>application/zip</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_image/ecw">
+          <description>image/ecw</description>
+          <name>image/ecw</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_image/jpg">
+          <description>image/jpg</description>
+          <name>image/jpg</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_image/png">
+          <description>image/png</description>
+          <name>image/png</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_image/svg+xml">
+          <description>image/svg+xml</description>
+          <name>image/svg+xml</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_image/tiff">
+          <description>image/tiff</description>
+          <name>image/tiff</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_text/html">
+          <description>text/html</description>
+          <name>text/html</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_MimeTypes_text/plain">
+          <description>text/plain</description>
+          <name>text/plain</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplan:XP_StylesheetListe">
+      <name>xplan:XP_StylesheetListe</name>
+      <definitionMember>
+        <Definition gml:id="xplan:XP_StylesheetListe_3020">
+          <description>Niederschlagswasserabsetzbecken</description>
+          <name>3020</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplanNSM:RP_NSM_SonstLuftverkehrTypen">
+      <name>xplanNSM:RP_NSM_SonstLuftverkehrTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplanNSM:RP_NSM_SonstSchienenverkehrTypen">
+      <name>xplanNSM:RP_NSM_SonstSchienenverkehrTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplanNSM:RP_NSM_SonstStrassenverkehrTypen">
+      <name>xplanNSM:RP_NSM_SonstStrassenverkehrTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="xplanNSM:RP_NSM_SonstWasserverkehrTypen">
+      <name>xplanNSM:RP_NSM_SonstWasserverkehrTypen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+</Dictionary  >

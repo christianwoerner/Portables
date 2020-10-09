@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigImportMpp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<group name="Text%1" active="true">1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30</group>
+	<group name="Number%1" active="true">1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20</group>
+	<group name="Flag%1" active="true">1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20</group>
+	<group name="Start%1" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Finish%1" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Duration%1" active="true" unit="min">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Date%1" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Cost%1" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="OutlineCode%1" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1BudgetCost" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1BudgetWork" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1Cost" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1DeliverableFinish" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1DeliverableStart" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1Duration" active="true" unit="min">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1DurationEstimated" active="false">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1DurationText" active="false">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1Finish" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1FinishText" active="false">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1FixedCost" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1FixedCostAccrual" active="false">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1Start" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1StartText" active="false">1;2;3;4;5;6;7;8;9;10</group>
+	<group name="Baseline%1Work" active="true">1;2;3;4;5;6;7;8;9;10</group>
+	<property name="Notes" active="true"/>
+	<property name="ResourceNames" active="true"/>
+	<property name="PercentComplete" active="true"/>
+	<property name="PercentWorkComplete" active="true"/>
+	<property name="PhysicalPercentComplete" active="true"/>
+	<property name="EarlyStart" active="true"/>
+	<property name="EarlyFinish" active="true"/>
+	<property name="Cost" active="true"/>
+	<property name="FixedCost" active="true"/>
+	<property name="Critical" active="true"/>
+	<property name="FreeSlack" active="true"/>
+	<property name="TotalSlack" active="true"/>
+	<property name="Milestone" active="true"/>	
+</ConfigImportMpp>

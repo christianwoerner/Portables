@@ -1,0 +1,88 @@
+html,body {
+  background-color: #FFF;
+  height: 100%;
+  width: 100%;
+  margin: 0%; padding: 0;
+  font-family: Verdana, Arial;
+  font-size: 1em;
+  overflow: hidden;
+  color: #000000;
+}
+ 
+a {
+  color: #ffff00;
+  text-decoration: none;
+}
+ 
+a:hover {
+  color: #ffff00;
+  text-decoration: underline;
+}
+ 
+#header {
+  font-family: Verdana, Arial;
+  font-size: 1em;
+  overflow: hidden;
+  color: #ffffff;
+}
+ 
+#map {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ 
+#content {
+  font-size: 1em;
+}
+ 
+#osm {
+  font-size: 0.7em;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+Der einzige Unterschied der beiden Dateien besteht nur darin:
+
+Code für den IE:
+
+[...]
+p   {
+margin-bottom: 20px;
+}
+
+#map {
+  height: 81%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+[...]
+
+Und für den Rest:
+
+[...]
+#map {
+  height: 81%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+[...]
+
+Es wird also nur das <p>-Attribut angegeben und die Höhe angepasst, mehr nicht.
+Navigationsmenü
+
+    Deutsch
+    Benutzerkonto anlegen
+    Anmelden
+
+    Seite
+    Diskussion
+
+    Lesen
+    Quelltext anzeigen
+    Versionsgeschichte
+

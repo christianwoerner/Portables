@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvdXML xmlns="http://buildingsmart-tech.org/mvd/XML/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://buildingsmart-tech.org/mvd/XML/1.2 https://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-2/mvdXML_V1.2.xsd" uuid="4b0de38e-1772-42bf-9931-9449e5b3965b" name="KIT/IAI mvdXML Editor" status="At least one instance of IfcSpace is required" author="Geiger, Andreas (IAI)">
+<Views>
+<ModelView uuid="77d67338-4758-475c-8063-da6358bdca8e" name="IFC4 import test" author="Geiger, Andreas (IAI)" applicableSchema="IFC4">
+<Definitions>
+<Definition>
+<Body><![CDATA[Test rules]]></Body>
+</Definition>
+</Definitions>
+<ExchangeRequirements>
+<ExchangeRequirement uuid="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" name="Building energy simulation requirements" applicability="import">
+<Definitions>
+<Definition>
+<Body><![CDATA[Check import]]></Body>
+</Definition>
+</Definitions>
+</ExchangeRequirement>
+</ExchangeRequirements>
+<Roots>
+<ConceptRoot uuid="28443da6-000b-40df-9c6f-62553300f55f" name="Test IfcSpace availability" applicableRootEntity="IfcSpace">
+<Applicability minOccurrence="1" applicableEntity="IfcSpace">
+<RuleMessage lang="en" state="failure">At least one room (IfcSpace) is required</RuleMessage>
+<RuleMessage lang="de" state="failure">Mindestens ein Raum (IfcSpace) muss vorhanden sein</RuleMessage>
+</Applicability>
+</ConceptRoot>
+</Roots>
+</ModelView>
+</Views>
+</mvdXML>

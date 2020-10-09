@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvdXML xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://buildingsmart-tech.org/mvd/XML/1.1 http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="886ef302-bfbf-49fc-a901-14ae1d4c3679" name="KIT/IAI mvdXML Editor" author="Geiger, Andreas (IAI)">
+  <Templates>
+    <ConceptTemplate uuid="39a4420d-ab6f-4dd1-b4ce-a4a85bd2bd13" name="BuildingElementConceptTemplate" applicableSchema="IFC4" applicableEntity="IfcBuildingElement">
+      <Definitions>
+        <Definition>
+          <Body lang="en"><![CDATA[Concept Template for each entity derived from IfcBuildingElement]]></Body>
+        </Definition>
+      </Definitions>
+      <Rules>
+        <AttributeRule RuleID="BuildingElementName" AttributeName="Name"/>
+        <AttributeRule RuleID="ProvidesBoundaries" AttributeName="ProvidesBoundaries">
+          <EntityRules>
+            <EntityRule RuleID="RelSpaceBoundary" EntityName="IfcRelSpaceBoundary">
+              <References>
+                <Template ref="02cff35c-619a-4cac-8be0-be186cf7f808"/>
+              </References>
+            </EntityRule>
+          </EntityRules>
+        </AttributeRule>
+      </Rules>
+    </ConceptTemplate>
+    <ConceptTemplate uuid="02cff35c-619a-4cac-8be0-be186cf7f808" name="RelSpaceBoundaryConceptTemplate" applicableSchema="IFC4" applicableEntity="IfcRelSpaceBoundary">
+      <Definitions>
+        <Definition>
+          <Body lang="en"><![CDATA[Concept Template for IfcRelSpaceBoundary]]></Body>
+        </Definition>
+      </Definitions>
+      <Rules>
+        <AttributeRule RuleID="RelationGlobalId" AttributeName="GlobalId"/>
+        <AttributeRule RuleID="RelationOwnerHistory" AttributeName="OwnerHistory"/>
+        <AttributeRule RuleID="RelationName" AttributeName="Name"/>
+        <AttributeRule RuleID="RelationDescription" AttributeName="Description"/>
+        <AttributeRule RuleID="RelatingSpace" AttributeName="RelatingSpace"/>
+        <AttributeRule RuleID="RelatedBuildingElement" AttributeName="RelatedBuildingElement"/>
+        <AttributeRule RuleID="ConnectionGeometry" AttributeName="ConnectionGeometry"/>
+        <AttributeRule RuleID="PhysicalOrVirtualBoundary" AttributeName="PhysicalOrVirtualBoundary"/>
+        <AttributeRule RuleID="InternalOrExternalBoundary" AttributeName="InternalOrExternalBoundary"/>
+        <AttributeRule RuleID="ParentBoundary" AttributeName="ParentBoundary"/>
+        <AttributeRule RuleID="CorrespondingBoundary" AttributeName="CorrespondingBoundary"/>
+      </Rules>
+    </ConceptTemplate>
+  </Templates>
+  <Views>
+    <ModelView uuid="77d67338-4758-475c-8063-da6358bdca8e" name="IFC4 import test" author="Geiger, Andreas (IAI)" applicableSchema="IFC4">
+      <Definitions>
+        <Definition>
+          <Body><![CDATA[Test rules]]></Body>
+        </Definition>
+      </Definitions>
+      <ExchangeRequirements>
+        <ExchangeRequirement uuid="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" name="Building energy simulation requirements" applicability="import">
+          <Definitions>
+            <Definition>
+              <Body><![CDATA[Check import]]></Body>
+            </Definition>
+          </Definitions>
+        </ExchangeRequirement>
+      </ExchangeRequirements>
+      <Roots>
+        <ConceptRoot uuid="da0a7038-4532-4805-ae30-4e14217c9726" name="Test for space boundaries" applicableRootEntity="IfcBuildingElement">
+          <Concepts>
+            <Concept uuid="8464e87a-8b0c-47f2-a3b4-ec8596d5baa9" name="Check space boundaries">
+              <Definitions>
+                <Definition>
+                  <Body><![CDATA[Existence of space boundary relations]]></Body>
+                </Definition>
+              </Definitions>
+              <Template ref="39a4420d-ab6f-4dd1-b4ce-a4a85bd2bd13"/>
+              <Requirements>
+                <Requirement applicability="import" exchangeRequirement="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" requirement="mandatory"/>
+              </Requirements>
+              <TemplateRules operator="and">
+                <TemplateRule Parameters="ProvidesBoundaries[Size]>=1"/>
+                <TemplateRule Parameters="RelationName[Exists]=TRUE">
+                    <RuleMessage lang="en-EN" state="failure">Message 1</RuleMessage>
+                    <RuleMessage lang="de-DE" state="failure">Message 2</RuleMessage>
+                  </TemplateRule>
+                  <TemplateRule Parameters="RelationName[Value]='1stLevel' or RelationName[Value]='2ndLevel'"/>
+                  </TemplateRules>
+                </Concept>
+              </Concepts>
+            </ConceptRoot>
+          </Roots>
+        </ModelView>
+      </Views>
+    </mvdXML>
+    

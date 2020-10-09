@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IfcExportConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mapping>
+		<map propKey="cpRevitCategory##xs:string" pattern="*pfosten* *mullion*" ifcType="IfcPile"/>
+		<map propKey="cpRevitCategory##xs:string" pattern="*fassade* *curtain*" ifcType="IfcCurtainWall"/>
+		<map propKey="cpRevitCategory##xs:string" pattern="*wände* *wand* *wall*" ifcType="IfcWall"/>
+		<map propKey="cpRevitCategory##xs:string" pattern="*stütz* *column*" ifcType="IfcColumn"/>
+		<map propKey="cpRevitCategory##xs:string" pattern="*decke* *floor*" ifcType="IfcSlab"/>
+		<map propKey="cpRevitCategory##xs:string" pattern="*dächer* *dach* *roof*" ifcType="IfcRoof"/>
+		<map propKey="cpRevitCategory##xs:string" pattern="*räume* *raum* *room*" ifcType="IfcSpace"/>
+		<map propKey="cpRevitCategory##xs:string" pattern="*tür* *door*" ifcType="IfcDoor"/>
+		<map propKey="cpRevitCategory##xs:string" pattern="*fenster* *window*" ifcType="IfcWindow"/>
+		<map propKey="cpRevitCategory##xs:string" pattern="*treppe* *stair*" ifcType="IfcStair"/>
+		<map propKey="cpRevitCategory##xs:string" pattern="*geländer* *railing*" ifcType="IfcRailing"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Space" ifcType="IfcSpace"/>	
+		<map propKey="cpiComponentType##xs:string" pattern="Surface" ifcType="IfcBuildingElementProxy"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Multi_Wall" ifcType="IfcWall"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Wall" ifcType="IfcWall"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Face_Formwork" ifcType="IfcWall"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Column" ifcType="IfcWall"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Slab" ifcType="IfcSlab"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Beam" ifcType="IfcBeam"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Foundation_Slab" ifcType="IfcFooting"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Foundation" ifcType="IfcFooting"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Default" ifcType="IfcBuildingElementProxy"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Chimney" ifcType="IfcChimney"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Lintel" ifcType="IfcBuildingElementProxy"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Shutter_Case" ifcType="IfcBuildingElementProxy"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Opening" ifcType="IfcOpeningElement"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Window" ifcType="IfcWindow"/>
+		<map propKey="cpiComponentType##xs:string" pattern="Door" ifcType="IfcDoor"/>
+	</mapping>
+</IfcExportConfig>

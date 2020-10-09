@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+        <link href="../css/cp.css" rel="stylesheet" type="text/css"/>
+        <script>
+            var _data = {};
+            function doOnLoad() {
+                setupData();
+                setupTable();             
+            }
+            function setupData() {
+                
+                var id = desiteThis.ID();
+                
+                _data["Name"]     = desiteThis.name();
+                _data["ID"]       = id;
+                _data["OZ"]       = desiteAPI.getPropertyValue( id, 'WBS', 'xs:string' );
+                
+                 var v = desiteAPI.getPropertyValue( id, 'LongText', 'xs:string' );
+                
+                if( v == undefined ) {
+                    v = "";
+                } else {
+                    v = v.replace( /<br\/>/g, '\n' );
+                    v = v.replace( /<br>/g, '\n' );
+                }
+
+                _data["Langtext"] = v;
+                
+                _data["Kurztext"] = desiteAPI.getPropertyValue( id, 'cpName', 'xs:string' );
+
+                _data["Menge"] = desiteAPI.getPropertyValue( id, 'Quantity', 'xs:double' );
+                if( _data["Menge"] == undefined ) _data["Menge"] = 0.0;
+
+                _data["ME"] = desiteAPI.getPropertyValue( id, 'Unit', 'xs:string' );
+                
+                _data["EP"] = desiteAPI.getPropertyValue( id, 'UnitPrice', 'xs:double' );
+                if( _data["EP"] == undefined ) _data["EP"] = 0.0;
+
+                _data["GP"] = desiteAPI.getPropertyValue( id, 'TotalPrice', 'xs:double' );
+                if( _data["GP"] == undefined ) _data["GP"] = 0.0;
+                
+            }   
+            function changeProp( propName, val ) {
+                var id = desiteThis.ID();
+                // var val = txtLong.value;                
+                desiteAPI.setPropertyValue( id, propName, 'xs:string', val );                
+            }
+            function setupTable() {
+
+                $("#tblData tr").remove();
+
+                var tblStr = '';                        
+
+                tblStr += '<tr bgcolor="#f3f3f3">';
+                tblStr += ' <td><b>OZ</b></td>';
+                tblStr += ' <td></td>';
+                tblStr += ' <td><b>Menge</b></td>';
+                tblStr += ' <td><b>ME</b></td>';
+                tblStr += ' <td><b>EP in EUR</b></td>';
+                tblStr += ' <td><b>GP in EUR</b></td>';
+                tblStr += '</tr>';
+
+                tblStr += '<tr>';
+                tblStr += ' <td><b>' + _data.OZ  + '</b></td>';
+                tblStr += ' <td><b>' + _data.Kurztext + '</b></td>';
+                tblStr += ' <td align="right"><b>' + desiteAPI.format(_data.Menge) + '</b></td>';
+                tblStr += ' <td><b>' + _data.ME + '</b></td>';
+                tblStr += ' <td align="right"><b>' + desiteAPI.format(_data.EP) + '</b></td>';
+                tblStr += ' <td align="right"><b>' + desiteAPI.format(_data.GP) + '</b></td>';
+                tblStr += '</tr>';
+
+                tblStr += '<tr>';
+                tblStr += ' <td/>';
+                tblStr += ' <td colspan="5">';
+                tblStr += '<textarea id="txtLong" onkeyup="changeProp(\'LongText\',this.value)" width="100%" rows="25" >' + _data.Langtext + '</textarea>';
+                tblStr += '</td>';                
+                tblStr += '</tr>';
+
+                $("#tblData").append(tblStr);
+
+            }
+        </script>
+    </head>
+    <body onload="doOnLoad()">
+        <table id="tblData" width="100%" cellspacing="3" cellpadding="4">            
+        </table>
+    </body>
+</html>

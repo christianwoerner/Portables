@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<postprocess xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <merge replaceContainer="1" keepCommonProps="1" skipClosed="1">
+    <rulegroup name="Wände">
+      <rule pname="cpRevitCategory" pdatatype="xs:string" pattern="*wand* *wänd* *wall*" />
+    </rulegroup>
+    <rulegroup name="Stützen">
+      <rule pname="cpRevitCategory" pdatatype="xs:string" pattern="*stütz* *column*" />
+    </rulegroup>
+    <rulegroup name="Decken">
+      <rule pname="cpRevitCategory" pdatatype="xs:string" pattern="*decke* *floor*" />
+    </rulegroup>
+    <rulegroup name="Räume">
+      <rule pname="cpRevitCategory" pdatatype="xs:string" pattern="raum räum* room*" />
+    </rulegroup>
+    <rulegroup name="Dächer">
+      <rule pname="cpRevitCategory" pdatatype="xs:string" pattern="*dach *dächer* *roof*" />
+    </rulegroup>	
+  </merge>
+  <merge replaceContainer="1" keepCommonProps="1" skipClosed="1">
+    <rulegroup name="Alternative 'Familienname'">
+      <rule pname="Familienname" pdatatype="xs:string" pattern="*wand* *stütz* *decke* *dach* *dächer" />
+    </rulegroup>
+    <rulegroup name="Alternative 'Familienname' 2">
+      <rule pname="Sonstige:Familienname" pdatatype="xs:string" pattern="*wand* *stütz* *decke* *dach* *dächer" />
+    </rulegroup>
+    <rulegroup name="Alternative 'Family Name'">
+      <rule pname="Family Name" pdatatype="xs:string" pattern="*wall* *column* *floor* *roof*" />
+    </rulegroup>
+    <rulegroup name="Alternative 'Family Name' 2">
+      <rule pname="Other:Family Name" pdatatype="xs:string" pattern="*wall* *column* *floor* *roof*" />
+    </rulegroup>
+  </merge>
+</postprocess>

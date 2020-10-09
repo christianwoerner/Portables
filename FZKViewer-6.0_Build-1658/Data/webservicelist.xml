@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceList>
+	<WebService id="1" guid="dbebac9a-5ee1-4409-85f2-36a171f6f062">
+		<Title>WFS BB 3D-Gebäude LOD 2</Title>
+		<Version>2.0.0</Version>
+		<Type>WFS</Type>
+		<Server override="1">https://isk.geobasis-bb.de/ows/gebaeudelod2_wfs</Server>
+		<Username>virtualcity</Username>
+		<Password Key="S-1-5-21-1202744845-3101423955-345487624-142730">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUkHm5i8QUkO4fuJFJVdWpQAAAAACAAAAAAADZgAAwAAAABAAAAB8HL5XSF6YRm9PAKsAaqEuAAAAAASAAACgAAAAEAAAAJ0ZxsH1/VasRvdZILSUlKkgAAAABgvN7D7RNYLxhC2t3flEyWBlPzL8FR0LyflYN2syk4kUAAAA6TLUeEbP4kZXQPGFHSmqxfZft8s=</Password>
+		<Password Key="S-1-5-21-1202744845-3101423955-345487624-65155"></Password>
+		<ProxyPort>8000</ProxyPort>
+		<ProxyUsername></ProxyUsername>
+		<ProxyPassword Key="S-1-5-21-1202744845-3101423955-345487624-142730"></ProxyPassword>
+		<ProxyPassword Key="S-1-5-21-1202744845-3101423955-345487624-65155"></ProxyPassword>
+		<ProxyServer activate="0">proxy.fzk.de</ProxyServer>
+		<TileMapping activate="1"></TileMapping>
+		<Resolution width="512" height="512" dpi="96"></Resolution>
+		<ScaleHint min="2.80334e-312" max="0" value="1.19644e-311"></ScaleHint>
+		<Compression activate="1"></Compression>
+	</WebService>
+	<WebService id="2" guid="3a776873-88e1-4938-a660-1aa2c4c35d23">
+		<Title>WMS BB-BE DOP20c</Title>
+		<Version>1.3.0</Version>
+		<Type>WMS</Type>
+		<Server override="0">https://isk.geobasis-bb.de/ows/dop20c_wms?</Server>
+		<Username></Username>
+		<Password Key="S-1-5-21-1202744845-3101423955-345487624-65155"></Password>
+		<ProxyPort>8000</ProxyPort>
+		<ProxyUsername></ProxyUsername>
+		<ProxyPassword Key="S-1-5-21-1202744845-3101423955-345487624-65155"></ProxyPassword>
+		<ProxyServer activate="0">proxy.fzk.de</ProxyServer>
+		<TileMapping activate="1"></TileMapping>
+		<Resolution width="512" height="512" dpi="96"></Resolution>
+		<ScaleHint min="1.88493e-309" max="6.95286e-310" value="1.29621e-313"></ScaleHint>
+		<Compression activate="1"></Compression>
+	</WebService>
+	<WebService id="3" guid="a331a0f4-903c-4873-863d-071fc50e7532">
+		<Title>OGC WMTS, Version: 1.0.0</Title>
+		<Version>1.0</Version>
+		<Type>WMTS</Type>
+		<Server override="0">https://isk.geobasis-bb.de/mapproxy/dop20c_wmts/service?</Server>
+		<Username></Username>
+		<Password Key="S-1-5-21-1202744845-3101423955-345487624-65155"></Password>
+		<ProxyPort>8000</ProxyPort>
+		<ProxyUsername></ProxyUsername>
+		<ProxyPassword Key="S-1-5-21-1202744845-3101423955-345487624-65155"></ProxyPassword>
+		<ProxyServer activate="0">proxy.fzk.de</ProxyServer>
+		<TileMapping activate="1"></TileMapping>
+		<Resolution width="512" height="512" dpi="96"></Resolution>
+		<ScaleHint min="1.88493e-309" max="6.95286e-310" value="1.29621e-313"></ScaleHint>
+		<Compression activate="1"></Compression>
+	</WebService>
+	<WebService id="4" guid="e593a3e9-7568-46b6-b138-b8043799b0dc">
+		<Title>WFS BB ALKIS NAS-konform</Title>
+		<Version>2.0.0</Version>
+		<Type>WFS</Type>
+		<Server override="0">https://isk.geobasis-bb.de/ows/alkis_nas_wfs?</Server>
+		<Username></Username>
+		<Password Key="S-1-5-21-1202744845-3101423955-345487624-65155"></Password>
+		<ProxyPort>8000</ProxyPort>
+		<ProxyUsername></ProxyUsername>
+		<ProxyPassword Key="S-1-5-21-1202744845-3101423955-345487624-65155"></ProxyPassword>
+		<ProxyServer activate="0">proxy.fzk.de</ProxyServer>
+		<TileMapping activate="1"></TileMapping>
+		<Resolution width="512" height="512" dpi="96"></Resolution>
+		<ScaleHint min="1.88493e-309" max="6.95286e-310" value="1.29621e-313"></ScaleHint>
+		<Compression activate="1"></Compression>
+	</WebService>
+	<WebService id="5" guid="93e80aec-910d-463f-8e3b-3e7cd4934bf9">
+		<Title>INSPIRE-WFS BB Flurstücke/Grundstücke ALKIS</Title>
+		<Version>2.0.0</Version>
+		<Type>WFS</Type>
+		<Server override="0">https://inspire.brandenburg.de/services/cp_alkis_wfs?</Server>
+		<Username></Username>
+		<Password Key="S-1-5-21-1202744845-3101423955-345487624-65155"></Password>
+		<ProxyPort>8000</ProxyPort>
+		<ProxyUsername></ProxyUsername>
+		<ProxyPassword Key="S-1-5-21-1202744845-3101423955-345487624-65155"></ProxyPassword>
+		<ProxyServer activate="0">proxy.fzk.de</ProxyServer>
+		<TileMapping activate="255"></TileMapping>
+		<Resolution width="512" height="512" dpi="96"></Resolution>
+		<ScaleHint min="6.9532e-310" max="1.48964e-317" value="4.94066e-324"></ScaleHint>
+		<Compression activate="1"></Compression>
+	</WebService>
+</WebServiceList>

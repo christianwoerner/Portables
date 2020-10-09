@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.xplanung.de/4/0/ADE_FHH" 
+           xmlns:xplanFHH="http://www.xplanung.de/4/0/ADE_FHH" 
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:xplan="http://www.xplanung.de/xplangml/4/0"
+           targetNamespace="http://www.xplanung.de/4/0/ADE_FHH"
+            version="4.0 ADE FHH">
+    <xs:import namespace="http://www.xplanung.de/xplangml/4/0" schemaLocation="XPlanung-Operationen.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml\3.2.1\gml.xsd"/>
+    
+    <!-- Erweiterung BP_Gruenflaeche ========================================================================== -->
+    <xsd:element name="zweckbestimmung_FHH" type="BP_ZweckbestimmungGruenflaeche_FHH" substitutionGroup="xplan:_GenericApplicationPropertyOfBP_GruenFlaeche"/>
+    <xsd:simpleType name="BP_ZweckbestimmungGruenflaeche_FHH">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="1000"/>
+            <!-- Aussengebiet -->
+        </xsd:restriction>
+    </xsd:simpleType> 
+
+    <!-- Erweiterung BP_Baugebiet, BP_BaugebietsTeilFlaeche =========================================================== -->
+    <xsd:element name="besondereArtDerBaulNutzung_FHH" type="BP_BesondereArtDerBaulNutzung_FHH" substitutionGroup="xplan:_GenericApplicationPropertyOfBP_BaugebietsTeilFlaeche" />
+    <xsd:simpleType name="BP_BesondereArtDerBaulNutzung_FHH">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="1000"/>
+            <!-- Kleinsiedlungsgebiet -->
+            <xsd:enumeration value="1100"/>
+            <!-- Wohngebiet -->
+            <xsd:enumeration value="1200"/>
+            <!-- Wohngebiet mit Besonderer Regelung -->
+            <xsd:enumeration value="1300"/>
+            <!-- Mischgebiet -->
+            <xsd:enumeration value="1400"/>
+            <!-- Geschäftsgebiet -->
+            <xsd:enumeration value="1500"/>
+            <!-- Geschäftsgebiet mit Besonderer Regelung -->
+            <xsd:enumeration value="1600"/>
+            <!-- Industriegebiet -->
+            <xsd:enumeration value="1700"/>
+            <!-- Industriegebiet mit Besonderer Regelung -->
+        </xsd:restriction>
+    </xsd:simpleType> 
+    
+    <!-- Neue Klasse xplanFHH:BP_Aussengebiet_FHH =====================================================================-->
+    <xsd:element name="BP_Aussengebiet_FHH" type="BP_Aussengebiet_FHHType" substitutionGroup="xplan:BP_Flaechenobjekt"/>
+    <xsd:complexType name="BP_Aussengebiet_FHHType">
+        <xsd:complexContent>
+            <xsd:extension base="xplan:BP_FlaechenobjektType">
+                <xsd:sequence>
+                    <xsd:element  name="nutzung" type="BP_AussengebietFHH_Nutzungen" minOccurs="0" />
+                </xsd:sequence>
+            </xsd:extension>
+       </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="nutzung" type="BP_AussengebietFHH_Nutzungen" substitutionGroup="xplan:_GenericApplicationPropertyOfBP_Flaechenobjekt"/>
+    
+    <xsd:simpleType name="BP_AussengebietFHH_Nutzungen">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="1000"/>
+            <!--  Sportplatz -->
+            <xsd:enumeration value="1100"/>
+            <!--  Nicht öffentliche Grünfläche -->
+            <xsd:enumeration value="1200"/>
+            <!--  Kinderspielplatz -->
+            <xsd:enumeration value="1300"/>
+            <!--  Sportplatz -->
+            <xsd:enumeration value="1400"/>
+            <!--  Kleingaerten -->
+            <xsd:enumeration value="1500"/>
+            <!--  Erwerbsgartenbau, Glashäuser -->
+            <xsd:enumeration value="1000"/>
+            <!--  Dauerkleingärten -->
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xs:schema>

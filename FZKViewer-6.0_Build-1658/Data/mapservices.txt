@@ -1,0 +1,162 @@
+;-==Beispiel==-
+;
+;server
+;{
+;	name "GoogleMaps"
+;	url "http://mt%serverN%.google.com/vt/x=%x%&y=%y%&z=%zoom%"
+;	active "yes" 	//Default
+;	default "no" 	//Default
+;	zoom "18"	//Default
+;}
+
+server
+{
+	name "GoogleMaps Roadmap"
+	url "http://maps.googleapis.com/maps/api/staticmap?center=%x%,%y%&zoom=%zoom%&maptype=roadmap&key=AIzaSyCG1g0hhAYZQPnk7u2JCP0R40US0RqTLRI"
+	zoom "18"
+}
+
+server
+{
+	name "GoogleMaps Satelite"
+	url "http://maps.googleapis.com/maps/api/staticmap?center=%x%,%y%&zoom=%zoom%&maptype=satelite&key=AIzaSyCG1g0hhAYZQPnk7u2JCP0R40US0RqTLRI"
+	zoom "18"
+}
+
+server
+{
+	name "GoogleMaps Terrain"
+	url "http://maps.googleapis.com/maps/api/staticmap?center=%x%,%y%&zoom=%zoom%&maptype=terrain&key=AIzaSyCG1g0hhAYZQPnk7u2JCP0R40US0RqTLRI"
+	zoom "18"
+}
+
+server
+{
+	name "GoogleMaps Hybrid"
+	url "http://maps.googleapis.com/maps/api/staticmap?center=%x%,%y%&zoom=%zoom%&maptype=hybrid&key=AIzaSyCG1g0hhAYZQPnk7u2JCP0R40US0RqTLRI"
+	zoom "18"
+}
+
+server
+{
+	name "MapTiler"
+	url "https://api.maptiler.com/maps/basic/%zoom%/%x%/%y%.png?key=OHlfvuJL4brchSim0mqT"
+	zoom "15"
+}
+
+server
+{
+	name "GoogleMaps"
+	url "http://mt%serverN%.google.com/vt/x=%x%&y=%y%&z=%zoom%"
+	zoom "18"
+}
+
+server
+{
+	name "GoogleSatellite"
+	url "https://mts%serverN%.google.com/vt/lyrs=s@186112443&hl=x-local&src=app&x=%x%&y=%y%&z=%zoom%&s=Galile"
+	zoom "18"
+}
+server
+{
+	name "GoogleTerrain"
+	url "http://mt%serverN%.google.com/vt/lyrs=t@901000000&hl=en&x=%x%&y=%y%&z=%zoom%&s=Ga"
+	zoom "18"
+}
+server
+{
+	name "OpenStreetMap"
+	url "http://tile.openstreetmap.org/%zoom%/%x%/%y%.png"
+	default "yes"
+	zoom "19"
+}
+server
+{
+	name "OpenRailwayMap"
+	url "http://tiles.openrailwaymap.org/standard/%zoom%/%x%/%y%.png"
+	zoom "19"
+}
+server
+{
+	name "OpenStreetOsm"
+	url "http://tah.openstreetmap.org/Tiles/tile/%zoom%/%x%/%y%.png"
+	zoom "13"
+}
+server
+{
+	name "OpenCycleMap"
+	url "http://tile.opencyclemap.org/cycle/%zoom%/%x%/%y%.png"
+	zoom "13"
+}
+server
+{
+	name "OpenTopoMap"
+	url "http://www.opentopomap.org/tiles/%zoom%/%x%/%y%.png"
+	zoom "13"
+}
+server
+{
+	name "Wanderreitkarte"
+	url "http://www.wanderreitkarte.de/topo/%zoom%/%x%/%y%.png"
+	zoom "13"
+}
+server
+{
+	name "HikeBikeMap"
+	url "http://toolserver.org/tiles/hikebike/%zoom%/%x%/%y%.png"
+	zoom "13"
+}
+server
+{
+	name "Wikimedia Maps"
+	url "https://maps.wikimedia.org/osm-intl/%zoom%/%x%/%y%.png"
+	zoom "18"
+}
+server
+{
+	name "OpenAerialMap"
+	url "http://otile1.mqcdn.com/tiles/1.0.0/sat/%zoom%/%x%/%y%.jpg"
+	zoom "13"
+}
+server
+{
+	name "OpenStreetMapSurfer"
+	url "http://tiles1.mapsurfer.net/tms_r.ashx?x=%x%&y=%y%&z=%zoom%"
+	zoom "13"
+}
+server
+{
+	name "OpenStreetMapSurferTerrain"
+	url "http://tiles2.mapsurfer.net/tms_t.ashx?x=%x%&y=%y%&z=%zoom%"
+	zoom "13"
+}
+server
+{
+	name "BingMaps"
+	url "http://ecn.t%serverN%.tiles.virtualearth.net/tiles/r%quadK%.png?g=563"
+	zoom "13"
+}
+server
+{
+	name "BingMapsNew"
+	url "http://ecn.t%serverN%.tiles.virtualearth.net/tiles/r%quadK%.png?g=563&lbl=l1&stl=h&shading=hill&n=z"
+	zoom "13"
+}
+server
+{
+	name "BingSatellite"
+	url "http://ecn.t%serverN%.tiles.virtualearth.net/tiles/a%quadK%.jpeg?g=563"
+	zoom "13"
+}
+server
+{
+	name "BingHybrid"
+	url "http://ecn.t%serverN%.tiles.virtualearth.net/tiles/h%quadK%.jpeg?g=563"
+	zoom "13"
+}
+
+server
+{
+	name "Unknown MapServer"
+	url ""
+}

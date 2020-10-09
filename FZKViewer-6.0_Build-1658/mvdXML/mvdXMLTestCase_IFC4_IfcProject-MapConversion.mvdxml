@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvdXML xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://buildingsmart-tech.org/mvd/XML/1.1 http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="5fcb9e75-638b-429d-9b00-98f818dd78be" name="KIT/IAI mvdXML Editor" author="Geiger, Andreas (IAI)">
+    <ConceptTemplate uuid="c6fef2d8-7154-41f0-a65f-e0d94cf7414d"
+      name="ProjectConceptTemplate" applicableSchema="IFC4" applicableEntity="IfcProject">
+      <Definitions>
+        <Definition>
+          <Body lang="en"><![CDATA[Concept Template for IfcProject]]></Body>
+        </Definition>
+      </Definitions>
+      <Rules>
+        <AttributeRule RuleID="GlobalId" AttributeName="GlobalId"/>
+        <AttributeRule RuleID="OwnerHistory" AttributeName="OwnerHistory"/>
+        <AttributeRule RuleID="Name" AttributeName="Name"/>
+        <AttributeRule RuleID="Description" AttributeName="Description"/>
+        <AttributeRule RuleID="ObjectType" AttributeName="ObjectType"/>
+        <AttributeRule RuleID="LongName" AttributeName="LongName"/>
+        <AttributeRule RuleID="Phase" AttributeName="Phase"/>
+        <AttributeRule RuleID="RepresentationContexts" AttributeName="RepresentationContexts">
+          <EntityRules>
+            <EntityRule RuleID="GeometricRepresentationContext" EntityName="IfcGeometricRepresentationContext">
+              <References>
+                <Template ref="bc7b2bea-5427-43af-9fd5-484f84ebb432"/>
+              </References>
+            </EntityRule>
+          </EntityRules>
+        </AttributeRule>
+        <AttributeRule RuleID="UnitsInContext" AttributeName="UnitsInContext"/>
+      </Rules>
+    </ConceptTemplate>
+<Templates>
+<ConceptTemplate uuid="5d12f2a4-0a5a-478f-8127-626fed6c616e" name="MapConversionConceptTemplate" applicableSchema="IFC4" applicableEntity="IfcMapConversion">
+<Definitions>
+<Definition>
+<Body Lang="en"><![CDATA[Concept Template for IfcMapConversion]]></Body>
+</Definition>
+</Definitions>
+<Rules>
+<AttributeRule RuleID="SourceCRS" AttributeName="SourceCRS"/>
+<AttributeRule RuleID="TargetCRS" AttributeName="TargetCRS">
+<EntityRules>
+<EntityRule RuleID="IsCoordinateReferenceSystem" EntityName="IfcProjectedCRS">
+<AttributeRules>
+<AttributeRule RuleID="CRSName" AttributeName="Name"/>
+<AttributeRule RuleID="CRSDescription" AttributeName="Description"/>
+<AttributeRule RuleID="GeodeticDatum" AttributeName="GeodeticDatum"/>
+<AttributeRule RuleID="VerticalDatum" AttributeName="VerticalDatum"/>
+</AttributeRules>
+</EntityRule>
+</EntityRules>
+</AttributeRule>
+<AttributeRule RuleID="Eastings" AttributeName="Eastings"/>
+<AttributeRule RuleID="Northings" AttributeName="Northings"/>
+<AttributeRule RuleID="OrthogonalHeight" AttributeName="OrthogonalHeight"/>
+<AttributeRule RuleID="XAxisAbscissa" AttributeName="XAxisAbscissa"/>
+<AttributeRule RuleID="XAxisOrdinate" AttributeName="XAxisOrdinate"/>
+</Rules>
+</ConceptTemplate>
+<ConceptTemplate uuid="bc7b2bea-5427-43af-9fd5-484f84ebb432" name="GeometricRepresentationContextConceptTemplate" applicableSchema="IFC4" applicableEntity="IfcGeometricRepresentationContext">
+<Definitions>
+<Definition>
+<Body Lang="en"><![CDATA[Concept Template for IfcGeometricRepresentationContext]]></Body>
+</Definition>
+</Definitions>
+<Rules>
+<AttributeRule RuleID="ContextIdentifier" AttributeName="ContextIdentifier"/>
+<AttributeRule RuleID="ContextType" AttributeName="ContextType"/>
+<AttributeRule RuleID="CoordinateSpaceDimension" AttributeName="CoordinateSpaceDimension"/>
+<AttributeRule RuleID="Precision" AttributeName="Precision"/>
+<AttributeRule RuleID="WorldCoordinateSystem" AttributeName="WorldCoordinateSystem"/>
+<AttributeRule RuleID="TrueNorth" AttributeName="TrueNorth"/>
+<AttributeRule RuleID="HasCoordinateOperation" AttributeName="HasCoordinateOperation">
+<EntityRules>
+<EntityRule EntityName="IfcMapConversion">
+<References>
+<Template ref="5d12f2a4-0a5a-478f-8127-626fed6c616e"/>
+</References>
+</EntityRule>
+</EntityRules>
+</AttributeRule>
+</Rules>
+</ConceptTemplate>
+</Templates>
+<Views>
+<ModelView uuid="77d67338-4758-475c-8063-da6358bdca8e" name="IFC4 import test" author="Geiger, Andreas (IAI)" applicableSchema="IFC4">
+<Definitions>
+<Definition>
+<Body><![CDATA[Test rules]]></Body>
+</Definition>
+</Definitions>
+<ExchangeRequirements>
+<ExchangeRequirement uuid="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" name="Building energy simulation requirements" applicability="import">
+<Definitions>
+<Definition>
+<Body><![CDATA[Check import]]></Body>
+</Definition>
+</Definitions>
+</ExchangeRequirement>
+</ExchangeRequirements>
+<Roots>
+<ConceptRoot uuid="7d334804-456b-4c23-bd5e-8e24b5caa6a5" name="Test IfcProject for geo reference" applicableRootEntity="IfcProject">
+<Definitions>
+<Definition>
+<Body/>
+</Definition>
+</Definitions>
+<Concepts>
+<Concept uuid="a36de357-3b64-480d-b777-82ea20062c32" name="Check GeoReference">
+<Definitions>
+<Definition>
+<Body Lang="en"><![CDATA[Existence of MapConversion]]></Body>
+</Definition>
+</Definitions>
+<Template ref="c6fef2d8-7154-41f0-a65f-e0d94cf7414d"/>
+<Requirements>
+<Requirement applicability="import" exchangeRequirement="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" requirement="mandatory"/>
+</Requirements>
+<TemplateRules operator="and">
+<TemplateRule Parameters="GeometricRepresentationContext[Type]='IfcGeometricRepresentationContext'"/>
+<TemplateRules operator="and">
+<TemplateRule Parameters="HasCoordinateOperation[Type]='IfcMapConversion'"/>
+</TemplateRules>
+</TemplateRules>
+</Concept>
+</Concepts>
+</ConceptRoot>
+</Roots>
+</ModelView>
+</Views>
+</mvdXML>

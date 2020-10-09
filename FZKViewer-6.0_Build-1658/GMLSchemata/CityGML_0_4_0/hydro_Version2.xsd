@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CityGML ADE flood concept Version No. 0.0.2, Jan 31th, 2008-->
+<!-- CityGML - application domain extension for hydraulic data with the scope of flood modeling -->
+<!-- Editors: Claudia Schulte, Master Thesis University of Applied Sciences Stuttgart -->
+<xsd:schema xmlns="http://www.citygml.org/ade/hydro_en" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:citygml="http://www.citygml.org/citygml/1/0/0" xmlns:hyd="http://www.citygml.org/ade/hydro_en" targetNamespace="http://www.citygml.org/ade/hydro_en" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.02">
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="../citygml/3.1.1/base/gmlBase.xsd"/>
+	<xsd:import namespace="http://www.citygml.org/citygml/1/0/0" schemaLocation="../citygml/CityGML.xsd"/>
+	<!-- =============================================== -->
+	<xsd:annotation>
+		<xsd:appinfo>hydro_V001.xsd</xsd:appinfo>
+		<xsd:documentation>
+			Concept for a cityGML Application Domain Extension for hydraulic data.
+			Concept developed 2008 by Claudia Schulte
+		</xsd:documentation>
+	</xsd:annotation>
+	<!-- =============================================== -->
+	<!-- ======= Root Element: DynamicWater  =========== -->
+	<!-- =============================================== -->
+	<xsd:element name="dynamicWater" type="hyd:dynamicWaterType" substitutionGroup="citygml:_GenericApplicationPropertyOfWaterBody"/>
+	<!-- =============================================== -->
+	<xsd:complexType name="dynamicWaterType">
+		<xsd:annotation>
+			<xsd:documentation>
+				This property contains all spatiotemporal information about a dynamic waterbody. 
+				It shall extent property model of the CityGML Object WaterBody for hydraulic data
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="gml:DynamicFeatureType">
+				<xsd:sequence>
+					<xsd:element ref="DynamicWaterMetadata" minOccurs="1"/>
+					<xsd:element ref="DynamicCoverage"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- =============================================== -->
+	<xsd:element name="DynamicWaterMetadata" type="DynamicWaterMetadataType" substitutionGroup="gml:GenericMetaData"/>
+	<!-- =============================================== -->
+	<xsd:complexType name="DynamicWaterMetadataType">
+		<xsd:annotation>
+			<xsd:documentation>
+			The property dynamicWaterMetadata contains a subset of metadata description classes providing information about
+			Data Source, Content, Scope and Mathematical Model			
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:restriction base="gml:GenericMetaDataType">
+				<xsd:sequence>
+					<xsd:element ref="hyd:sourceSoftware" maxOccurs="1"/>
+					<xsd:element ref="hyd:hydraulicModel" minOccurs="0"/>
+					<xsd:element ref="hyd:dynamicTimeAxis" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- =============================================== -->
+	<!-- =============================================== -->
+	<xsd:element name="sourceSoftware" type="hyd:sourceSoftwareType" substitutionGroup="gml:GenericMetaData"/>
+	<!-- =============================================== -->
+	<xsd:complexType name="sourceSoftwareType">
+		<xsd:annotation>
+			<xsd:documentation>
+			The sourceSoftware property shall contain the information about Name and Version of the 
+			source hydraulic modelling tool with which the data was created
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:restriction base="gml:GenericMetaDataType">
+				<xsd:sequence>
+					<xsd:element name="softwareName" type="xsd:string"/>
+					<xsd:element name="softwareVersion" type="xsd:string" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- =============================================== -->
+	<xsd:element name="hydraulicModel" type="hyd:hydraulicModelType" substitutionGroup="gml:GenericMetaData"/>
+	<!-- =============================================== -->
+	<xsd:complexType name="hydraulicModelType">
+		<xsd:annotation>
+			<xsd:documentation>
+			The hydraulicModel Property consists of a personal and institutional metadata about the data set as well as a 
+			detailed description about the model parameters with which the model was setup
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:restriction base="gml:GenericMetaDataType">
+				<xsd:sequence>
+					<xsd:element ref="hyd:modelDescription"/>
+					<xsd:element ref="hyd:modelParameters" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- =============================================== -->
+	<xsd:element name="modelDescription" type="hyd:modelDescriptionType" substitutionGroup="gml:GenericMetaData"/>
+	<!-- =============================================== -->
+	<xsd:complexType name="modelDescriptionType">
+		<xsd:annotation>
+			<xsd:documentation>
+			The modelDescription Property contains the metainformation about the model.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:restriction base="gml:GenericMetaDataType">
+				<xsd:sequence>
+					<xsd:element name="modeler" type="xsd:string" minOccurs="0">
+						<xsd:annotation>
+							<xsd:documentation>Name of the person who set up the hydraulic model</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="dataSource" type="xsd:string" minOccurs="0">
+						<xsd:annotation>
+							<xsd:documentation>The institution which provides the hydraulic model data set</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="constructionDate" type="xsd:date" minOccurs="0">
+						<xsd:annotation>
+							<xsd:documentation>Reference data for the actuality of the model</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="modelScope" type="xsd:string" minOccurs="0">
+						<xsd:annotation>
+							<xsd:documentation>Short description of the scope for which the model was produced</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="additionalInformation" type="xsd:string" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- =============================================== -->
+	<xsd:element name="modelParameters" type="hyd:modelParametersType" substitutionGroup="gml:GenericMetaData"/>
+	<!-- =============================================== -->
+	<xsd:complexType name="modelParametersType">
+		<xsd:annotation>
+			<xsd:documentation>Within the property modelParameters a detailed description of the configuration 
+			of the hydraulic model simulation can be provided</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:restriction base="gml:GenericMetaDataType">
+				<xsd:sequence>
+					<xsd:element ref="hyd:mathematicalParameters" minOccurs="0"/>
+					<!--xsd:element ref="hyd:physicalParameters" minOccurs="0"/-->
+					<xsd:element ref="hyd:modelGrid" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- =============================================== -->
+	<xsd:element name="mathematicalParameters" type="hyd:mathematicalParametersType" substitutionGroup="gml:GenericMetaData"/>
+	<!-- =============================================== -->
+	<xsd:complexType name="mathematicalParametersType">
+		<xsd:annotation>
+			<xsd:documentation>Within the mathematicalParameters Property the applied function, 
+			used within the hydraulic simulation tool as well as the applied solution System can be inserted</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:restriction base="gml:GenericMetaDataType">
+				<xsd:sequence>
+					<xsd:element name="function" type="xsd:string" minOccurs="0">
+						<xsd:annotation>
+							<xsd:documentation>Possible values are: St. Venant Equations, Shallow Water Equations,...</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="solutionSystem" type="xsd:string" minOccurs="0">
+						<xsd:annotation>
+							<xsd:documentation>Possible values are Finite Element Method, 
+Finite Difference Method,...
+			</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- =============================================== -->
+	<xsd:element name="physicalParameters" type="hyd:physicalParametersType" substitutionGroup="gml:GenericMetaData"/>
+	<!-- =============================================== -->
+	<xsd:complexType name="physicalParametersType">
+		<xsd:annotation>
+			<xsd:documentation>Within this metadata sequetion applied physical parameters like e.g.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="gml:GenericMetaDataType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- =============================================== -->
+	<xsd:element name="modelGrid" type="hyd:modelGridType" substitutionGroup="gml:GenericMetaData"/>
+	<!-- =============================================== -->
+	<xsd:complexType name="modelGridType">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:restriction base="gml:GenericMetaDataType">
+				<xsd:sequence>
+					<xsd:element name="gridType" type="xsd:string" minOccurs="0">
+						<xsd:annotation>
+							<xsd:documentation/>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="gridResolution" type="xsd:double" minOccurs="0">
+						<xsd:annotation>
+							<xsd:documentation/>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- =============================================== -->
+	<xsd:element name="dynamicTimeAxis" type="dynamicTimeAxisType" substitutionGroup="gml:GenericMetaData"/>
+	<!-- =============================================== -->
+	<xsd:complexType name="dynamicTimeAxisType">
+		<xsd:complexContent>
+			<xsd:restriction base="gml:GenericMetaDataType">
+				<xsd:sequence>
+					<xsd:element name="timeStepNo" type="xsd:integer"/>
+					<xsd:element name="timeStepInterval" type="xsd:double"/>
+					<xsd:element name="timeUnit" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- =============================================== -->
+	<xsd:element name="DynamicCoverage" type="hyd:DynamicCoverageType" substitutionGroup="gml:_DiscreteCoverage"/>
+	<!-- =============================================== -->
+	<xsd:complexType name="DynamicCoverageType">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:restriction base="gml:AbstractDiscreteCoverageType">
+				<xsd:sequence>
+					<xsd:element ref="gml:domainSet" minOccurs="1" maxOccurs="1"/>
+					<xsd:element ref="gml:rangeSet" minOccurs="1" maxOccurs="1"/>
+					<xsd:element ref="gml:coverageFunction" minOccurs="0" maxOccurs="1"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!--============ ValueObject Definitions ============-->
+	<xsd:complexType name="attributeType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:ValuePropertyType">
+				<xsd:sequence>
+					<xsd:element ref="gml:timePosition" minOccurs="0"/>
+				</xsd:sequence>
+				<xsd:attribute ref="gml:uom"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- ========== hydraulic specific attributes ====== -->
+	<xsd:element name="waterLevel" type="hyd:attributeType" substitutionGroup="gml:valueComponent">
+		<xsd:annotation>
+			<xsd:documentation>Contains the TimeStep of the water Levels above sea level,  
+			contained within the rangeSet of the Dynamic Coverage</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="waterDepth" type="hyd:attributeType" substitutionGroup="gml:valueComponent">
+		<xsd:annotation>
+			<xsd:documentation>Contains the TimeStep of the water Depth in meters,  
+			contained within the rangeSet of the Dynamic Coverage</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="waterFluxQ" type="hyd:attributeType" substitutionGroup="gml:valueComponent">
+		<xsd:annotation>
+			<xsd:documentation>Amount of water running through a certain cell in a certain time sequence m^3/s/m"</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="waterFluxP" type="hyd:attributeType" substitutionGroup="gml:valueComponent">
+		<xsd:annotation>
+			<xsd:documentation>Amount of water running through a certain cell in a certain time sequence m^3/s/m"</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="valueProbability" type="hyd:attributeType" substitutionGroup="gml:valueComponent">
+		<xsd:annotation>
+			<xsd:documentation>A probability value per node, reflecting the probability of the validity of the output values 
+			from the hydraulic system</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

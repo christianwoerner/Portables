@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary   gml:id="AX_Gebaeudefunktion" 
+    xmlns="http://www.opengis.net/gml" 
+    xmlns:gml="http://www.opengis.net/gml" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.opengis.net/gml D:/XPlanung/XPlanGML.4.0/Schema/gml/3.2.1/gml.xsd">
+	<name>AX_GebaeudefunktionType</name>
+		
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1000">
+			<name>Wohngebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1000</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1010">
+			<name>Wohnhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1010</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1020">
+			<name>Wohnheim</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1020</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1021">
+			<name>Kinderheim</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1021</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1022">
+			<name>Seniorenheim</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1022</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1023">
+			<name>Schwesternwohnheim</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1023</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1024">
+			<name>Studenten-, Schülerwohnheim</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1024</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1025">
+			<name>Schullandheim</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1025</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1100">
+			<name>Gemischt genutztes Gebäude mit Wohnen</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1100</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1110">
+			<name>Wohngebäude mit Gemeinbedarf</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1110</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1120">
+			<name>Wohngebäude mit Handel und Dienstleistungen</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1120</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1121">
+			<name>Wohn- und Verwaltungsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1121</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1122">
+			<name>Wohn- und Bürogebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1122</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1123">
+			<name>Wohn- und Geschäftsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1123</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1130">
+			<name>Wohngebäude mit Gewerbe und Industrie</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1130</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1131">
+			<name>Wohn- und Betriebsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1131</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1210">
+			<name>Land- und forstwirtschaftliches Wohngebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1210</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1220">
+			<name>Land- und forstwirtschaftliches Wohn- und Betriebsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1220</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1221">
+			<name>Bauernhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1221</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1222">
+			<name>Wohn- und Wirtschaftsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1222</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1223">
+			<name>Forsthaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1223</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1310">
+			<name>Gebäude zur Freizeitgestaltung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1310</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1311">
+			<name>Ferienhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1311</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1312">
+			<name>Wochenendhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1312</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_1313">
+			<name>Gartenhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">1313</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2000">
+			<name>Gebäude für Wirtschaft oder Gewerbe</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2000</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2010">
+			<name>Gebäude für Handel und Dienstleistungen</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2010</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2020">
+			<name>Bürogebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2020</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2030">
+			<name>Kreditinstitut</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2030</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2040">
+			<name>Versicherung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2040</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2050">
+			<name>Geschäftsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2050</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2051">
+			<name>Kaufhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2051</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2052">
+			<name>Einkaufszentrum</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2052</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2053">
+			<name>Markthalle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2053</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2054">
+			<name>Laden</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2054</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2055">
+			<name>Kiosk</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2055</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2056">
+			<name>Apotheke</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2056</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2060">
+			<name>Messehalle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2060</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2070">
+			<name>Gebäude für Beherbergung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2070</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2071">
+			<name>Hotel, Motel, Pension</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2071</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2072">
+			<name>Jugendherberge</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2072</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2073">
+			<name>Hütte (mit Übernachtungsmöglichkeit)</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2073</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2074">
+			<name>Campingplatzgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2074</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2080">
+			<name>Gebäude für Bewirtung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2080</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2081">
+			<name>Gaststätte, Restaurant</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2081</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2082">
+			<name>Hütte (ohne Übernachtungsmöglichkeit)</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2082</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2083">
+			<name>Kantine</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2083</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2090">
+			<name>Freizeit- und Vergnügungsstätte</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2090</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2091">
+			<name>Festsaal</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2091</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2092">
+			<name>Kino</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2092</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2093">
+			<name>Kegel-, Bowlinghalle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2093</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2094">
+			<name>Spielkasino</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2094</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2100">
+			<name>Gebäude für Gewerbe und Industrie</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2100</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2110">
+			<name>Produktionsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2110</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2111">
+			<name>Fabrik</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2111</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2112">
+			<name>Betriebsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2112</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2113">
+			<name>Brauerei</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2113</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2114">
+			<name>Brennerei</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2114</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2120">
+			<name>Werkstatt</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2120</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2121">
+			<name>Sägewerk</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2121</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2130">
+			<name>Tankstelle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2130</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2131">
+			<name>Waschstraße, Waschanlage, Waschhalle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2131</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2140">
+			<name>Gebäude für Vorratshaltung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2140</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2141">
+			<name>Kühlhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2141</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2142">
+			<name>Speichergebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2142</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2143">
+			<name>Lagerhalle, Lagerschuppen, Lagerhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2143</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2150">
+			<name>Speditionsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2150</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2160">
+			<name>Gebäude für Forschungszwecke</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2160</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2170">
+			<name>Gebäude für Grundstoffgewinnung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2170</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2171">
+			<name>Bergwerk</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2171</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2172">
+			<name>Saline</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2172</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2180">
+			<name>Gebäude für betriebliche Sozialeinrichtung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2180</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2200">
+			<name>Sonstiges Gebäude für Gewerbe und Industrie</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2200</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2210">
+			<name>Mühle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2210</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2211">
+			<name>Windmühle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2211</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2212">
+			<name>Wassermühle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2212</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2213">
+			<name>Schöpfwerk</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2213</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2220">
+			<name>Wetterstation</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2220</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2310">
+			<name>Gebäude für Handel und Dienstleistung mit Wohnen</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2310</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2320">
+			<name>Gebäude für Gewerbe und Industrie mit Wohnen</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2320</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2400">
+			<name>Betriebsgebäude zu Verkehrsanlagen (allgemein)</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2400</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2410">
+			<name>Betriebsgebäude für Straßenverkehr</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2410</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2411">
+			<name>Straßenmeisterei</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2411</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2412">
+			<name>Wartehalle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2412</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2420">
+			<name>Betriebsgebäude für Schienenverkehr</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2420</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2421">
+			<name>Bahnwärterhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2421</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2422">
+			<name>Lokschuppen, Wagenhalle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2422</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2423">
+			<name>Stellwerk, Blockstelle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2423</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2424">
+			<name>Betriebsgebäude des Güterbahnhofs</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2424</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2430">
+			<name>Betriebsgebäude für Flugverkehr</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2430</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2431">
+			<name>Flugzeughalle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2431</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2440">
+			<name>Betriebsgebäude für Schiffsverkehr</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2440</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2441">
+			<name>Werft (Halle)</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2441</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2442">
+			<name>Dock (Halle)</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2442</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2443">
+			<name>Betriebsgebäude zur Schleuse</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2443</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2444">
+			<name>Bootshaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2444</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2450">
+			<name>Betriebsgebäude zur Seilbahn</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2450</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2451">
+			<name>Spannwerk zur Drahtseilbahn</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2451</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2460">
+			<name>Gebäude zum Parken</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2460</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2461">
+			<name>Parkhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2461</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2462">
+			<name>Parkdeck</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2462</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2463">
+			<name>Garage</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2463</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2464">
+			<name>Fahrzeughalle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2464</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2465">
+			<name>Tiefgarage</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2465</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2500">
+			<name>Gebäude zur Versorgung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2500</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2501">
+			<name>Gebäude zur Energieversorgung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2501</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2510">
+			<name>Gebäude zur Wasserversorgung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2510</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2511">
+			<name>Wasserwerk</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2511</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2512">
+			<name>Pumpstation</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2512</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2513">
+			<name>Wasserbehälter</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2513</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2520">
+			<name>Gebäude zur Elektrizitätsversorgung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2520</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2521">
+			<name>Elektrizitätswerk</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2521</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2522">
+			<name>Umspannwerk</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2522</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2523">
+			<name>Umformer</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2523</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2527">
+			<name>Reaktorgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2527</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2528">
+			<name>Turbinenhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2528</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2529">
+			<name>Kesselhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2529</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2540">
+			<name>Gebäude für Fernmeldewesen</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2540</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2560">
+			<name>Gebäude an unterirdischen Leitungen</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2560</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2570">
+			<name>Gebäude zur Gasversorgung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2570</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2571">
+			<name>Gaswerk</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2571</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2580">
+			<name>Heizwerk</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2580</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2590">
+			<name>Gebäude zur Versorgungsanlage</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2590</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2591">
+			<name>Pumpwerk (nicht für Wasserversorgung)</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2591</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2600">
+			<name>Gebäude zur Entsorgung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2600</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2610">
+			<name>Gebäude zur Abwasserbeseitigung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2610</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2611">
+			<name>Gebäude der Kläranlage</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2611</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2612">
+			<name>Toilette</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2612</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2620">
+			<name>Gebäude zur Abfallbehandlung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2620</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2621">
+			<name>Müllbunker</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2621</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2622">
+			<name>Gebäude zur Müllverbrennung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2622</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2623">
+			<name>Gebäude der Abfalldeponie</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2623</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2700">
+			<name>Gebäude für Land- und Forstwirtschaft</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2700</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2720">
+			<name>Land- und forstwirtschaftliches Betriebsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2720</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2721">
+			<name>Scheune</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2721</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2723">
+			<name>Schuppen</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2723</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2724">
+			<name>Stall</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2724</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2726">
+			<name>Scheune und Stall</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2726</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2727">
+			<name>Stall für Tiergroßhaltung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2727</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2728">
+			<name>Reithalle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2728</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2729">
+			<name>Wirtschaftsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2729</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2732">
+			<name>Almhütte</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2732</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2735">
+			<name>Jagdhaus, Jagdhütte</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2735</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2740">
+			<name>Gewächshaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2740</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2741">
+			<name>Treibhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2741</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_2742">
+			<name>Gewächshaus, verschiebbar</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">2742</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3000">
+			<name>Gebäude für öffentliche Zwecke</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3000</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3010">
+			<name>Verwaltungsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3010</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3011">
+			<name>Parlament</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3011</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3012">
+			<name>Rathaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3012</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3013">
+			<name>Post</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3013</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3014">
+			<name>Zollamt</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3014</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3015">
+			<name>Gericht</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3015</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3016">
+			<name>Botschaft, Konsulat</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3016</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3017">
+			<name>Kreisverwaltung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3017</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3018">
+			<name>Bezirksregierung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3018</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3019">
+			<name>Finanzamt</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3019</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3020">
+			<name>Gebäude für Bildung und Forschung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3020</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3021">
+			<name>Allgemein bildende Schule</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3021</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3022">
+			<name>Berufsbildende Schule</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3022</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3023">
+			<name>Hochschulgebäude (Fachhochschule, Universität)</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3023</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3024">
+			<name>Forschungsinstitut</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3024</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3030">
+			<name>Gebäude für kulturelle Zwecke</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3030</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3031">
+			<name>Schloss</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3031</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3032">
+			<name>Theater, Oper</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3032</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3033">
+			<name>Konzertgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3033</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3034">
+			<name>Museum</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3034</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3035">
+			<name>Rundfunk, Fernsehen</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3035</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3036">
+			<name>Veranstaltungsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3036</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3037">
+			<name>Bibliothek, Bücherei</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3037</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3038">
+			<name>Burg, Festung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3038</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3040">
+			<name>Gebäude für religiöse Zwecke</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3040</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3041">
+			<name>Kirche</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3041</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3042">
+			<name>Synagoge</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3042</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3043">
+			<name>Kapelle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3043</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3044">
+			<name>Gemeindehaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3044</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3045">
+			<name>Gotteshaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3045</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3046">
+			<name>Moschee</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3046</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3047">
+			<name>Tempel</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3047</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3048">
+			<name>Kloster</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3048</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3050">
+			<name>Gebäude für Gesundheitswesen</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3050</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3051">
+			<name>Krankenhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3051</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3052">
+			<name>Heilanstalt, Pflegeanstalt, Pflegestation</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3052</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3053">
+			<name>Ärztehaus, Poliklinik</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3053</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3060">
+			<name>Gebäude für soziale Zwecke</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3060</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3061">
+			<name>Jugendfreizeitheim</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3061</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3062">
+			<name>Freizeit-, Vereinsheim, Dorfgemeinschafts-, Bürgerhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3062</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3063">
+			<name>Seniorenfreizeitstätte</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3063</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3064">
+			<name>Obdachlosenheim</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3064</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3065">
+			<name>Kinderkrippe, Kindergarten, Kindertagesstätte</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3065</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3066">
+			<name>Asylbewerberheim</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3066</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3070">
+			<name>Gebäude für Sicherheit und Ordnung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3070</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3071">
+			<name>Polizei</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3071</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3072">
+			<name>Feuerwehr</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3072</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3073">
+			<name>Kaserne</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3073</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3074">
+			<name>Schutzbunker</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3074</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3075">
+			<name>Justizvollzugsanstalt</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3075</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3080">
+			<name>Friedhofsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3080</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3081">
+			<name>Trauerhalle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3081</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3082">
+			<name>Krematorium</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3082</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3090">
+			<name>Empfangsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3090</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3091">
+			<name>Bahnhofsgebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3091</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3092">
+			<name>Flughafengebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3092</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3094">
+			<name>Gebäude zum U-Bahnhof</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3094</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3095">
+			<name>Gebäude zum S-Bahnhof</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3095</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3097">
+			<name>Gebäude zum Busbahnhof</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3097</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3098">
+			<name>Empfangsgebäude Schifffahrt</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3098</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3100">
+			<name>Gebäude für öffentliche Zwecke mit Wohnen</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3100</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3200">
+			<name>Gebäude für Erholungszwecke</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3200</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3210">
+			<name>Gebäude für Sportzwecke</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3210</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3211">
+			<name>Sport-, Turnhalle</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3211</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3212">
+			<name>Gebäude zum Sportplatz</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3212</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3220">
+			<name>Badegebäude</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3220</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3221">
+			<name>Hallenbad</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3221</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3222">
+			<name>Gebäude im Freibad</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3222</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3230">
+			<name>Gebäude im Stadion</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3230</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3240">
+			<name>Gebäude für Kurbetrieb</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3240</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3241">
+			<name>Badegebäude für medizinische Zwecke</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3241</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3242">
+			<name>Sanatorium</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3242</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3260">
+			<name>Gebäude im Zoo</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3260</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3261">
+			<name>Empfangsgebäude des Zoos</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3261</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3262">
+			<name>Aquarium, Terrarium, Voliere</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3262</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3263">
+			<name>Tierschauhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3263</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3264">
+			<name>Stall im Zoo</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3264</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3270">
+			<name>Gebäude im botanischen Garten</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3270</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3271">
+			<name>Empfangsgebäude des botanischen Gartens</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3271</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3272">
+			<name>Gewächshaus (Botanik)</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3272</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3273">
+			<name>Pflanzenschauhaus</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3273</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3280">
+			<name>Gebäude für andere Erholungseinrichtung</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3280</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3281">
+			<name>Schutzhütte</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3281</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_3290">
+			<name>Touristisches Informationszentrum</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">3290</name>
+			</Definition>
+		</dictionaryEntry>
+		<dictionaryEntry>
+			<Definition gml:id="AX_Gebaeudefunktion_9998">
+			<name>Nach Quellenlage nicht zu spezifizieren</name>
+			<name codeSpace="urn:adv:AX_Gebaeudefunktion">9998</name>
+			</Definition>
+		</dictionaryEntry>
+		
+	 
+    
+</Dictionary>
+    

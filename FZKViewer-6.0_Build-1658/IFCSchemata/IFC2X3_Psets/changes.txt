@@ -1,0 +1,5 @@
+2010-12-07
+	Pset_ElectricalDeviceCommon:
+	- added IfcDistributionElementType to applicable classes
+2010-12-12
+	added Pset-ProvisionForVoids

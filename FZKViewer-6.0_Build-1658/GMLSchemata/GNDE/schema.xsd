@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns:gml="http://www.opengis.net/gml"
+    attributeFormDefault="unqualified"
+    xmlns:wfs="http://www.deegree.org/wfs"
+    xmlns:gn="http://www.geodatenzentrum.de/gnde"
+    elementFormDefault="qualified"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.geodatenzentrum.de/gnde"
+    xmlns:ogc="http://www.opengis.net/ogc">
+  <xsd:import
+      schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/feature.xsd"
+      namespace="http://www.opengis.net/gml">
+  </xsd:import>
+  <xsd:import
+      schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/geometryAggregates.xsd"
+      namespace="http://www.opengis.net/gml">
+  </xsd:import>
+  <!-- GnObjekt-->
+  <xsd:element  name="GnObjekt"  type="gn:GnObjektType"   substitutionGroup="gml:_Feature"/>
+  
+  <xsd:complexType name="GnObjektType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element  name="nnid"   minOccurs="0"   type="xsd:string"/>
+           <xsd:element  name="hatLand"  minOccurs="0"  type="gml:FeaturePropertyType"/>        
+          <xsd:element  name="karten" minOccurs="0"    type="xsd:string"/>
+           <xsd:element  name="beschreibung"  minOccurs="0"   type="xsd:string"/>
+           <xsd:element  name="geoLaenge"   minOccurs="0"   type="xsd:float"/>
+           <xsd:element  name="geoBreite"   minOccurs="0"   type="xsd:float"/>
+          <xsd:element   name="amt"   minOccurs="0"   type="xsd:string"/>
+           <xsd:element  name="hoehe"  minOccurs="0"  type="xsd:float"/>
+           <xsd:element  name="groesse"  minOccurs="0"  type="xsd:float"/>
+           <xsd:element   name="ewz"   minOccurs="0"  type="xsd:integer"/>
+           <xsd:element   name="ags"   minOccurs="0"  type="xsd:string"/>
+           <xsd:element   name="hatAgs"  minOccurs="0"   type="gml:FeaturePropertyType"/>
+           <xsd:element   name="nathe"   minOccurs="0"   type="xsd:string"/>
+           <xsd:element   name="hatObjektartLink"  minOccurs="0"  type="gml:FeaturePropertyType"/>
+            <xsd:element  name="box"   minOccurs="0"   type="gml:GeometryPropertyType"/>        
+          <xsd:element   name="hatEndonym"   minOccurs="0"  maxOccurs="unbounded"  type="gml:FeaturePropertyType"/>         
+          <xsd:element   name="hatDlmLink"   minOccurs="0"   type="gml:FeaturePropertyType"/>
+          <xsd:element   name="hatPlzLink"   minOccurs="0"  type="gml:FeaturePropertyType"/>
+           <xsd:element  name="hatBearbeitung"   minOccurs="0"   type="gml:FeaturePropertyType"/>
+           <xsd:element  name="hatZusatzLink"  minOccurs="0"  type="gml:FeaturePropertyType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!--  Endonym--> 
+  <xsd:element  name="Endonym"  type="gn:EndonymType"  substitutionGroup="gml:_Feature"/>
+  
+  <xsd:complexType name="EndonymType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureCollectionType">
+        <xsd:sequence>
+          <xsd:element   name="nnid"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="name"   minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="geschlecht"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="hatSprache"  minOccurs="0"  type="gml:FeaturePropertyType"/>
+          <xsd:element   name="aussprache"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="hatStatus"   minOccurs="0"  type="gml:FeaturePropertyType"/>
+          <xsd:element   name="jahrVon"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="jahrBis"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="gewk"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="synonym" minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="bemerkung"  minOccurs="0"  type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!-- Sprache-->
+  <xsd:element  name="Sprache"  type="gn:SpracheType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="SpracheType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element  name="sprache_ID"   minOccurs="0"  type="xsd:integer"/>
+          <xsd:element  name="sprache"  minOccurs="0"  type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!-- Status-->
+  <xsd:element  name="Status"  type="gn:StatusType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="StatusType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element   name="status_Id"  minOccurs="0"  type="xsd:integer"/>
+          <xsd:element   name="status"  minOccurs="0"  type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType> 
+    
+  <!-- ObjektartLink-->
+  <xsd:element  name="ObjektartLink" type="gn:ObjektartLinkType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="ObjektartLinkType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element  name="objektartLink_ID"  minOccurs="0"  type="xsd:integer"/>
+          <xsd:element  name="hatObjektart"  minOccurs="0"  type="gml:FeaturePropertyType"/>
+          <xsd:element  name="hatAttribut"  minOccurs="0"  type="gml:FeaturePropertyType"/>
+          <xsd:element  name="hatWert" minOccurs="0"  type="gml:FeaturePropertyType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!-- Objektart-->
+  <xsd:element  name="Objektart"  type="gn:ObjektartType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="ObjektartType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element  name="oba"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element  name="beschreibung" minOccurs="0"  type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!-- Attribut-->
+  <xsd:element  name="Attribut"  type="gn:AttributType"  substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="AttributType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element  name="attribut_ID"  minOccurs="0"  type="xsd:integer"/>
+          <xsd:element  name="name"  minOccurs="0"  type="xsd:string"/>
+        <xsd:element    name="beschreibung" minOccurs="0" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+ <!-- Wert-->
+  <xsd:element name="Wert" type="gn:WertType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="WertType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element  name="wert_ID"  minOccurs="0"  type="xsd:integer"/>
+          <xsd:element  name="wert"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element  name="beschreibung"  minOccurs="0"  type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!-- PlzLink--> 
+  <xsd:element  name="PlzLink" type="gn:PlzLinkType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="PlzLinkType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element   name="nnid" minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="hatPlzGebiet"  minOccurs="0"  type="gml:FeaturePropertyType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!--PlzGebiet-->
+   <xsd:element  name="PlzGebiet"  type="gn:PlzGebietType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="PlzGebietType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element   name="plz"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="plzName"  minOccurs="0" type="xsd:string"/>
+          <xsd:element   name="box"  minOccurs="0"  type="gml:GeometryPropertyType"/>
+         </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!-- DlmLink-->
+  <xsd:element  name="DlmLink"  type="gn:DlmLinkType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="DlmLinkType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureCollectionType">
+        <xsd:sequence>
+          <xsd:element   name="ui_ID"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="nnid"   minOccurs="0"  type="xsd:string"/>
+          <xsd:element   name="hatModell"  minOccurs="0"  type="gml:FeaturePropertyType"/>
+          <xsd:element   name="hatLayer"   minOccurs="0"  type="gml:FeaturePropertyType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!-- Modell-->
+  <xsd:element name="Modell" type="gn:ModellType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="ModellType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element   name="modell_ID"  minOccurs="0"  type="xsd:integer"/>
+          <xsd:element   name="modellKennung"  minOccurs="0"   type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+    <!-- Layer-->
+  <xsd:element  name="Layer"  type="gn:LayerType"  substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="LayerType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element   name="layer_ID"  minOccurs="0"  type="xsd:integer"/>
+          <xsd:element   name="layerBezeichnung"  minOccurs="0" type="xsd:string"/>
+          <xsd:element   name="layerBeschreibung"  minOccurs="0" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!-- Land-->  
+  <xsd:element  name="Land"  type="gn:LandType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="LandType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element  name="landesCode"  minOccurs="0" type="xsd:string"/>
+          <xsd:element  name="name"   minOccurs="0"  type="xsd:string"/>
+          <xsd:element  name="char2"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element  name="char3"  minOccurs="0"  type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!-- Bearbeitung-->  
+  <xsd:element  name="Bearbeitung"  type="gn:BearbeitungType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="BearbeitungType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element    name="nnid"  minOccurs="0"   type="xsd:string"/>
+          <xsd:element    name="datum" minOccurs="0"  type="xsd:date"/>
+          <xsd:element    name="hatAenderung"  minOccurs="0"  type="gml:FeaturePropertyType"/>
+       </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!-- Aenderung-->
+  <xsd:element name="Aenderung"  type="gn:AenderungType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="AenderungType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element  name="aenderung_ID"  minOccurs="0"  type="xsd:integer"/>
+          <xsd:element  name="aenderung"  minOccurs="0" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+   <!-- ZusatzLink -->
+  <xsd:element  name="ZusatzLink"  type="gn:ZusatzLinkType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="ZusatzLinkType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element  name="nnid"  minOccurs="0"  type="xsd:string"/>
+         <xsd:element   name="hatZusatz"  minOccurs="0"  type="gml:FeaturePropertyType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+ <!-- Zusatz-->
+  <xsd:element name="Zusatz"  type="gn:ZusatzType"  substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="ZusatzType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element  name="zusatz_ID"   minOccurs="0"  type="xsd:integer"/>
+          <xsd:element  name="name"  minOccurs="0" type="xsd:string"/>
+          <xsd:element  name="typ"  minOccurs="0"  type="xsd:string"/>
+      </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+    
+  <!--Ags-->
+  <xsd:element  name="Ags"  type="gn:AgsType" substitutionGroup="gml:_Feature"/>
+  <xsd:complexType name="AgsType">
+    <xsd:complexContent>
+      <xsd:extension
+          base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element  name="ags"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element  name="bundesland"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element  name="regierungsbezirk"  minOccurs="0"  type="xsd:string"/>
+          <xsd:element  name="kreis"  minOccurs="0"   type="xsd:string"/>
+          <xsd:element  name="gemeinde"  minOccurs="0"  type="xsd:string"/>
+      </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvdXML xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://buildingsmart-tech.org/mvd/XML/1.1 http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="08b666d9-6960-4c5e-9058-aff57264353f" name="KIT/IAI mvdXML Editor" author="Geiger, Andreas (IAI)">
+  <Templates>
+    <ConceptTemplate uuid="84127f82-b856-4636-a812-d6823d5d56bd" name="ProductConceptTemplate" applicableSchema="IFC4" applicableEntity="IfcObjectDefinition">
+      <Definitions>
+        <Definition>
+          <Body lang="en"><![CDATA[Concept Template for IfcObjectDefinition]]></Body>
+        </Definition>
+      </Definitions>
+      <Rules>
+        <AttributeRule RuleID="Name" AttributeName="Name"/>
+      </Rules>
+    </ConceptTemplate>
+  </Templates>
+  <Views>
+    <ModelView uuid="77d67338-4758-475c-8063-da6358bdca8e" name="IFC4 import test" author="Geiger, Andreas (IAI)" applicableSchema="IFC4">
+      <Definitions>
+        <Definition>
+          <Body><![CDATA[Test rules]]></Body>
+        </Definition>
+      </Definitions>
+      <ExchangeRequirements>
+        <ExchangeRequirement uuid="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" name="Building energy simulation requirements" applicability="import">
+          <Definitions>
+            <Definition>
+              <Body><![CDATA[Check import]]></Body>
+            </Definition>
+          </Definitions>
+        </ExchangeRequirement>
+      </ExchangeRequirements>
+      <Roots>
+        <ConceptRoot uuid="a375e01c-7caf-4821-b4ff-08e9007a22e0" name="Test name of IfcObjectDefinition" applicableRootEntity="IfcObjectDefinition">
+          <Definitions>
+            <Definition>
+              <Body><![CDATA[Existence of name attriute.]]></Body>
+            </Definition>
+          </Definitions>
+          <Concepts>
+            <Concept uuid="1feee93d-6da7-4259-a01f-951092d25252" name="IfcObjectDefinition Name exists">
+              <Definitions>
+                <Definition>
+                  <Body lang="en"><![CDATA[Existence of name attribute.]]></Body>
+                </Definition>
+              </Definitions>
+              <Template ref="84127f82-b856-4636-a812-d6823d5d56bd"/>
+              <Requirements>
+                <Requirement applicability="import" exchangeRequirement="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" requirement="mandatory"/>
+              </Requirements>
+              <TemplateRules operator="and">
+                <TemplateRule Parameters="Name[Exists]=TRUE"/>
+              </TemplateRules>
+            </Concept>
+          </Concepts>
+        </ConceptRoot>
+        <ConceptRoot uuid="b8353218-9d3c-4fc8-a8a5-f1ccb9edb292" name="Test name of IfcBuildingElement" applicableRootEntity="IfcBuildingElement">
+          <Definitions>
+            <Definition>
+              <Body><![CDATA[Existence of name attriute.]]></Body>
+            </Definition>
+          </Definitions>
+          <Concepts>
+            <Concept uuid="84988dea-b058-4da4-8d4a-4e6246e39b42" name="IfcBuildingElement Name exists">
+              <Definitions>
+                <Definition>
+                  <Body lang="en"><![CDATA[Existence of name attribute.]]></Body>
+                </Definition>
+              </Definitions>
+              <Template ref="84127f82-b856-4636-a812-d6823d5d56bd"/>
+              <Requirements>
+                <Requirement applicability="import" exchangeRequirement="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" requirement="mandatory"/>
+              </Requirements>
+              <TemplateRules operator="and">
+                <TemplateRule Parameters="Name[Exists]=TRUE"/>
+              </TemplateRules>
+            </Concept>
+          </Concepts>
+        </ConceptRoot>
+        <ConceptRoot uuid="0465a7ab-87e6-48f5-869d-7827f1443131" name="Test name of IfcSpatialElement" applicableRootEntity="IfcSpatialElement">
+          <Definitions>
+            <Definition>
+              <Body><![CDATA[Existence of name attriute.]]></Body>
+            </Definition>
+          </Definitions>
+          <Concepts>
+            <Concept uuid="c259d84b-86c6-4ce6-b991-7e87de63cf0b" name="IfcSpatialElement Name exists">
+              <Definitions>
+                <Definition>
+                  <Body lang="en"><![CDATA[Existence of name attribute.]]></Body>
+                </Definition>
+              </Definitions>
+              <Template ref="84127f82-b856-4636-a812-d6823d5d56bd"/>
+              <Requirements>
+                <Requirement applicability="import" exchangeRequirement="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" requirement="mandatory"/>
+              </Requirements>
+              <TemplateRules operator="and">
+                <TemplateRule Parameters="Name[Exists]=TRUE"/>
+              </TemplateRules>
+            </Concept>
+          </Concepts>
+        </ConceptRoot>
+      </Roots>
+    </ModelView>
+  </Views>
+</mvdXML>

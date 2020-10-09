@@ -1,0 +1,280 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3211,
+	"last_window_id": 1,
+	"log_indexing": false,
+	"settings":
+	{
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/C/Users/Christian.Woerner/Desktop/AccuracyStudy/20200924_newresults/csv_4422_for_python1.csv",
+					"settings":
+					{
+						"buffer_size": 84747,
+						"encoding": "UTF-8 with BOM",
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Users/Christian.Woerner/Desktop/AccuracyStudy/20200924_newresults/csv_4421_for_python.csv",
+				"/C/Users/Christian.Woerner/Desktop/AccuracyStudy/20200924_newresults/csv_4290_for_python.csv",
+				"/C/Users/Christian.Woerner/Desktop/AccuracyStudy/20200924_newresults/csv_4422_for_python.csv",
+				"/C/Users/Christian.Woerner/Desktop/AccuracyStudy/QGIS/gleislinse_pp_4421.csv",
+				"/C/Users/Christian.Woerner/Desktop/AccuracyStudy/20200924_newresults/csv_4290_for_python.xlsx",
+				"/C/Users/Christian.Woerner/Desktop/Meine Orte.kml",
+				"/C/Users/Christian.Woerner/Desktop/AccuracyStudy/gcps-4422.csv",
+				"/C/Users/Christian.Woerner/Desktop/20200909_neues_mischwerk_mischwerke",
+				"/C/Users/Christian.Woerner/Desktop/20200909_neues_mischwerk_geoinfos",
+				"/C/Users/Christian.Woerner/Downloads/L34PP.csv",
+				"/C/Users/Christian.Woerner/Desktop/20200908_help2.kml",
+				"/C/Users/Christian.Woerner/Desktop/20200908_help.kml",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Roadmarker/data/output/polygon_geojsons/200813160916_original_a7_tiled.0_yellow.geojson",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Roadmarker/data/output/polygon_geojsons/200813161037_original_a7_tiled.1_yellow.geojson",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Roadmarker/data/output/polygon_geojsons/200813161201_original_a7_tiled.2_yellow.geojson",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Roadmarker/data/output/polygon_geojsons/200813161226_original_a7_tiled.3_yellow.geojson",
+				"/C/Users/Christian.Woerner/Downloads/gleislinse_pp_all.csv",
+				"/C/Users/Christian.Woerner/Desktop/AccuracyStudy/QGIS/auswertung4290_1.csv",
+				"/C/Users/Christian.Woerner/Downloads/gleislinse_pp_4290.csv",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/data/output/getlabdata/start_bis_2020-4-3_bpo_test_data.json",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/data/output/getbills/2019-7-3_to_2019-7-4_200720102323_toimport_pyBPO.json",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/src/bpo_test_data.json",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/src/20200616_validjson",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/data/output/getbills/2020-7-20_to_2020-7-21_200720102937_toimport_pyBPO.json",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/data/output/getthermaldata/2019-9-4_bis_2019-9-5_bpo_test_data.json",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/src/2020-4-2_bis_2020-4-3_bpo_test_data.json",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/data/output/2019-7-10_to_2019-7-11_200720102326_toimport_pyBPO.json",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/data/output/2020-7-20_to_2020-7-21_200720102937_toimport_pyBPO.json",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/data/output/2019-6-6_to_2019-6-7_200716174614_toimport_pyBPO.json",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/data/output/2019-6-6_to_2019-6-7_200717151908_toimport_pyBPO.json",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/data/output/2019-6-27_to_2019-6-28_200716174620_toimport_pyBPO.json",
+				"/C/Users/Christian.Woerner/Documents/GitHub/Strassenbau4.0/pyBPO/data/output/2019-9-16_to_2019-9-17_200716174652_toimport_pyBPO.json",
+				"/C/Users/Christian.Woerner/Downloads/output.geojson"
+			],
+			"find":
+			{
+				"height": 28.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					";",
+					",",
+					";",
+					",",
+					";",
+					",",
+					";",
+					"\"Polygon\"}",
+					"}{",
+					"]",
+					"["
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					",",
+					".",
+					",",
+					".",
+					",",
+					".",
+					",",
+					"\"Polygon\"},",
+					"},{",
+					")",
+					"("
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/C/Users/Christian.Woerner/Desktop/AccuracyStudy/20200924_newresults/csv_4422_for_python1.csv",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 84747,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										940,
+										940
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 28.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,2,3,-1,-1,-1,-1,901,952,270,1608",
+			"project": "",
+			"replace":
+			{
+				"height": 72.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

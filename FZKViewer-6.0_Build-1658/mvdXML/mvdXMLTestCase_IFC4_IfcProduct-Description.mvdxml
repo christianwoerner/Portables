@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvdXML xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://buildingsmart-tech.org/mvd/XML/1.1 http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="ed58d6ad-c15d-4bdd-b048-878c99019861" name="KIT/IAI mvdXML Editor" author="Geiger, Andreas (IAI)">
+  <Templates>
+    <ConceptTemplate uuid="fc4cd909-040b-4125-a78c-b5e0d84f6c47" name="ProductConceptTemplate" applicableSchema="IFC4" applicableEntity="IfcProduct">
+      <Definitions>
+        <Definition>
+          <Body lang="en"><![CDATA[Concept Template for any Product]]></Body>
+        </Definition>
+      </Definitions>
+      <Rules>
+        <AttributeRule RuleID="Description" AttributeName="Description"/>
+      </Rules>
+    </ConceptTemplate>
+  </Templates>
+  <Views>
+    <ModelView uuid="77d67338-4758-475c-8063-da6358bdca8e" name="IFC4 import test" author="Geiger, Andreas (IAI)" applicableSchema="IFC4">
+      <Definitions>
+        <Definition>
+          <Body><![CDATA[Test rules]]></Body>
+        </Definition>
+      </Definitions>
+      <ExchangeRequirements>
+        <ExchangeRequirement uuid="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" name="Building energy simulation requirements" applicability="import">
+          <Definitions>
+            <Definition>
+              <Body><![CDATA[Check import]]></Body>
+            </Definition>
+          </Definitions>
+        </ExchangeRequirement>
+      </ExchangeRequirements>
+      <Roots>
+        <ConceptRoot uuid="02cfad01-38f9-4eb8-8aa9-c8ed72ef86be" name="Test description of IfcProduct" applicableRootEntity="IfcProduct">
+          <Definitions>
+            <Definition>
+              <Body><![CDATA[Existence of description attriute.]]></Body>
+            </Definition>
+          </Definitions>
+          <Concepts>
+            <Concept uuid="6ab0bd3e-2929-4f37-b132-22ea8752c612" name="Description exists">
+              <Definitions>
+                <Definition>
+                  <Body lang="en"><![CDATA[Existence of description attribute.]]></Body>
+                </Definition>
+              </Definitions>
+              <Template ref="fc4cd909-040b-4125-a78c-b5e0d84f6c47"/>
+              <Requirements>
+                <Requirement applicability="import" exchangeRequirement="92f50b6b-557f-4e5a-9b27-7034e7b6f3b6" requirement="mandatory"/>
+              </Requirements>
+              <TemplateRules operator="and">
+                <TemplateRule Parameters="Description[Exists]=TRUE"/>
+              </TemplateRules>
+            </Concept>
+          </Concepts>
+        </ConceptRoot>
+      </Roots>
+    </ModelView>
+  </Views>
+</mvdXML>

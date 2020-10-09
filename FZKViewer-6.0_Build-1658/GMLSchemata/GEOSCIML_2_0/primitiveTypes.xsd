@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml"
+    xmlns:cgu="urn:cgi:xmlns:CGI:Utilities:1.0" targetNamespace="urn:cgi:xmlns:CGI:Utilities:1.0"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <annotation>
+        <documentation>This package contains classes that have a canonical encoding so must be packaged separately from
+            the packages from which the XML encoding will be generated automatically.</documentation>
+    </annotation>
+    <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+    <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+    <element name="LocalizedScopedName" type="cgu:LocalizedScopedNameType" substitutionGroup="gml:name"/>
+    <complexType name="LocalizedScopedNameType">
+        <annotation>
+            <documentation>add required xml:lang attribute</documentation>
+        </annotation>
+        <simpleContent>
+            <extension base="cgu:CodeWithAuthorityType">
+                <attribute ref="xml:lang" use="required"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <element name="LocalizedGenericName" type="cgu:LocalizedGenericNameType" substitutionGroup="gml:name"/>
+    <complexType name="LocalizedGenericNameType">
+        <annotation>
+            <documentation>add required xml:lang attribute</documentation>
+        </annotation>
+        <simpleContent>
+            <extension base="cgu:CodeWithAuthorityType">
+                <attribute ref="xml:lang" use="required"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <element name="LocalizableScopedName" type="cgu:LocalizableScopedNameType" substitutionGroup="gml:name"/>
+    <complexType name="LocalizableScopedNameType">
+        <annotation>
+            <documentation>add optional xml:lang attribute</documentation>
+        </annotation>
+        <simpleContent>
+            <extension base="gml:CodeType">
+                <attribute ref="xml:lang"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <element name="LocalizableGenericName" type="cgu:LocalizableGenericNameType" substitutionGroup="gml:name"/>
+    <complexType name="LocalizableGenericNameType">
+        <annotation>
+            <documentation>add optional xml:lang attribute</documentation>
+        </annotation>
+        <simpleContent>
+            <extension base="gml:CodeType">
+                <attribute ref="xml:lang"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         NOTE: "CodeWithAuthorityType" is a GML component that is temporarily
+         defined in this namespace. It is defined in GML 3.2 and should be
+         removed after CGI schemas are migrated from GML 3.1 to GML 3.2.
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <complexType name="CodeWithAuthorityType">
+        <annotation>
+            <documentation>gml:CodeWithAuthorityType requires that the codeSpace attribute is provided in an
+            instance.</documentation>
+        </annotation>
+        <simpleContent>
+            <restriction base="gml:CodeType">
+                <attribute name="codeSpace" type="anyURI" use="required"/>
+            </restriction>
+        </simpleContent>
+    </complexType>
+</schema>

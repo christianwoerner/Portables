@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceFilterSettings>
+	<Host url="https://isk.geobasis-bb.de/ows/dop20c_wms?" guid="3a776873-88e1-4938-a660-1aa2c4c35d23">
+		<DialogSettings dlg="GetMap">
+			<Property Name="bbox">376801.824133,5699552.996985,377058.937399,5699760.097986</Property>
+			<Property Name="bbox-srs">EPSG:25833</Property>
+			<Property Name="fixed-height"></Property>
+			<Property Name="fixed-width"></Property>
+			<Property Name="layers">bebb_dop20c</Property>
+			<Property Name="map-z-max">68.082</Property>
+			<Property Name="map-z-min">68.082</Property>
+			<Property Name="outputFormat">image/png</Property>
+			<Property Name="query-tiled-map">true</Property>
+			<Property Name="scale-hint">0.04388</Property>
+			<Property Name="styles"></Property>
+			<Property Name="time-value"></Property>
+			<Property Name="requestType"></Property>
+			<Property Name="scale-hint-max"></Property>
+			<Property Name="scale-hint-min"></Property>
+			<Property Name="tile-dpi">0</Property>
+			<Property Name="tile-height">1000</Property>
+			<Property Name="tile-width">1000</Property>
+		</DialogSettings>
+	</Host>
+</WebServiceFilterSettings>

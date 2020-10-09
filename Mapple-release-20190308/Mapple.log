@@ -1,0 +1,224 @@
+--------------- Thu Oct  1 09:29:08 2020 ---------------
+[OpenglInfo] GLEW Version: 2.1.0
+[OpenglInfo] GL Vendor: Intel
+[OpenglInfo] GL Renderer: Intel(R) UHD Graphics 630
+[OpenglInfo] GL Version: 4.3.0 - Build 26.20.100.7157
+[OpenglInfo] GLSL Version: 4.30 - Build 26.20.100.7157
+[PointSetIO] reading file...
+[PointSetSerializer_las] reading 276939977 points...
+[PointSetSerializer_las] first point (33052.7 13130.9 35.1173)
+[PointSetIO] done. time: 42.0s
+[Drawable] vertex buffer updated. time: 885.1ms
+[Drawable] color buffer updated. time: 901.2ms
+--------------- Thu Oct  1 13:40:01 2020 ---------------
+[OpenglInfo] GLEW Version: 2.1.0
+[OpenglInfo] GL Vendor: Intel
+[OpenglInfo] GL Renderer: Intel(R) UHD Graphics 630
+[OpenglInfo] GL Version: 4.3.0 - Build 26.20.100.7157
+[OpenglInfo] GLSL Version: 4.30 - Build 26.20.100.7157
+[PointSetIO] reading file...
+[PointSetSerializer_las] reading 16709454 points...
+[PointSetSerializer_las] first point (4.39792e+06 5.71545e+06 271.97)
+[PointSetIO] done. time: 2.0s
+[PointSetSelect] 1969588 points selected.
+[PointSetSelect] 789 points deselected.
+[PointSetSelect] 199 points selected.
+[PointSetSelect] 81041 points selected.
+[PointSetSelect] point (113.103 138.312 2.87) selected
+[PointSetSelect] point (-2.43 61.412 -0.442) selected
+[PointSetSelect] point (105.207 141.263 2.8) selected
+[PaintCanvas] 2050041 points deleted
+--------------- Thu Oct  1 13:45:31 2020 ---------------
+[OpenglInfo] GLEW Version: 2.1.0
+[OpenglInfo] GL Vendor: Intel
+[OpenglInfo] GL Renderer: Intel(R) UHD Graphics 630
+[OpenglInfo] GL Version: 4.3.0 - Build 26.20.100.7157
+[OpenglInfo] GLSL Version: 4.30 - Build 26.20.100.7157
+[PointSetIO] reading file...
+[PointSetSerializer_las] reading 16709454 points...
+[PointSetSerializer_las] first point (4.39792e+06 5.71545e+06 271.97)
+[PointSetIO] done. time: 2.1s
+[PointSetSelect] 1264455 points selected.
+[PointSetSelect] 0 points selected.
+[PaintCanvas] 15444999 points deleted
+[PointSetSelect] 0 points deselected.
+[PointSetSelect] 0 points selected.
+[PointSetSelect] 0 points selected.
+[PointSetSelect] 1795 points selected.
+[PaintCanvas] 1795 points deleted
+[PointSetSelect] 812 points selected.
+[PaintCanvas] 812 points deleted
+[AutoRepair] no model exist
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] Error: no progressive mesh
+[ProgressiveMesh] no model exist
+[PrimitivesRansac] RANSAC Detector requires point cloud normals
+[PrimitivesRansac] RANSAC Detector requires point cloud normals
+[PointSetNormals] building kd-tree ...
+[PointSetNormals] done. time: 331.4ms
+[PointSetNormals] estimating normals ...
+[PointSetNormals] done. time: 420.8ms
+[PointSetNormals] building kd-tree ...
+[PointSetNormals] done. time: 327.1ms
+[PointSetNormals] estimating normals ...
+[PointSetNormals] done. time: 422.6ms
+[PrimitivesRansac] detecting primitives...
+[PrimitivesRansac] 20 primitives extracted. 36349 points remained. time: 1.3s
+[PointSetSerializer_las] Warning: normals discarded when saving to LAS or LAZ format (future release may support).
+[PointSetSerializer_las] saving 1261848 points...
+[PointSetSerializer_las] scale factor: 8.7057e-08 7.6367e-08 1.6143e-08
+[PointSetSerializer_las] offset: 36.8495 92.3385 3.4735
+[PointSetSerializer_las] 42903059 bytes for 1261848 points
+[PointSetIO] done. time: 155.3ms
+[PointSetIO] done. time: 14.8ms
+[PointSetSelect] 30417 points selected.
+[PointSetSelect] 41195 points selected.
+[PointSetSelect] 7932 points selected.
+[PointSetSelect] 14416 points selected.
+[PointSetSelect] 8654 points selected.
+[PointSetSelect] 45396 points selected.
+[PointSetSelect] 297227 points selected.
+[PaintCanvas] 445237 points deleted
+[PointSetSelect] 606 points selected.
+[PointSetSelect] 195 points selected.
+[PointSetSelect] 898 points selected.
+[PointSetSelect] 2188 points selected.
+[PaintCanvas] 3887 points deleted
+[PointSetSelect] 158320 points selected.
+[PaintCanvas] 158320 points deleted
+[PointSetSelect] 0 points selected.
+[PointSetSelect] 10634 points selected.
+[PointSetSelect] 11898 points selected.
+[PaintCanvas] 22532 points deleted
+[PointSetSelect] 75 points selected.
+[PointSetSelect] 2037 points selected.
+[PaintCanvas] 2112 points deleted
+[PointSetSelect] 123209 points selected.
+[PointSetSelect] 0 points deselected.
+[PointSetSelect] 8798 points selected.
+[PaintCanvas] 132007 points deleted
+[PointSetSelect] 13706 points selected.
+[PointSetSelect] 5017 points selected.
+[PaintCanvas] 18723 points deleted
+[PointSetSelect] 1776 points selected.
+[PaintCanvas] 1776 points deleted
+[PointSetSelect] 643 points selected.
+[PaintCanvas] 643 points deleted
+[PointSetIO] done. time: 5.1ms
+--------------- Thu Oct  1 19:08:57 2020 ---------------
+[OpenglInfo] GLEW Version: 2.1.0
+[OpenglInfo] GL Vendor: Intel
+[OpenglInfo] GL Renderer: Intel(R) UHD Graphics 630
+[OpenglInfo] GL Version: 4.3.0 - Build 26.20.100.7157
+[OpenglInfo] GLSL Version: 4.30 - Build 26.20.100.7157
+[PointSetIO] reading file...
+[PointSetSerializer_las] reading 184674809 points...
+[PointSetSerializer_las] first point (7.30572 52.5583 -16.433)
+[PointSetIO] done. time: 28.7s
+[Drawable] vertex buffer updated. time: 656.3ms
+[Drawable] color buffer updated. time: 679.7ms
+--------------- Thu Oct  1 22:22:39 2020 ---------------
+[OpenglInfo] GLEW Version: 2.1.0
+[OpenglInfo] GL Vendor: Intel
+[OpenglInfo] GL Renderer: Intel(R) UHD Graphics 630
+[OpenglInfo] GL Version: 4.3.0 - Build 26.20.100.7157
+[OpenglInfo] GLSL Version: 4.30 - Build 26.20.100.7157
+[PointSetIO] reading file...
+[PointSetSerializer_las] reading 184674809 points...
+[PointSetSerializer_las] first point (7.30572 52.5583 -16.433)
+[PointSetIO] done. time: 26.9s
+[Drawable] vertex buffer updated. time: 580.2ms
+[Drawable] color buffer updated. time: 594.9ms
+--------------- Thu Oct  1 22:35:07 2020 ---------------
+[OpenglInfo] GLEW Version: 2.1.0
+[OpenglInfo] GL Vendor: Intel
+[OpenglInfo] GL Renderer: Intel(R) UHD Graphics 630
+[OpenglInfo] GL Version: 4.3.0 - Build 26.20.100.7157
+[OpenglInfo] GLSL Version: 4.30 - Build 26.20.100.7157
+[PointSetIO] reading file...
+[PointSetIO] done. time: 9.0s
+[Drawable] vertex buffer updated. time: 7.6s
+[Drawable] color buffer updated. time: 8.2s
+[Drawable] normal buffer updated. time: 767.6ms
+[Drawable] selection buffer updated. time: 229.8ms
+--------------- Thu Oct  1 22:42:00 2020 ---------------
+[OpenglInfo] GLEW Version: 2.1.0
+[OpenglInfo] GL Vendor: Intel
+[OpenglInfo] GL Renderer: Intel(R) UHD Graphics 630
+[OpenglInfo] GL Version: 4.3.0 - Build 26.20.100.7157
+[OpenglInfo] GLSL Version: 4.30 - Build 26.20.100.7157
+[PointSetIO] reading file...
+[PointSetSerializer_las] reading 184674809 points...
+[PointSetSerializer_las] first point (7.306 52.558 0)
+[PointSetIO] done. time: 26.9s
+[Drawable] vertex buffer updated. time: 593.6ms
+[Drawable] color buffer updated. time: 594.1ms
